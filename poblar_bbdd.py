@@ -9,17 +9,17 @@ asign_colecc = db['asignaturas']
 datos_prof = pd.read_excel("docs_iniciales/infoProf.xlsx", usecols=[0, 1, 2], header=None)
 datos_dep = pd.read_excel("docs_iniciales/infoDep.xlsx", header=None)
 
-# capacidades = datos_dep.iloc[1, 11:]
-# for indice,fila in datos_prof.iterrows():
-#     profesor = {
-#         'orden': fila[0],
-#         'nombre': fila[1],
-#         'uvus': fila[2],
-#         'capacidad': capacidades[indice + 11]
-#     }
-#     prof_colecc.insert_one(profesor)
+capacidades = datos_dep.iloc[1, 11:]
+for indice,fila in datos_prof.iterrows():
+    profesor = {
+        'orden': fila[0],
+        'nombre': fila[1],
+        'uvus': fila[2],
+        'capacidad': capacidades[indice + 11]
+    }
+    prof_colecc.insert_one(profesor)
 
-# print("Datos insertados en la colección 'profesores' de la base de datos 'PAP'.")
+print("Datos insertados en la colección 'profesores' de la base de datos 'PAP'.")
 
 asignaturas = datos_dep.iloc[8:, :11]
 # print(asignaturas)
