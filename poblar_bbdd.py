@@ -24,6 +24,7 @@ print("Datos insertados en la colección 'profesores' de la base de datos 'PAP'.
 asignaturas = datos_dep.iloc[8:, :11]
 # print(asignaturas)
 for indice, fila in asignaturas.iterrows():
+    
     horario = []
     if not pd.isnull(fila[9]):
         horario.append(fila[9])
@@ -36,9 +37,11 @@ for indice, fila in asignaturas.iterrows():
         'codigo': fila[1],
         'acronimo': fila[3],
         'cuatrimestre': fila[6],
-        'creditos': fila[7],
-        'horario': horario
+        'creditos': fila[7]
     }
+
+    if horario:
+        asignatura['horario'] = horario
     # print(asignatura)
     asign_colecc.insert_one(asignatura)
 
