@@ -1,7588 +1,954 @@
 [{
   "_id": {
-    "$oid": "65da1db2d3d6e80db320740d"
+    "$oid": "65e4b2bcfffdc49182fd8657"
   },
   "nombre": "Sistemas de Información para la Administración Pública",
   "titulacion": "GRA Gestión y Administración Pública",
   "codigo": 1650028,
-  "acronimo": "SIAP",
-  "cuatrimestre": 2,
-  "creditos": 3,
-  "horario": [
-    "Ma. - 9:30 a 10:30"
-  ]
+  "acronimo": "SIAP"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320740e"
-  },
-  "nombre": "Sistemas de Información para la Administración Pública",
-  "titulacion": "GRA Gestión y Administración Pública",
-  "codigo": 1650028,
-  "acronimo": "SIAP",
-  "cuatrimestre": 2,
-  "creditos": 3,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320740f"
+    "$oid": "65e4b2bcfffdc49182fd8658"
   },
   "nombre": "Fundamentos de Programación",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 8:30"
-  ]
+  "acronimo": "FP-IC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207410"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207411"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207412"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207413"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207414"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207415"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207416"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207417"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207418"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207419"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320741a"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C1",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320741b"
+    "$oid": "65e4b2bcfffdc49182fd8659"
   },
   "nombre": "Fundamentos de Programación",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 8:30"
-  ]
+  "acronimo": "FP-IC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320741c"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320741d"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320741e"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320741f"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207420"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207421"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207422"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207423"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207424"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207425"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207426"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040001-C2",
-  "acronimo": "FP-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207427"
+    "$oid": "65e4b2bcfffdc49182fd865a"
   },
   "nombre": "Análisis y Diseño de Datos y Algoritmos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": "2040010-C1",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
+  "acronimo": "ADDA-IC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207428"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C1",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207429"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C1",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320742a"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C1",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320742b"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C1",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320742c"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C1",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320742d"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C1",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320742e"
+    "$oid": "65e4b2bcfffdc49182fd865b"
   },
   "nombre": "Análisis y Diseño de Datos y Algoritmos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": "2040010-C2",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 8:30",
-    "Mi. - 10:40"
-  ]
+  "acronimo": "ADDA-IC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320742f"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C2",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207430"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C2",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207431"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C2",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207432"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C2",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207433"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C2",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207434"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": "2040010-C2",
-  "acronimo": "ADDA-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207435"
+    "$oid": "65e4b2bcfffdc49182fd865c"
   },
   "nombre": "Sistemas Operativos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": 2040013,
-  "acronimo": "SSOO-IC",
-  "cuatrimestre": 1,
-  "creditos": 6,
-  "horario": [
-    "Mi. -10:40",
-    "L. - 8:30"
-  ]
+  "acronimo": "SSOO-IC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207436"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040013,
-  "acronimo": "SSOO-IC",
-  "cuatrimestre": 1,
-  "creditos": 6,
-  "horario": [
-    "Mi. - 17:40",
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207437"
+    "$oid": "65e4b2bcfffdc49182fd865d"
   },
   "nombre": "Desarrollo de Aplicaciones Distribuidas",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": 2040023,
-  "acronimo": "DAD",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Vi. - 10:40"
-  ]
+  "acronimo": "DAD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207438"
-  },
-  "nombre": "Desarrollo de Aplicaciones Distribuidas",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040023,
-  "acronimo": "DAD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207439"
-  },
-  "nombre": "Desarrollo de Aplicaciones Distribuidas",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040023,
-  "acronimo": "DAD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320743a"
+    "$oid": "65e4b2bcfffdc49182fd865e"
   },
   "nombre": "Acceso Inteligente a la Información",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": 2040038,
-  "acronimo": "AII-IC",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
+  "acronimo": "AII-IC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320743b"
-  },
-  "nombre": "Acceso Inteligente a la Información",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040038,
-  "acronimo": "AII-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320743c"
+    "$oid": "65e4b2bcfffdc49182fd865f"
   },
   "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": 2040047,
-  "acronimo": "IISSI1-IC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
+  "acronimo": "IISSI1-IC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320743d"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040047,
-  "acronimo": "IISSI1-IC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320743e"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040047,
-  "acronimo": "IISSI1-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320743f"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040047,
-  "acronimo": "IISSI1-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207440"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040047,
-  "acronimo": "IISSI1-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207441"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040047,
-  "acronimo": "IISSI1-IC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207442"
+    "$oid": "65e4b2bcfffdc49182fd8660"
   },
   "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
   "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
   "codigo": 2040048,
-  "acronimo": "IISSI2-IC",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
+  "acronimo": "IISSI2-IC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207443"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040048,
-  "acronimo": "IISSI2-IC",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207444"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040048,
-  "acronimo": "IISSI2-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207445"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040048,
-  "acronimo": "IISSI2-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207446"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040048,
-  "acronimo": "IISSI2-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207447"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería de Computadores",
-  "codigo": 2040048,
-  "acronimo": "IISSI2-IC",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207448"
+    "$oid": "65e4b2bcfffdc49182fd8661"
   },
   "nombre": "Fundamentos de Programación",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 12:40"
-  ]
+  "acronimo": "FP-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207449"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320744a"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320744b"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320744c"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Vi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320744d"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320744e"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320744f"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207450"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207451"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207452"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207453"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207454"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207455"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207456"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207457"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207458"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C1",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207459"
+    "$oid": "65e4b2bcfffdc49182fd8662"
   },
   "nombre": "Fundamentos de Programación",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 8:30"
-  ]
+  "acronimo": "FP-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320745a"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320745b"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320745c"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 17:40",
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320745d"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320745e"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320745f"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207460"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207461"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207462"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207463"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207464"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207465"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207466"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207467"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207468"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207469"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050001-C2",
-  "acronimo": "FP-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320746a"
+    "$oid": "65e4b2bcfffdc49182fd8663"
   },
   "nombre": "Análisis y Diseño de Datos y Algoritmos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 10:40"
-  ]
+  "acronimo": "ADDA-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320746b"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320746c"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320746d"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320746e"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320746f"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207470"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207471"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207472"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207473"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207474"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207475"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207476"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207477"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207478"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207479"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320747a"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320747b"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320747c"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C1",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320747d"
+    "$oid": "65e4b2bcfffdc49182fd8664"
   },
   "nombre": "Análisis y Diseño de Datos y Algoritmos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 10:40"
-  ]
+  "acronimo": "ADDA-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320747e"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320747f"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207480"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40",
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207481"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207482"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207483"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207484"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207485"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207486"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207487"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207488"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207489"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320748a"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320748b"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320748c"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320748d"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320748e"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320748f"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": "2050010-C2",
-  "acronimo": "ADDA-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207490"
+    "$oid": "65e4b2bcfffdc49182fd8665"
   },
   "nombre": "Sistemas Operativos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 1.4,
-  "horario": [
-    "L. - 10:40 // J. - 12:40",
-    "L. - 8:30"
-  ]
+  "acronimo": "SSOO-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207491"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 1.4,
-  "horario": [
-    "L. - 8:30 // J. - 12:40",
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207492"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 1.4,
-  "horario": [
-    "J. - 17:40",
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207493"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 1.4,
-  "horario": [
-    "J. - 15:30",
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207494"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 1.4,
-  "horario": [
-    "V. - 10:40",
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207495"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 8:30",
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207496"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 10:40",
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207497"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 10:40",
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207498"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "J. - 10:40",
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207499"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "J. - 10:40",
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320749a"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 15:30",
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320749b"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 15:30",
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320749c"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 17:40",
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320749d"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 17:40",
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320749e"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050014,
-  "acronimo": "SSOO-IS",
-  "cuatrimestre": 1,
-  "creditos": 4.6,
-  "horario": [
-    "Mi. - 8:30",
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320749f"
+    "$oid": "65e4b2bcfffdc49182fd8666"
   },
   "nombre": "Arquitectura e Integración de Sistemas Software",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
+  "acronimo": "AISS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074a0"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a1"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a2"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a3"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a4"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a5"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a6"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a7"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a8"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074a9"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074aa"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ab"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ac"
-  },
-  "nombre": "Arquitectura e Integración de Sistemas Software",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050016,
-  "acronimo": "AISS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ad"
+    "$oid": "65e4b2bcfffdc49182fd8667"
   },
   "nombre": "Ingeniería de Requisitos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 12:40"
-  ]
+  "acronimo": "IR"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074ae"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074af"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b0"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b1"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b2"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b3"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b4"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b5"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b6"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b7"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b8"
-  },
-  "nombre": "Ingeniería de Requisitos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050020,
-  "acronimo": "IR",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074b9"
+    "$oid": "65e4b2bcfffdc49182fd8668"
   },
   "nombre": "Acceso Inteligente a la Información",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050027,
-  "acronimo": "AII-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
+  "acronimo": "AII-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074ba"
-  },
-  "nombre": "Acceso Inteligente a la Información",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050027,
-  "acronimo": "AII-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 19-40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074bb"
-  },
-  "nombre": "Acceso Inteligente a la Información",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050027,
-  "acronimo": "AII-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Vi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074bc"
-  },
-  "nombre": "Acceso Inteligente a la Información",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050027,
-  "acronimo": "AII-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Vi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074bd"
-  },
-  "nombre": "Acceso Inteligente a la Información",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050027,
-  "acronimo": "AII-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Vi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074be"
+    "$oid": "65e4b2bcfffdc49182fd8669"
   },
   "nombre": "Evolución y Gestión de la Configuración",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
+  "acronimo": "EGC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074bf"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c0"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c1"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c2"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c3"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c4"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c5"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c6"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c7"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c8"
-  },
-  "nombre": "Evolución y Gestión de la Configuración",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050032,
-  "acronimo": "EGC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074c9"
+    "$oid": "65e4b2bcfffdc49182fd866a"
   },
   "nombre": "Planificación y Gestión de Proyectos Informáticos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
+  "acronimo": "PGPI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074ca"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074cb"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074cc"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074cd"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ce"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074cf"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d0"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d1"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d2"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d3"
-  },
-  "nombre": "Planificación y Gestión de Proyectos Informáticos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050035,
-  "acronimo": "PGPI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d4"
+    "$oid": "65e4b2bcfffdc49182fd866b"
   },
   "nombre": "Complementos de Bases de Datos",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050037,
-  "acronimo": "CBD",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
+  "acronimo": "CBD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074d5"
-  },
-  "nombre": "Complementos de Bases de Datos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050037,
-  "acronimo": "CBD",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d6"
-  },
-  "nombre": "Complementos de Bases de Datos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050037,
-  "acronimo": "CBD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d7"
-  },
-  "nombre": "Complementos de Bases de Datos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050037,
-  "acronimo": "CBD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d8"
-  },
-  "nombre": "Complementos de Bases de Datos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050037,
-  "acronimo": "CBD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074d9"
-  },
-  "nombre": "Complementos de Bases de Datos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050037,
-  "acronimo": "CBD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074da"
-  },
-  "nombre": "Complementos de Bases de Datos",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050037,
-  "acronimo": "CBD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074db"
+    "$oid": "65e4b2bcfffdc49182fd866c"
   },
   "nombre": "Ingeniería del Software y Práctica Profesional",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050039,
-  "acronimo": "ISPP",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
+  "acronimo": "ISPP"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074dc"
-  },
-  "nombre": "Ingeniería del Software y Práctica Profesional",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050039,
-  "acronimo": "ISPP",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074dd"
-  },
-  "nombre": "Ingeniería del Software y Práctica Profesional",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050039,
-  "acronimo": "ISPP",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074de"
-  },
-  "nombre": "Ingeniería del Software y Práctica Profesional",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050039,
-  "acronimo": "ISPP",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074df"
-  },
-  "nombre": "Ingeniería del Software y Práctica Profesional",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050039,
-  "acronimo": "ISPP",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074e0"
-  },
-  "nombre": "Ingeniería del Software y Práctica Profesional",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050039,
-  "acronimo": "ISPP",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074e1"
-  },
-  "nombre": "Ingeniería del Software y Práctica Profesional",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050039,
-  "acronimo": "ISPP",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074e2"
-  },
-  "nombre": "Ingeniería del Software y Práctica Profesional",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050039,
-  "acronimo": "ISPP",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074e3"
+    "$oid": "65e4b2bcfffdc49182fd866d"
   },
   "nombre": "Seguridad en Sistemas Informáticos y en Internet",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050043,
-  "acronimo": "SSII-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 10:40"
-  ]
+  "acronimo": "SSII-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074e4"
-  },
-  "nombre": "Seguridad en Sistemas Informáticos y en Internet",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050043,
-  "acronimo": "SSII-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074e5"
-  },
-  "nombre": "Seguridad en Sistemas Informáticos y en Internet",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050043,
-  "acronimo": "SSII-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074e6"
+    "$oid": "65e4b2bcfffdc49182fd866e"
   },
   "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 12:40"
-  ]
+  "acronimo": "IISSI1-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074e7"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074e8"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074e9"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ea"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074eb"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ec"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ed"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ee"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ef"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f0"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f1"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f2"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f3"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050046,
-  "acronimo": "IISSI1-IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f4"
+    "$oid": "65e4b2bcfffdc49182fd866f"
   },
   "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma.  - 12:40"
-  ]
+  "acronimo": "IISSI2-IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32074f5"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f6"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f7"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f8"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074f9"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074fa"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074fb"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074fc"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074fd"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074fe"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32074ff"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207500"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207501"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207502"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050047,
-  "acronimo": "IISSI2-IS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207503"
+    "$oid": "65e4b2bcfffdc49182fd8670"
   },
   "nombre": "Diseño y Pruebas I",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 10:40"
-  ]
+  "acronimo": "DP1"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207504"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207505"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207506"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207507"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207508"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207509"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320750a"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320750b"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320750c"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320750d"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320750e"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320750f"
-  },
-  "nombre": "Diseño y Pruebas I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050048,
-  "acronimo": "DP1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207510"
+    "$oid": "65e4b2bcfffdc49182fd8671"
   },
   "nombre": "Diseño y Pruebas II",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
+  "acronimo": "DP2"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207511"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207512"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207513"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207514"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207515"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207516"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207517"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207518"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207519"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320751a"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320751b"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320751c"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320751d"
-  },
-  "nombre": "Diseño y Pruebas II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050049,
-  "acronimo": "DP2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320751e"
+    "$oid": "65e4b2bcfffdc49182fd8672"
   },
   "nombre": "Proceso Software y Gestión I",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 10:40"
-  ]
+  "acronimo": "PSG1"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320751f"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207520"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207521"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207522"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207523"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207524"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207525"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207526"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207527"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207528"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207529"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320752a"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320752b"
-  },
-  "nombre": "Proceso Software y Gestión I",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050050,
-  "acronimo": "PSG1",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320752c"
+    "$oid": "65e4b2bcfffdc49182fd8673"
   },
   "nombre": "Proceso Software y Gestión II",
   "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
   "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 10:40"
-  ]
+  "acronimo": "PSG2"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320752d"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320752e"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320752f"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207530"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207531"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207532"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207533"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207534"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207535"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207536"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207537"
-  },
-  "nombre": "Proceso Software y Gestión II",
-  "titulacion": "GRA Ingeniería Informática-Ingeniería del Software",
-  "codigo": 2050051,
-  "acronimo": "PSG2",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207538"
+    "$oid": "65e4b2bcfffdc49182fd8674"
   },
   "nombre": "Fundamentos de Programación",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 8:30"
-  ]
+  "acronimo": "FP-TI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207539"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320753a"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320753b"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320753c"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320753d"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320753e"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320753f"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207540"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207541"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207542"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207543"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207544"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207545"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C1",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207546"
+    "$oid": "65e4b2bcfffdc49182fd8675"
   },
   "nombre": "Fundamentos de Programación",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 8:30"
-  ]
+  "acronimo": "FP-TI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207547"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207548"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207549"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320754a"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320754b"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320754c"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320754d"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320754e"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320754f"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207550"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207551"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207552"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207553"
-  },
-  "nombre": "Fundamentos de Programación",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060001-C2",
-  "acronimo": "FP-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207554"
+    "$oid": "65e4b2bcfffdc49182fd8676"
   },
   "nombre": "Análisis y Diseño de Datos y Algoritmos",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 10:40"
-  ]
+  "acronimo": "ADDA-TI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207555"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207556"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207557"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207558"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207559"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320755a"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320755b"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320755c"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320755d"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320755e"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320755f"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C1",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207560"
+    "$oid": "65e4b2bcfffdc49182fd8677"
   },
   "nombre": "Análisis y Diseño de Datos y Algoritmos",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 10:40"
-  ]
+  "acronimo": "ADDA-TI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207561"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207562"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 15:30",
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207563"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207564"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207565"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207566"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207567"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207568"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207569"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320756a"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320756b"
-  },
-  "nombre": "Análisis y Diseño de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": "2060010-C2",
-  "acronimo": "ADDA-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320756c"
+    "$oid": "65e4b2bcfffdc49182fd8678"
   },
   "nombre": "Sistemas Operativos",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 1.4,
-  "horario": [
-    "L. - 10:40 // V. - 8:30 // V. 12:40",
-    "Ma. - 12:40"
-  ]
+  "acronimo": "SSOO-TI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320756d"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 1.4,
-  "horario": [
-    "V. - 12:40",
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320756e"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 1.4,
-  "horario": [
-    "V. - 15:30",
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320756f"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 4.6,
-  "horario": [
-    "¿V. - 12:40?",
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207570"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 4.6,
-  "horario": [
-    "¿Ma. - 12:40?",
-    "V. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207571"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 10:40",
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207572"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 4.6,
-  "horario": [
-    "L. - 10:40",
-    "V. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207573"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 4.6,
-  "horario": [
-    "Ma. - 17:40",
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207574"
-  },
-  "nombre": "Sistemas Operativos",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060017,
-  "acronimo": "SSOO-TI",
-  "cuatrimestre": 2,
-  "creditos": 4.6,
-  "horario": [
-    "Ma. - 17:40",
-    "V. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207575"
+    "$oid": "65e4b2bcfffdc49182fd8679"
   },
   "nombre": "Gestión de Sistemas de Información (SI, TI)",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060019,
-  "acronimo": "GSI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 10:40"
-  ]
+  "acronimo": "GSI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207576"
-  },
-  "nombre": "Gestión de Sistemas de Información (SI, TI)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060019,
-  "acronimo": "GSI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207577"
-  },
-  "nombre": "Gestión de Sistemas de Información (SI, TI)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060019,
-  "acronimo": "GSI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207578"
-  },
-  "nombre": "Gestión de Sistemas de Información (SI, TI)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060019,
-  "acronimo": "GSI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207579"
+    "$oid": "65e4b2bcfffdc49182fd867a"
   },
   "nombre": "Procesadores de Lenguajes (TI, CP)",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060022,
-  "acronimo": "PL",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 8:30"
-  ]
+  "acronimo": "PL"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320757a"
-  },
-  "nombre": "Procesadores de Lenguajes (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060022,
-  "acronimo": "PL",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320757b"
-  },
-  "nombre": "Procesadores de Lenguajes (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060022,
-  "acronimo": "PL",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Vi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320757c"
-  },
-  "nombre": "Procesadores de Lenguajes (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060022,
-  "acronimo": "PL",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Vi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320757d"
-  },
-  "nombre": "Procesadores de Lenguajes (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060022,
-  "acronimo": "PL",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320757e"
-  },
-  "nombre": "Procesadores de Lenguajes (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060022,
-  "acronimo": "PL",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320757f"
-  },
-  "nombre": "Procesadores de Lenguajes (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060022,
-  "acronimo": "PL",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207580"
-  },
-  "nombre": "Procesadores de Lenguajes (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060022,
-  "acronimo": "PL",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207581"
+    "$oid": "65e4b2bcfffdc49182fd867b"
   },
   "nombre": "Sistemas de Información Empresariales (SI, TI, CP)",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060028,
-  "acronimo": "SIE",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
+  "acronimo": "SIE"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207582"
-  },
-  "nombre": "Sistemas de Información Empresariales (SI, TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060028,
-  "acronimo": "SIE",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207583"
-  },
-  "nombre": "Sistemas de Información Empresariales (SI, TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060028,
-  "acronimo": "SIE",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207584"
-  },
-  "nombre": "Sistemas de Información Empresariales (SI, TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060028,
-  "acronimo": "SIE",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207585"
-  },
-  "nombre": "Sistemas de Información Empresariales (SI, TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060028,
-  "acronimo": "SIE",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207586"
-  },
-  "nombre": "Sistemas de Información Empresariales (SI, TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060028,
-  "acronimo": "SIE",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207587"
+    "$oid": "65e4b2bcfffdc49182fd867c"
   },
   "nombre": "Sistemas Orientados a Servicios (SI, TI)",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060030,
-  "acronimo": "SOS",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 10:40"
-  ]
+  "acronimo": "SOS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207588"
-  },
-  "nombre": "Sistemas Orientados a Servicios (SI, TI)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060030,
-  "acronimo": "SOS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207589"
-  },
-  "nombre": "Sistemas Orientados a Servicios (SI, TI)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060030,
-  "acronimo": "SOS",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320758a"
+    "$oid": "65e4b2bcfffdc49182fd867d"
   },
   "nombre": "Gestión de Procesos y Servicios (SI, CP)",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060034,
-  "acronimo": "GPS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 8:30"
-  ]
+  "acronimo": "GPS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320758b"
-  },
-  "nombre": "Gestión de Procesos y Servicios (SI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060034,
-  "acronimo": "GPS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320758c"
+    "$oid": "65e4b2bcfffdc49182fd867e"
   },
   "nombre": "Interacción Persona-ordenador (TI, CP)",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060037,
-  "acronimo": "IPO",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 17:40"
-  ]
+  "acronimo": "IPO"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320758d"
-  },
-  "nombre": "Interacción Persona-ordenador (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060037,
-  "acronimo": "IPO",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320758e"
-  },
-  "nombre": "Interacción Persona-ordenador (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060037,
-  "acronimo": "IPO",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320758f"
-  },
-  "nombre": "Interacción Persona-ordenador (TI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060037,
-  "acronimo": "IPO",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 19:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207590"
+    "$oid": "65e4b2bcfffdc49182fd867f"
   },
   "nombre": "Seguridad en Sistemas Informáticos y en Internet",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060042,
-  "acronimo": "SSII-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
+  "acronimo": "SSII-TI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207591"
-  },
-  "nombre": "Seguridad en Sistemas Informáticos y en Internet",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060042,
-  "acronimo": "SSII-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207592"
-  },
-  "nombre": "Seguridad en Sistemas Informáticos y en Internet",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060042,
-  "acronimo": "SSII-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207593"
+    "$oid": "65e4b2bcfffdc49182fd8680"
   },
   "nombre": "Inteligencia Empresarial (SI, TI)",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060049,
-  "acronimo": "IE",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 10:40"
-  ]
+  "acronimo": "IE"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207594"
-  },
-  "nombre": "Inteligencia Empresarial (SI, TI)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060049,
-  "acronimo": "IE",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "Ma. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207595"
+    "$oid": "65e4b2bcfffdc49182fd8681"
   },
   "nombre": "Modelado y Análisis de Requisitos en Sistemas de Información (SI, CP)",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060050,
-  "acronimo": "MARSI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
+  "acronimo": "MARSI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207596"
-  },
-  "nombre": "Modelado y Análisis de Requisitos en Sistemas de Información (SI, CP)",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060050,
-  "acronimo": "MARSI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207597"
+    "$oid": "65e4b2bcfffdc49182fd8682"
   },
   "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 12:40"
-  ]
+  "acronimo": "IISSI1-TI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207598"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207599"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320759a"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320759b"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320759c"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320759d"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320759e"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320759f"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información I",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060054,
-  "acronimo": "IISSI1-TI",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a0"
+    "$oid": "65e4b2bcfffdc49182fd8683"
   },
   "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
   "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
   "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
+  "acronimo": "IISSI2-TI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075a1"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a2"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a3"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a4"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a5"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a6"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a7"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a8"
-  },
-  "nombre": "Introducción a la Ingeniería del Software y los Sistemas de Información II",
-  "titulacion": "GRA Ingeniería Informática-Tecnologías Informáticas",
-  "codigo": 2060055,
-  "acronimo": "IISSI2-TI",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075a9"
+    "$oid": "65e4b2bcfffdc49182fd8684"
   },
   "nombre": "Fundamentos de la Programación",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260005,
-  "acronimo": "FP-Salud",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 8:30"
-  ]
+  "acronimo": "FP-Salud"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075aa"
-  },
-  "nombre": "Fundamentos de la Programación",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260005,
-  "acronimo": "FP-Salud",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "V. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ab"
-  },
-  "nombre": "Fundamentos de la Programación",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260005,
-  "acronimo": "FP-Salud",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ac"
-  },
-  "nombre": "Fundamentos de la Programación",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260005,
-  "acronimo": "FP-Salud",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ad"
-  },
-  "nombre": "Fundamentos de la Programación",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260005,
-  "acronimo": "FP-Salud",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ae"
-  },
-  "nombre": "Fundamentos de la Programación",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260005,
-  "acronimo": "FP-Salud",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075af"
+    "$oid": "65e4b2bcfffdc49182fd8685"
   },
   "nombre": "Programación Orientada a Objetos",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260010,
-  "acronimo": "POO",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
+  "acronimo": "POO"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075b0"
-  },
-  "nombre": "Programación Orientada a Objetos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260010,
-  "acronimo": "POO",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075b1"
-  },
-  "nombre": "Programación Orientada a Objetos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260010,
-  "acronimo": "POO",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075b2"
-  },
-  "nombre": "Programación Orientada a Objetos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260010,
-  "acronimo": "POO",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075b3"
-  },
-  "nombre": "Programación Orientada a Objetos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260010,
-  "acronimo": "POO",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075b4"
-  },
-  "nombre": "Programación Orientada a Objetos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260010,
-  "acronimo": "POO",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075b5"
+    "$oid": "65e4b2bcfffdc49182fd8686"
   },
   "nombre": "Estructuras de Datos y Algoritmos",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260015,
-  "acronimo": "EDA",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 10:40"
-  ]
+  "acronimo": "EDA"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075b6"
-  },
-  "nombre": "Estructuras de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260015,
-  "acronimo": "EDA",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 17:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075b7"
-  },
-  "nombre": "Estructuras de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260015,
-  "acronimo": "EDA",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075b8"
-  },
-  "nombre": "Estructuras de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260015,
-  "acronimo": "EDA",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075b9"
-  },
-  "nombre": "Estructuras de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260015,
-  "acronimo": "EDA",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ba"
-  },
-  "nombre": "Estructuras de Datos y Algoritmos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260015,
-  "acronimo": "EDA",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075bb"
+    "$oid": "65e4b2bcfffdc49182fd8687"
   },
   "nombre": "Bases de Datos",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260018,
-  "acronimo": "BD",
-  "cuatrimestre": 2,
-  "creditos": 3.6,
-  "horario": [
-    "J. - 10:40"
-  ]
+  "acronimo": "BD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075bc"
-  },
-  "nombre": "Bases de Datos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260018,
-  "acronimo": "BD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075bd"
-  },
-  "nombre": "Bases de Datos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260018,
-  "acronimo": "BD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075be"
-  },
-  "nombre": "Bases de Datos",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260018,
-  "acronimo": "BD",
-  "cuatrimestre": 2,
-  "creditos": 2.4,
-  "horario": [
-    "L. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075bf"
+    "$oid": "65e4b2bcfffdc49182fd8688"
   },
   "nombre": "Fundamentos de Informática Clínica",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260021,
-  "acronimo": "FIC",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "Ma. - 10:40"
-  ]
+  "acronimo": "FIC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075c0"
-  },
-  "nombre": "Fundamentos de Informática Clínica",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260021,
-  "acronimo": "FIC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Vi. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075c1"
-  },
-  "nombre": "Fundamentos de Informática Clínica",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260021,
-  "acronimo": "FIC",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "Vi. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075c2"
+    "$oid": "65e4b2bcfffdc49182fd8689"
   },
   "nombre": "Ingeniería del Software",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260023,
-  "acronimo": "IS",
-  "cuatrimestre": 1,
-  "creditos": 3.6,
-  "horario": [
-    "L. - 8:30"
-  ]
+  "acronimo": "IS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075c3"
-  },
-  "nombre": "Ingeniería del Software",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260023,
-  "acronimo": "IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 8:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075c4"
-  },
-  "nombre": "Ingeniería del Software",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260023,
-  "acronimo": "IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075c5"
-  },
-  "nombre": "Ingeniería del Software",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260023,
-  "acronimo": "IS",
-  "cuatrimestre": 1,
-  "creditos": 2.4,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075c6"
+    "$oid": "65e4b2bcfffdc49182fd868a"
   },
   "nombre": "Análisis Avanzado de Datos Clínicos (IC)",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260026,
-  "acronimo": "AADC",
-  "cuatrimestre": 2,
-  "creditos": 3,
-  "horario": [
-    "Vi. - 8:30"
-  ]
+  "acronimo": "AADC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075c7"
-  },
-  "nombre": "Análisis Avanzado de Datos Clínicos (IC)",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260026,
-  "acronimo": "AADC",
-  "cuatrimestre": 2,
-  "creditos": 1.5,
-  "horario": [
-    "Mi. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075c8"
+    "$oid": "65e4b2bcfffdc49182fd868b"
   },
   "nombre": "Codificación y Gestión de la Información Sanitaria (IC)",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260033,
-  "acronimo": "CGIS",
-  "cuatrimestre": 2,
-  "creditos": 3,
-  "horario": [
-    "Ma. - 8:30"
-  ]
+  "acronimo": "CGIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075c9"
-  },
-  "nombre": "Codificación y Gestión de la Información Sanitaria (IC)",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260033,
-  "acronimo": "CGIS",
-  "cuatrimestre": 2,
-  "creditos": 1.5,
-  "horario": [
-    "Ma. - 10:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ca"
+    "$oid": "65e4b2bcfffdc49182fd868c"
   },
   "nombre": "Seguridad, Confidencialidad y Gestión de la Identidad (IC)",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260042,
-  "acronimo": "SCGI",
-  "cuatrimestre": 2,
-  "creditos": 3,
-  "horario": [
-    "J. - 10:40"
-  ]
+  "acronimo": "SCGI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075cb"
-  },
-  "nombre": "Seguridad, Confidencialidad y Gestión de la Identidad (IC)",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260042,
-  "acronimo": "SCGI",
-  "cuatrimestre": 2,
-  "creditos": 0.15,
-  "horario": [
-    "J. - 12:40"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075cc"
+    "$oid": "65e4b2bcfffdc49182fd868d"
   },
   "nombre": "Gestión de Proyectos Informáticos (IC)",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260055,
-  "acronimo": "GPI",
-  "cuatrimestre": 1,
-  "creditos": 4.5,
-  "horario": [
-    "J. - 17:40"
-  ]
+  "acronimo": "GPI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075cd"
+    "$oid": "65e4b2bcfffdc49182fd868e"
   },
   "nombre": "Gestión de Servicios y Tecnologías de la Información (IC)",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260056,
-  "acronimo": "GSTI",
-  "cuatrimestre": 1,
-  "creditos": 5.8,
-  "horario": [
-    "Ma. - 17:40"
-  ]
+  "acronimo": "GSTI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075ce"
-  },
-  "nombre": "Gestión de Servicios y Tecnologías de la Información (IC)",
-  "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
-  "codigo": 2260056,
-  "acronimo": "GSTI",
-  "cuatrimestre": 1,
-  "creditos": 0.2,
-  "horario": [
-    "Mi. - 15:30"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075cf"
+    "$oid": "65e4b2bcfffdc49182fd868f"
   },
   "nombre": "Minería de Datos Clínicos (IC)",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260060,
-  "acronimo": "MDC",
-  "cuatrimestre": 2,
-  "creditos": 4.5,
-  "horario": [
-    "Ma. - 15:30"
-  ]
+  "acronimo": "MDC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075d0"
+    "$oid": "65e4b2bcfffdc49182fd8690"
   },
   "nombre": "Proyectos en Informática Clínica (IC)",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260073,
-  "acronimo": "PIC",
-  "cuatrimestre": 2,
-  "creditos": 4.5,
-  "horario": [
-    "Mi. - 15:30"
-  ]
+  "acronimo": "PIC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075d1"
+    "$oid": "65e4b2bcfffdc49182fd8691"
   },
   "nombre": "Tecnologías para la Administración Electrónica (IC)",
   "titulacion": "GRA Ingeniería de la Salud (UMA-USE)",
   "codigo": 2260081,
-  "acronimo": "TAE",
-  "cuatrimestre": 1,
-  "creditos": 4.5,
-  "horario": [
-    "Mi. - 17:40"
-  ]
+  "acronimo": "TAE"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075d2"
+    "$oid": "65e4b2bcfffdc49182fd8692"
   },
   "nombre": "Aprendizaje y enseñanza de las materias de Informática",
   "titulacion": "MUN Prof, de ESO y Bachillerato, FP y EI",
   "codigo": 50440010,
-  "acronimo": "AEMI",
-  "cuatrimestre": 2,
-  "creditos": 3,
-  "horario": [
-    "L. a J. de 16:00 a 18:00"
-  ]
+  "acronimo": "AEMI"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075d3"
+    "$oid": "65e4b2bcfffdc49182fd8693"
   },
   "nombre": "Nuevas Tecnologías en el Acceso y Uso de la Información Bibliográfica y Documental",
   "titulacion": "MUN Documentos y Libros, Archivos y Bibliotecas",
   "codigo": 50670020,
-  "acronimo": "NTAUIBD",
-  "cuatrimestre": 2,
-  "creditos": 1.4,
-  "horario": [
-    "L. a J. de 16:00 a 21:00"
-  ]
+  "acronimo": "NTAUIBD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075d4"
+    "$oid": "65e4b2bcfffdc49182fd8694"
   },
   "nombre": "Literatura Cibernética",
   "titulacion": "MUN Escritura Creativa",
   "codigo": 50710010,
-  "acronimo": "LC",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": []
+  "acronimo": "LC"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075d5"
+    "$oid": "65e4b2bcfffdc49182fd8695"
   },
   "nombre": "Biomedicina Computacional",
   "titulacion": "MUN Investigación Biomédica",
   "codigo": 51610027,
-  "acronimo": "BC-IB",
-  "cuatrimestre": 1,
-  "creditos": 0.1,
-  "horario": []
+  "acronimo": "BC-IB"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075d6"
-  },
-  "nombre": "Biomedicina Computacional",
-  "titulacion": "MUN Investigación Biomédica",
-  "codigo": 51610027,
-  "acronimo": "BC-IB",
-  "cuatrimestre": 1,
-  "creditos": 0.1,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075d7"
+    "$oid": "65e4b2bcfffdc49182fd8696"
   },
   "nombre": "CRM: Gestión de Clientes",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790002,
-  "acronimo": "CRM-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": [
-    "L, M, X, J"
-  ]
+  "acronimo": "CRM-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075d8"
-  },
-  "nombre": "CRM: Gestión de Clientes",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790002,
-  "acronimo": "CRM-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.6,
-  "horario": [
-    "L, M, X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075d9"
+    "$oid": "65e4b2bcfffdc49182fd8697"
   },
   "nombre": "ERP: Planificación de Recursos Empresariales",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790003,
-  "acronimo": "ERP-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": []
+  "acronimo": "ERP-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075da"
-  },
-  "nombre": "ERP: Planificación de Recursos Empresariales",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790003,
-  "acronimo": "ERP-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.6,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075db"
+    "$oid": "65e4b2bcfffdc49182fd8698"
   },
   "nombre": "Fundamentos de Gestión TI y Práctica Profesional",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790004,
-  "acronimo": "FGTIPP-MIS",
-  "cuatrimestre": 1,
-  "creditos": 3.1,
-  "horario": [
-    "L, M, X, J"
-  ]
+  "acronimo": "FGTIPP-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075dc"
-  },
-  "nombre": "Fundamentos de Gestión TI y Práctica Profesional",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790004,
-  "acronimo": "FGTIPP-MIS",
-  "cuatrimestre": 1,
-  "creditos": 0.62,
-  "horario": [
-    "L, M, X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075dd"
+    "$oid": "65e4b2bcfffdc49182fd8699"
   },
   "nombre": "Fundamentos de Ingeniería de Datos",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790005,
-  "acronimo": "FID-MIS",
-  "cuatrimestre": 1,
-  "creditos": 1.88,
-  "horario": [
-    "L, M"
-  ]
+  "acronimo": "FID-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075de"
-  },
-  "nombre": "Fundamentos de Ingeniería de Datos",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790005,
-  "acronimo": "FID-MIS",
-  "cuatrimestre": 1,
-  "creditos": 1.88,
-  "horario": [
-    "L, M"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075df"
+    "$oid": "65e4b2bcfffdc49182fd869a"
   },
   "nombre": "Fundamentos de Ingeniería del Software para Sistemas Cloud",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790006,
-  "acronimo": "FISSC-MIS",
-  "cuatrimestre": 1,
-  "creditos": 2.5,
-  "horario": [
-    "X, J"
-  ]
+  "acronimo": "FISSC-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075e0"
-  },
-  "nombre": "Fundamentos de Ingeniería del Software para Sistemas Cloud",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790006,
-  "acronimo": "FISSC-MIS",
-  "cuatrimestre": 1,
-  "creditos": 1.25,
-  "horario": [
-    "X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075e1"
+    "$oid": "65e4b2bcfffdc49182fd869b"
   },
   "nombre": "Gestión TI: Dirección de Proyectos",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790007,
-  "acronimo": "DP-MIS",
-  "cuatrimestre": 1,
-  "creditos": 3.12,
-  "horario": [
-    "L, M, X, J"
-  ]
+  "acronimo": "DP-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075e2"
-  },
-  "nombre": "Gestión TI: Dirección de Proyectos",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790007,
-  "acronimo": "DP-MIS",
-  "cuatrimestre": 1,
-  "creditos": 0.62,
-  "horario": [
-    "L, M, X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075e3"
+    "$oid": "65e4b2bcfffdc49182fd869c"
   },
   "nombre": "Gestión TI: Dirección y Gestión de Empresas",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790008,
-  "acronimo": "DGE-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.1,
-  "horario": [
-    "X, J"
-  ]
+  "acronimo": "DGE-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075e4"
-  },
-  "nombre": "Gestión TI: Dirección y Gestión de Empresas",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790008,
-  "acronimo": "DGE-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.65,
-  "horario": [
-    "X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075e5"
+    "$oid": "65e4b2bcfffdc49182fd869d"
   },
   "nombre": "Gestión TI: Gestión de Productos",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790009,
-  "acronimo": "GP-MIS",
-  "cuatrimestre": 1,
-  "creditos": 3.12,
-  "horario": [
-    "L, M"
-  ]
+  "acronimo": "GP-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075e6"
-  },
-  "nombre": "Gestión TI: Gestión de Productos",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790009,
-  "acronimo": "GP-MIS",
-  "cuatrimestre": 1,
-  "creditos": 0.62,
-  "horario": [
-    "L, M"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075e7"
+    "$oid": "65e4b2bcfffdc49182fd869e"
   },
   "nombre": "Gestión TI: Gobierno TI y Gestión de Servicios",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790010,
-  "acronimo": "GTIGS-MIS",
-  "cuatrimestre": 2,
-  "creditos": 3.12,
-  "horario": [
-    "L, M"
-  ]
+  "acronimo": "GTIGS-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075e8"
-  },
-  "nombre": "Gestión TI: Gobierno TI y Gestión de Servicios",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790010,
-  "acronimo": "GTIGS-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.62,
-  "horario": [
-    "L, M"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075e9"
+    "$oid": "65e4b2bcfffdc49182fd869f"
   },
   "nombre": "Gobierno, Gestión y Tecnologías de la Ciberseguridad",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790011,
-  "acronimo": "GGTC-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": [
-    "L, M, X, J"
-  ]
+  "acronimo": "GGTC-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075ea"
-  },
-  "nombre": "Gobierno, Gestión y Tecnologías de la Ciberseguridad",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790011,
-  "acronimo": "GGTC-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.6,
-  "horario": [
-    "L, M, X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075eb"
+    "$oid": "65e4b2bcfffdc49182fd86a0"
   },
   "nombre": "Infraestructuras Públicas de servicio a la administración",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790012,
-  "acronimo": "IPSA-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": [
-    "L, M, J"
-  ]
+  "acronimo": "IPSA-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075ec"
-  },
-  "nombre": "Infraestructuras Públicas de servicio a la administración",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790012,
-  "acronimo": "IPSA-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.6,
-  "horario": [
-    "L, M, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ed"
+    "$oid": "65e4b2bcfffdc49182fd86a1"
   },
   "nombre": "Ingeniería Cloud: Arquitecturas para Software como Servicio",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790013,
-  "acronimo": "ASS-MIS",
-  "cuatrimestre": 1,
-  "creditos": 2.5,
-  "horario": [
-    "L, M"
-  ]
+  "acronimo": "ASS-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075ee"
-  },
-  "nombre": "Ingeniería Cloud: Arquitecturas para Software como Servicio",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790013,
-  "acronimo": "ASS-MIS",
-  "cuatrimestre": 1,
-  "creditos": 1.25,
-  "horario": [
-    "L, M"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ef"
+    "$oid": "65e4b2bcfffdc49182fd86a2"
   },
   "nombre": "Ingeniería Cloud: Despliegue y Operación de Servicios",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790014,
-  "acronimo": "DOS-MIS",
-  "cuatrimestre": 2,
-  "creditos": 2.5,
-  "horario": [
-    "X, J"
-  ]
+  "acronimo": "DOS-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075f0"
-  },
-  "nombre": "Ingeniería Cloud: Despliegue y Operación de Servicios",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790014,
-  "acronimo": "DOS-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.25,
-  "horario": [
-    "X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075f1"
+    "$oid": "65e4b2bcfffdc49182fd86a3"
   },
   "nombre": "Ingeniería Cloud: Tecnologías de Cliente",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790015,
-  "acronimo": "TC-MIS",
-  "cuatrimestre": 2,
-  "creditos": 2.5,
-  "horario": [
-    "L, M"
-  ]
+  "acronimo": "TC-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075f2"
-  },
-  "nombre": "Ingeniería Cloud: Tecnologías de Cliente",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790015,
-  "acronimo": "TC-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.25,
-  "horario": [
-    "L, M"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075f3"
+    "$oid": "65e4b2bcfffdc49182fd86a4"
   },
   "nombre": "Ingeniería Cloud: Tecnologías Móviles",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790016,
-  "acronimo": "TM-MIS",
-  "cuatrimestre": 2,
-  "creditos": 2.5,
-  "horario": [
-    "X, J"
-  ]
+  "acronimo": "TM-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075f4"
-  },
-  "nombre": "Ingeniería Cloud: Tecnologías Móviles",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790016,
-  "acronimo": "TM-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.25,
-  "horario": [
-    "X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075f5"
+    "$oid": "65e4b2bcfffdc49182fd86a5"
   },
   "nombre": "Ingeniería de Datos: Análisis de Información no Estructurada",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790017,
-  "acronimo": "AINE-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.88,
-  "horario": [
-    "X, J"
-  ]
+  "acronimo": "AINE-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075f6"
-  },
-  "nombre": "Ingeniería de Datos: Análisis de Información no Estructurada",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790017,
-  "acronimo": "AINE-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.88,
-  "horario": [
-    "X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075f7"
+    "$oid": "65e4b2bcfffdc49182fd86a6"
   },
   "nombre": "Ingeniería de Datos: Big Data",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790018,
-  "acronimo": "BD-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.88,
-  "horario": [
-    "L, M"
-  ]
+  "acronimo": "BD-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075f8"
-  },
-  "nombre": "Ingeniería de Datos: Big Data",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790018,
-  "acronimo": "BD-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.88,
-  "horario": [
-    "L, M"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075f9"
+    "$oid": "65e4b2bcfffdc49182fd86a7"
   },
   "nombre": "Ingeniería de Datos: Data Science",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790019,
-  "acronimo": "DS-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.88,
-  "horario": [
-    "X, J"
-  ]
+  "acronimo": "DS-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075fa"
-  },
-  "nombre": "Ingeniería de Datos: Data Science",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790019,
-  "acronimo": "DS-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1.88,
-  "horario": [
-    "X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075fb"
+    "$oid": "65e4b2bcfffdc49182fd86a8"
   },
   "nombre": "Ingeniería de Datos: Machine Learning Engineering",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790020,
-  "acronimo": "MLE-MIS",
-  "cuatrimestre": 1,
-  "creditos": 1.88,
-  "horario": [
-    "L, M, X, J"
-  ]
+  "acronimo": "MLE-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075fc"
-  },
-  "nombre": "Ingeniería de Datos: Machine Learning Engineering",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790020,
-  "acronimo": "MLE-MIS",
-  "cuatrimestre": 1,
-  "creditos": 1.88,
-  "horario": [
-    "L, M, X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075fd"
+    "$oid": "65e4b2bcfffdc49182fd86a9"
   },
   "nombre": "Introducción a la Investigación",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790021,
-  "acronimo": "II-MIS",
-  "cuatrimestre": 1,
-  "creditos": 1,
-  "horario": [
-    "L, M, X, J"
-  ]
+  "acronimo": "II-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db32075fe"
-  },
-  "nombre": "Introducción a la Investigación",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790021,
-  "acronimo": "II-MIS",
-  "cuatrimestre": 1,
-  "creditos": 0.6,
-  "horario": [
-    "L, M, X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db32075ff"
+    "$oid": "65e4b2bcfffdc49182fd86aa"
   },
   "nombre": "Modelos en Ingeniería del Software: DSLs, MDE y simulación",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790022,
-  "acronimo": "MIS-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": [
-    "L, M, X, J"
-  ]
+  "acronimo": "MIS-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207600"
-  },
-  "nombre": "Modelos en Ingeniería del Software: DSLs, MDE y simulación",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790022,
-  "acronimo": "MIS-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.25,
-  "horario": [
-    "L, M, X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207601"
+    "$oid": "65e4b2bcfffdc49182fd86ab"
   },
   "nombre": "PLM: Product Lifecycle Management",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790023,
-  "acronimo": "PLM-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": [
-    "L, M, X"
-  ]
+  "acronimo": "PLM-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207602"
-  },
-  "nombre": "PLM: Product Lifecycle Management",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790023,
-  "acronimo": "PLM-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.6,
-  "horario": [
-    "L, M, X"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207603"
+    "$oid": "65e4b2bcfffdc49182fd86ac"
   },
   "nombre": "Pruebas de Software Avanzadas",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790024,
-  "acronimo": "PSA-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": [
-    "L, M, J"
-  ]
+  "acronimo": "PSA-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207604"
-  },
-  "nombre": "Pruebas de Software Avanzadas",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790024,
-  "acronimo": "PSA-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.6,
-  "horario": [
-    "L, M, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207605"
+    "$oid": "65e4b2bcfffdc49182fd86ad"
   },
   "nombre": "Sistemas de Información Empresariales",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790025,
-  "acronimo": "SIE-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": [
-    "L, M, X"
-  ]
+  "acronimo": "SIE-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207606"
-  },
-  "nombre": "Sistemas de Información Empresariales",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790025,
-  "acronimo": "SIE-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.6,
-  "horario": [
-    "L, M, X"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207607"
+    "$oid": "65e4b2bcfffdc49182fd86ae"
   },
   "nombre": "Técnicas de visualización de la información",
   "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
   "codigo": 51790026,
-  "acronimo": "TVI-MIS",
-  "cuatrimestre": 2,
-  "creditos": 1,
-  "horario": [
-    "L, M, X, J"
-  ]
+  "acronimo": "TVI-MIS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207608"
-  },
-  "nombre": "Técnicas de visualización de la información",
-  "titulacion": "MUN Ingeniería del Software: Cloud, Datos y Gestión de las Tecnologías de la Información",
-  "codigo": 51790026,
-  "acronimo": "TVI-MIS",
-  "cuatrimestre": 2,
-  "creditos": 0.6,
-  "horario": [
-    "L, M, X, J"
-  ]
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207609"
+    "$oid": "65e4b2bcfffdc49182fd86af"
   },
   "nombre": "Análisis de Datos en Sistemas de Información",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800001,
-  "acronimo": "ADSI-MII",
-  "cuatrimestre": 2,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "ADSI-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320760a"
-  },
-  "nombre": "Análisis de Datos en Sistemas de Información",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800001,
-  "acronimo": "ADSI-MII",
-  "cuatrimestre": 2,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320760b"
+    "$oid": "65e4b2bcfffdc49182fd86b0"
   },
   "nombre": "Auditoría y Certificación",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800003,
-  "acronimo": "AC-MII",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "AC-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320760c"
-  },
-  "nombre": "Auditoría y Certificación",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800003,
-  "acronimo": "AC-MII",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320760d"
+    "$oid": "65e4b2bcfffdc49182fd86b1"
   },
   "nombre": "Desarrollo y Gestión de Sistemas de Información en la Nube",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800004,
-  "acronimo": "DGSIN-MII",
-  "cuatrimestre": 2,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "DGSIN-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320760e"
-  },
-  "nombre": "Desarrollo y Gestión de Sistemas de Información en la Nube",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800004,
-  "acronimo": "DGSIN-MII",
-  "cuatrimestre": 2,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320760f"
+    "$oid": "65e4b2bcfffdc49182fd86b2"
   },
   "nombre": "Diseño Guiado por Experiencia de Usuario",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800005,
-  "acronimo": "DGEU-MII",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "DGEU-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207610"
-  },
-  "nombre": "Diseño Guiado por Experiencia de Usuario",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800005,
-  "acronimo": "DGEU-MII",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207611"
+    "$oid": "65e4b2bcfffdc49182fd86b3"
   },
   "nombre": "Gestión, Diseño y Comercialización de Sistemas Informáticos",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800009,
-  "acronimo": "GDCSI-MII",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "GDCSI-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207612"
-  },
-  "nombre": "Gestión, Diseño y Comercialización de Sistemas Informáticos",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800009,
-  "acronimo": "GDCSI-MII",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207613"
+    "$oid": "65e4b2bcfffdc49182fd86b4"
   },
   "nombre": "Programación Gráfica",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800012,
-  "acronimo": "PG-MII",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "PG-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207614"
-  },
-  "nombre": "Programación Gráfica",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800012,
-  "acronimo": "PG-MII",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207615"
+    "$oid": "65e4b2bcfffdc49182fd86b5"
   },
   "nombre": "Sistemas de Gestión Empresarial y Transformación Digital",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800013,
-  "acronimo": "SGETD-MII",
-  "cuatrimestre": 2,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "SGETD-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207616"
-  },
-  "nombre": "Sistemas de Gestión Empresarial y Transformación Digital",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800013,
-  "acronimo": "SGETD-MII",
-  "cuatrimestre": 2,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207617"
+    "$oid": "65e4b2bcfffdc49182fd86b6"
   },
   "nombre": "Big Data Engineering",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800016,
-  "acronimo": "BDE-MII",
-  "cuatrimestre": 1,
-  "creditos": 2.25,
-  "horario": []
+  "acronimo": "BDE-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207618"
-  },
-  "nombre": "Big Data Engineering",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800016,
-  "acronimo": "BDE-MII",
-  "cuatrimestre": 1,
-  "creditos": 2.25,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207619"
+    "$oid": "65e4b2bcfffdc49182fd86b7"
   },
   "nombre": "Ciberseguridad",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800017,
-  "acronimo": "CS-MII",
-  "cuatrimestre": 1,
-  "creditos": 2.25,
-  "horario": []
+  "acronimo": "CS-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320761a"
-  },
-  "nombre": "Ciberseguridad",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800017,
-  "acronimo": "CS-MII",
-  "cuatrimestre": 1,
-  "creditos": 2.25,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320761b"
+    "$oid": "65e4b2bcfffdc49182fd86b8"
   },
   "nombre": "Sistemas Software e Innovación",
   "titulacion": "MUN Ingeniería Informática [on line]",
   "codigo": 51800023,
-  "acronimo": "SSI-MII",
-  "cuatrimestre": 1,
-  "creditos": 2.25,
-  "horario": []
+  "acronimo": "SSI-MII"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320761c"
-  },
-  "nombre": "Sistemas Software e Innovación",
-  "titulacion": "MUN Ingeniería Informática [on line]",
-  "codigo": 51800023,
-  "acronimo": "SSI-MII",
-  "cuatrimestre": 1,
-  "creditos": 2.25,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320761d"
+    "$oid": "65e4b2bcfffdc49182fd86b9"
   },
   "nombre": "Aplicaciones para Sistemas de Información Sanitaria y Dispositivos Móviles",
   "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
   "codigo": 51880001,
-  "acronimo": "ASISDM-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 3,
-  "horario": []
+  "acronimo": "ASISDM-MIBSD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320761e"
-  },
-  "nombre": "Aplicaciones para Sistemas de Información Sanitaria y Dispositivos Móviles",
-  "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
-  "codigo": 51880001,
-  "acronimo": "ASISDM-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 3,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320761f"
+    "$oid": "65e4b2bcfffdc49182fd86ba"
   },
   "nombre": "Big Data en el Sector de la Salud",
   "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
   "codigo": 51880002,
-  "acronimo": "BDSS-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 3,
-  "horario": []
+  "acronimo": "BDSS-MIBSD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207620"
-  },
-  "nombre": "Big Data en el Sector de la Salud",
-  "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
-  "codigo": 51880002,
-  "acronimo": "BDSS-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 3,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207621"
+    "$oid": "65e4b2bcfffdc49182fd86bb"
   },
   "nombre": "Gestión Organizacional y Liderazgo",
   "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
   "codigo": 51880006,
-  "acronimo": "GOL-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "GOL-MIBSD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207622"
-  },
-  "nombre": "Gestión Organizacional y Liderazgo",
-  "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
-  "codigo": 51880006,
-  "acronimo": "GOL-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207623"
+    "$oid": "65e4b2bcfffdc49182fd86bc"
   },
   "nombre": "Gobierno y Gestión de la Seguridad en el Ámbito de la Salud",
   "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
   "codigo": 51880007,
-  "acronimo": "GGSAS-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
+  "acronimo": "GGSAS-MIBSD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207624"
-  },
-  "nombre": "Gobierno y Gestión de la Seguridad en el Ámbito de la Salud",
-  "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
-  "codigo": 51880007,
-  "acronimo": "GGSAS-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 1.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207625"
+    "$oid": "65e4b2bcfffdc49182fd86bd"
   },
   "nombre": "Interoperabilidad y Estándares de Intercambio",
   "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
   "codigo": 51880008,
-  "acronimo": "IEI-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 3,
-  "horario": []
+  "acronimo": "IEI-MIBSD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207626"
-  },
-  "nombre": "Interoperabilidad y Estándares de Intercambio",
-  "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
-  "codigo": 51880008,
-  "acronimo": "IEI-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 3,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207627"
+    "$oid": "65e4b2bcfffdc49182fd86be"
   },
   "nombre": "Metodologías para la Investigación en el Ámbito Biomédico y la Salud",
   "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
   "codigo": 51880009,
-  "acronimo": "MIABS-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 0.5,
-  "horario": []
+  "acronimo": "MIABS-MIBSD"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db3207628"
-  },
-  "nombre": "Metodologías para la Investigación en el Ámbito Biomédico y la Salud",
-  "titulacion": "MUN Ingeniería Biomédica y Salud Digital",
-  "codigo": 51880009,
-  "acronimo": "MIABS-MIBSD",
-  "cuatrimestre": 1,
-  "creditos": 0.5,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db3207629"
+    "$oid": "65e4b2bcfffdc49182fd86bf"
   },
   "nombre": "Aplicaciones en Ciencia del Dato y Aprendizaje Automático",
   "titulacion": "MUN Análisis de Datos Ómicos y Biologia de Sistemas (US-UNIA)",
   "codigo": 52030002,
-  "acronimo": "ACDAA-MADOBS",
-  "cuatrimestre": 2,
-  "creditos": 0.8,
-  "horario": []
+  "acronimo": "ACDAA-MADOBS"
 },
 {
   "_id": {
-    "$oid": "65da1db2d3d6e80db320762a"
-  },
-  "nombre": "Aplicaciones en Ciencia del Dato y Aprendizaje Automático",
-  "titulacion": "MUN Análisis de Datos Ómicos y Biologia de Sistemas (US-UNIA)",
-  "codigo": 52030002,
-  "acronimo": "ACDAA-MADOBS",
-  "cuatrimestre": 2,
-  "creditos": 0.8,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320762b"
+    "$oid": "65e4b2bcfffdc49182fd86c0"
   },
   "nombre": "Fundamentos Matemáticos/Computacionales",
   "titulacion": "MUN Análisis de Datos Ómicos y Biologia de Sistemas (US-UNIA)",
   "codigo": 52030012,
-  "acronimo": "FMC-MADOBS",
-  "cuatrimestre": 2,
-  "creditos": 0.2,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320762c"
-  },
-  "nombre": "Fundamentos Matemáticos/Computacionales",
-  "titulacion": "MUN Análisis de Datos Ómicos y Biologia de Sistemas (US-UNIA)",
-  "codigo": 52030012,
-  "acronimo": "FMC-MADOBS",
-  "cuatrimestre": 2,
-  "creditos": 0.2,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320762d"
-  },
-  "nombre": "Fundamentos Matemáticos/Computacionales",
-  "titulacion": "MUN Análisis de Datos Ómicos y Biologia de Sistemas (US-UNIA)",
-  "codigo": 52030012,
-  "acronimo": "FMC-MADOBS",
-  "cuatrimestre": 2,
-  "creditos": 0.2,
-  "horario": []
-},
-{
-  "_id": {
-    "$oid": "65da1db2d3d6e80db320762e"
-  },
-  "nombre": "Fundamentos Matemáticos/Computacionales",
-  "titulacion": "MUN Análisis de Datos Ómicos y Biologia de Sistemas (US-UNIA)",
-  "codigo": 52030012,
-  "acronimo": "FMC-MADOBS",
-  "cuatrimestre": 2,
-  "creditos": 0.18,
-  "horario": []
+  "acronimo": "FMC-MADOBS"
 }]

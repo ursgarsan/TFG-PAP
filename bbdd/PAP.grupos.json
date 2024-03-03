@@ -1,0 +1,8106 @@
+[{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea78"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3,
+  "horario": [
+    "L. - 9:30 a 10:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8657"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea79"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3,
+  "horario": [
+    "Ma. - 9:30 a 10:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8657"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea7a"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8657"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea7b"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea7c"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea7d"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea7e"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea7f"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea80"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea81"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea82"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea83"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea84"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea85"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea86"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea87"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea88"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea89"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea8a"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea8b"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea8c"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea8d"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea8e"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea8f"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea90"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea91"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea92"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8658"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea93"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea94"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea95"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea96"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea97"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea98"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea99"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea9a"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 8:30",
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea9b"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea9c"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea9d"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea9e"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecea9f"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa0"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa1"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 6,
+  "horario": [
+    "Mi. -10:40",
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa2"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 6,
+  "horario": [
+    "Mi. - 17:40",
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa3"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Vi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa4"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa5"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa6"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa7"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa8"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaa9"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaaa"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaab"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaac"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaad"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd865f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaae"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8660"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaaf"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8660"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab0"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8660"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab1"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8660"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab2"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8660"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab3"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8660"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab4"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab5"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab6"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab7"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab8"
+  },
+  "tipo": "T",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Vi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceab9"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaba"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceabb"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceabc"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceabd"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceabe"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceabf"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac0"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac1"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac2"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac3"
+  },
+  "tipo": "L",
+  "grupo": 11,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac4"
+  },
+  "tipo": "L",
+  "grupo": 12,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac5"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac6"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac7"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac8"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 17:40",
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceac9"
+  },
+  "tipo": "T",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaca"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceacb"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceacc"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceacd"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceace"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceacf"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead0"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead1"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead2"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead3"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead4"
+  },
+  "tipo": "L",
+  "grupo": 11,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead5"
+  },
+  "tipo": "L",
+  "grupo": 12,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8661"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead6"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead7"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead8"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecead9"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceada"
+  },
+  "tipo": "T",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceadb"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceadc"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceadd"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceade"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceadf"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae0"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae1"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae2"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae3"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae4"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae5"
+  },
+  "tipo": "L",
+  "grupo": 11,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae6"
+  },
+  "tipo": "L",
+  "grupo": 12,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae7"
+  },
+  "tipo": "L",
+  "grupo": 13,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae8"
+  },
+  "tipo": "L",
+  "grupo": 14,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceae9"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaea"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaeb"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaec"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40",
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaed"
+  },
+  "tipo": "T",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaee"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaef"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf0"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf1"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf2"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf3"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf4"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf5"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf6"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf7"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf8"
+  },
+  "tipo": "L",
+  "grupo": 11,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaf9"
+  },
+  "tipo": "L",
+  "grupo": 12,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceafa"
+  },
+  "tipo": "L",
+  "grupo": 13,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceafb"
+  },
+  "tipo": "L",
+  "grupo": 14,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8663"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceafc"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.4,
+  "horario": [
+    "L. - 10:40 // J. - 12:40",
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceafd"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 1.4,
+  "horario": [
+    "L. - 8:30 // J. - 12:40",
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceafe"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 1.4,
+  "horario": [
+    "J. - 17:40",
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceaff"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 1.4,
+  "horario": [
+    "J. - 15:30",
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb00"
+  },
+  "tipo": "T",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 1.4,
+  "horario": [
+    "V. - 10:40",
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb01"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 8:30",
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb02"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 10:40",
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb03"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 10:40",
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb04"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "J. - 10:40",
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb05"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "J. - 10:40",
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb06"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 15:30",
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb07"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 15:30",
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb08"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 17:40",
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb09"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 17:40",
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb0a"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 1,
+  "acreditacion": 4.6,
+  "horario": [
+    "Mi. - 8:30",
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8665"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb0b"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb0c"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb0d"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb0e"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb0f"
+  },
+  "tipo": "T",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb10"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb11"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb12"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb13"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb14"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb15"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb16"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb17"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb18"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8666"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb19"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb1a"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb1b"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb1c"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb1d"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb1e"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb1f"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb20"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb21"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb22"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb23"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb24"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8667"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb25"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8668"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb26"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 19-40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8668"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb27"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Vi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8668"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb28"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Vi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8668"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb29"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Vi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8668"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb2a"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb2b"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb2c"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb2d"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb2e"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb2f"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb30"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb31"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb32"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb33"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb34"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8669"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb35"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb36"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb37"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb38"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb39"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb3a"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb3b"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb3c"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb3d"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb3e"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb3f"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb40"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb41"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb42"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb43"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb44"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb45"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb46"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb47"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb48"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb49"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb4a"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb4b"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb4c"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb4d"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb4e"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb4f"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb50"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb51"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb52"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb53"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb54"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb55"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb56"
+  },
+  "tipo": "T",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb57"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb58"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb59"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb5a"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb5b"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb5c"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb5d"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb5e"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb5f"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb60"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma.  - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb61"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb62"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb63"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb64"
+  },
+  "tipo": "T",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb65"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb66"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb67"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb68"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb69"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb6a"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb6b"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb6c"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb6d"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb6e"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd866f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb6f"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb70"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb71"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb72"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb73"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb74"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb75"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb76"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb77"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb78"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb79"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb7a"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb7b"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8670"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb7c"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb7d"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb7e"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb7f"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb80"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb81"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb82"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb83"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb84"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb85"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb86"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb87"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb88"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb89"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8671"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb8a"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb8b"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb8c"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb8d"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb8e"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb8f"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb90"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb91"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb92"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb93"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb94"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb95"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb96"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb97"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8672"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb98"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb99"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb9a"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb9b"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb9c"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb9d"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb9e"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceb9f"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba0"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba1"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba2"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba3"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8673"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba4"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba5"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba6"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba7"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba8"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7eceba9"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebaa"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebab"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebac"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebad"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebae"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebaf"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb0"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb1"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb2"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb3"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb4"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb5"
+  },
+  "tipo": "T",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb6"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb7"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb8"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebb9"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebba"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebbb"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebbc"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebbd"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebbe"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebbf"
+  },
+  "tipo": "L",
+  "grupo": 10,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8674"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc0"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc1"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc2"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc3"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc4"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc5"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc6"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc7"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc8"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebc9"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebca"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebcb"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebcc"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebcd"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebce"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 15:30",
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebcf"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd0"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd1"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd2"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd3"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd4"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd5"
+  },
+  "tipo": "L",
+  "grupo": 7,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd6"
+  },
+  "tipo": "L",
+  "grupo": 8,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd7"
+  },
+  "tipo": "L",
+  "grupo": 9,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8676"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd8"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.4,
+  "horario": [
+    "L. - 10:40 // V. - 8:30 // V. 12:40",
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebd9"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 1.4,
+  "horario": [
+    "V. - 12:40",
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebda"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 1.4,
+  "horario": [
+    "V. - 15:30",
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebdb"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 4.6,
+  "horario": [
+    "¿V. - 12:40?",
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebdc"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 4.6,
+  "horario": [
+    "¿Ma. - 12:40?",
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebdd"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 10:40",
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebde"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 4.6,
+  "horario": [
+    "L. - 10:40",
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebdf"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 4.6,
+  "horario": [
+    "Ma. - 17:40",
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe0"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 4.6,
+  "horario": [
+    "Ma. - 17:40",
+    "V. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8678"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe1"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8679"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe2"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8679"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe3"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8679"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe4"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8679"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe5"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe6"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe7"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Vi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe8"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Vi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebe9"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebea"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebeb"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebec"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebed"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebee"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebef"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf0"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf1"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf2"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf3"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf4"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf5"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf6"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf7"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf8"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebf9"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebfa"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebfb"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 19:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebfc"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebfd"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebfe"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd867f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecebff"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8680"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec00"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "Ma. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8680"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec01"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8681"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec02"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8681"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec03"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec04"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec05"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec06"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec07"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec08"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec09"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec0a"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec0b"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8682"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec0c"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec0d"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec0e"
+  },
+  "tipo": "T",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec0f"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec10"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec11"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec12"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec13"
+  },
+  "tipo": "L",
+  "grupo": 5,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec14"
+  },
+  "tipo": "L",
+  "grupo": 6,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8683"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec15"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8684"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec16"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "V. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8684"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec17"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8684"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec18"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8684"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec19"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8684"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec1a"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8684"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec1b"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8685"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec1c"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8685"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec1d"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8685"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec1e"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8685"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec1f"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8685"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec20"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8685"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec21"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8686"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec22"
+  },
+  "tipo": "T",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8686"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec23"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8686"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec24"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8686"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec25"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8686"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec26"
+  },
+  "tipo": "L",
+  "grupo": 4,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8686"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec27"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.6,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8687"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec28"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8687"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec29"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8687"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec2a"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 2,
+  "acreditacion": 2.4,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8687"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec2b"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8688"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec2c"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Vi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8688"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec2d"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "Vi. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8688"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec2e"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.6,
+  "horario": [
+    "L. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8689"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec2f"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8689"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec30"
+  },
+  "tipo": "L",
+  "grupo": 2,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8689"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec31"
+  },
+  "tipo": "L",
+  "grupo": 3,
+  "cuatrimestre": 1,
+  "acreditacion": 2.4,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8689"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec32"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3,
+  "horario": [
+    "Vi. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec33"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.5,
+  "horario": [
+    "Mi. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec34"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3,
+  "horario": [
+    "Ma. - 8:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec35"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.5,
+  "horario": [
+    "Ma. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec36"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3,
+  "horario": [
+    "J. - 10:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec37"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.15,
+  "horario": [
+    "J. - 12:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec38"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 4.5,
+  "horario": [
+    "J. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec39"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 5.8,
+  "horario": [
+    "Ma. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec3a"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.2,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec3b"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 4.5,
+  "horario": [
+    "Ma. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd868f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec3c"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 4.5,
+  "horario": [
+    "Mi. - 15:30"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8690"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec3d"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 4.5,
+  "horario": [
+    "Mi. - 17:40"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8691"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec3e"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3,
+  "horario": [
+    "L. a J. de 16:00 a 18:00"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8692"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec3f"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.4,
+  "horario": [
+    "L. a J. de 16:00 a 21:00"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8693"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec40"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8694"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec41"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.1,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8695"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec42"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.1,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8695"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec43"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8696"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec44"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.6,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8696"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec45"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8697"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec46"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.6,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8697"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec47"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.1,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8698"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec48"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.62,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8698"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec49"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.88,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8699"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec4a"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.88,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd8699"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec4b"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.5,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec4c"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.25,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869a"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec4d"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.12,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec4e"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.62,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869b"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec4f"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.1,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec50"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.65,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec51"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3.12,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec52"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.62,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec53"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 3.12,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec54"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.62,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec55"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec56"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.6,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd869f"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec57"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec58"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.6,
+  "horario": [
+    "L, M, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec59"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.5,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a1"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec5a"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.25,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a1"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec5b"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.5,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a2"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec5c"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.25,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a2"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec5d"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.5,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a3"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec5e"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.25,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a3"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec5f"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 2.5,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a4"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec60"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.25,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a4"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec61"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.88,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a5"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec62"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.88,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a5"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec63"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.88,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a6"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec64"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.88,
+  "horario": [
+    "L, M"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a6"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec65"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.88,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a7"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec66"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.88,
+  "horario": [
+    "X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a7"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec67"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.88,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec68"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.88,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a8"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec69"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a9"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec6a"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.6,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86a9"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec6b"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86aa"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec6c"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.25,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86aa"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec6d"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, X"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ab"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec6e"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.6,
+  "horario": [
+    "L, M, X"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ab"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec6f"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec70"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.6,
+  "horario": [
+    "L, M, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ac"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec71"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, X"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec72"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.6,
+  "horario": [
+    "L, M, X"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ad"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec73"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec74"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.6,
+  "horario": [
+    "L, M, X, J"
+  ],
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ae"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec75"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86af"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec76"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86af"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec77"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec78"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec79"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec7a"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b1"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec7b"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec7c"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b2"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec7d"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec7e"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b3"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec7f"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b4"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec80"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b4"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec81"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b5"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec82"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b5"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec83"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.25,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b6"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec84"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.25,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b6"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec85"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.25,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b7"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec86"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.25,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b7"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec87"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.25,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b8"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec88"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 2.25,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b8"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec89"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b9"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec8a"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86b9"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec8b"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ba"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec8c"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86ba"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec8d"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86bb"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec8e"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86bb"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec8f"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86bc"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec90"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 1.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86bc"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec91"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86bd"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec92"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 3,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86bd"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec93"
+  },
+  "tipo": "Turno 1",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86be"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec94"
+  },
+  "tipo": "Turno 2",
+  "grupo": 1,
+  "cuatrimestre": 1,
+  "acreditacion": 0.5,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86be"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec95"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.8,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86bf"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec96"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.8,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86bf"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec97"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.2,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86c0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec98"
+  },
+  "tipo": "T",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.2,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86c0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec99"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.2,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86c0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65e4b470fbb92f3cd7ecec9a"
+  },
+  "tipo": "L",
+  "grupo": 1,
+  "cuatrimestre": 2,
+  "acreditacion": 0.18,
+  "asignatura_id": {
+    "$oid": "65e4b2bcfffdc49182fd86c0"
+  }
+}]
