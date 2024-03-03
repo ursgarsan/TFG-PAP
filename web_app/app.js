@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const profesoresRoutes = require('./routes/profesorRoutes');
+const asignaturasRoutes = require('./routes/asignaturaRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -14,7 +15,14 @@ mongoose.connect('mongodb://127.0.0.1:27017/PAP')
 
 app.use(express.json());
 
+// Ruta para la página de inicio
+app.get('/', (req, res) => {
+  res.render('pagina', { title: 'Título de la página', content: 'Contenido de la página de inicio' });
+});
+
+// Rutas para otras funcionalidades
 app.use('/profesores', profesoresRoutes);
+app.use('/asignaturas', asignaturasRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor iniciado en el puerto ${PORT}`);
