@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Listado de Asignaturas
+  ul
+    each asignatura in asignaturas
+      li Nombre: #{asignatura.nombre}, Titulación: #{asignatura.titulacion}, Código: #{asignatura.codigo}, Acrónimo: #{asignatura.acronimo}

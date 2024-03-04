@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Listado de Profesores
+  ul
+    each profesor in profesores
+      li Nombre: #{profesor.nombre}, UVUS: #{profesor.uvus}, Capacidad: #{profesor.capacidad}
