@@ -3,7 +3,7 @@ extends layout
 block content
   h1 Listado de Asignaturas
 
-  table.table.table-striped
+  table#tablaAsignaturas.table.table-striped
     thead
       tr
         th(scope='col') Nombre
@@ -17,3 +17,8 @@ block content
           td= asignatura.titulacion
           td= asignatura.codigo
           td= asignatura.acronimo
+
+  script.
+    $(document).ready(function() {
+      $('#tablaAsignaturas').DataTable();
+    });

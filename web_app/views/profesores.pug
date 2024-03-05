@@ -3,7 +3,7 @@ extends layout
 block content
   h1 Listado de Profesores
 
-  table.table.table-striped
+  table#tablaProfesores.table.table-striped
     thead
       tr
         th(scope='col') Nombre
@@ -15,3 +15,8 @@ block content
           td= profesor.nombre
           td= profesor.uvus
           td= profesor.capacidad
+
+  script.
+    $(document).ready(function() {
+      $('#tablaProfesores').DataTable();
+    });
