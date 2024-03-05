@@ -2,6 +2,18 @@ extends layout
 
 block content
   h1 Listado de Asignaturas
-  ul
-    each asignatura in asignaturas
-      li Nombre: #{asignatura.nombre}, Titulación: #{asignatura.titulacion}, Código: #{asignatura.codigo}, Acrónimo: #{asignatura.acronimo}
+
+  table.table.table-striped
+    thead
+      tr
+        th(scope='col') Nombre
+        th(scope='col') Titulación
+        th(scope='col') Código
+        th(scope='col') Acrónimo
+    tbody
+      each asignatura in asignaturas
+        tr
+          td= asignatura.nombre
+          td= asignatura.titulacion
+          td= asignatura.codigo
+          td= asignatura.acronimo

@@ -2,6 +2,16 @@ extends layout
 
 block content
   h1 Listado de Profesores
-  ul
-    each profesor in profesores
-      li Nombre: #{profesor.nombre}, UVUS: #{profesor.uvus}, Capacidad: #{profesor.capacidad}
+
+  table.table.table-striped
+    thead
+      tr
+        th(scope='col') Nombre
+        th(scope='col') UVUS
+        th(scope='col') Capacidad
+    tbody
+      each profesor in profesores
+        tr
+          td= profesor.nombre
+          td= profesor.uvus
+          td= profesor.capacidad

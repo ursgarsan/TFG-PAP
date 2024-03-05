@@ -1,25 +1,26 @@
 doctype html
 html
   head
-    title My Website
+    title= title
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
   body
     nav.navbar.navbar-expand-lg.navbar-light.bg-light
       .container
-        a.navbar-brand(href='#') My Website
+        a.navbar-brand(href='/') TFG-PAP
         button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
           span.navbar-toggler-icon
         #navbarNav.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item
-              a.nav-link(href='#') Home
+              a.nav-link(href='/asignaturas') Asignaturas
             li.nav-item
-              a.nav-link(href='#') About
-            li.nav-item
-              a.nav-link(href='#') Contact
+              a.nav-link(href='/profesores') Profesores
 
     block content
 
     footer.footer.bg-dark.text-light.text-center
-      .container
+      .container-fluid
         p Copyright © 2024 My Website
