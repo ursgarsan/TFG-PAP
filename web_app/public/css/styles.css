@@ -1,4 +1,37 @@
+/* PALETA DE COLORES */
+:root {
+    --azul-claro: #e8eef2ff;
+    --lila-gris: #d6c9c9ff;
+    --azul-medio: #c7d3ddff;
+    --verde-enfasis: #ddfc74ff;
+    --gris-oscuro: #37393aff;
+  }
+
+/* BARRA DE NAVEGACIÓN */
 .bg-custom {
-    background-color: blue;
+    background-color: var(--azul-medio);
+    margin-bottom: 2dvh;
+  }
+
+  .btn-search-custom {
+    margin-left: 1dvw;
+    color: var(--gris-oscuro);
+    background-color: transparent;
+    border-color: transparent;
+  }
+  
+  .btn-search-custom:hover {
+    color: white;
+    background-color: var(--gris-oscuro);
+    border-color: var(--gris-oscuro);
+  }
+  
+
+  .d-search-custom {
+    margin-left: 2dvw;
+  }
+
+  .bi-search {
+    font-size: 3dvh;
   }
   

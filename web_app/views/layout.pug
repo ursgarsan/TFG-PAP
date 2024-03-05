@@ -4,6 +4,7 @@ html
     title= title
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='/css/styles.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css')
     script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
     script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
@@ -19,10 +20,10 @@ html
               a.nav-link(href='/asignaturas') Asignaturas
             li.nav-item
               a.nav-link(href='/profesores') Profesores
-          form.d-flex(role='search')
-            input.form-control.me-2(type='search', placeholder='Search', aria-label='Search')
-            button.btn.btn-outline-success(type='submit') Search
-
+            form.d-inline-flex.align-items-center(role='search').d-search-custom
+              input.form-control.me-2(type='search', placeholder='Buscar', aria-label='Buscar')
+              button.btn.btn-outline-success.btn-search-custom(type='submit')
+                i.bi.bi-search
     block content
 
     footer.footer.bg-dark.text-light.text-center
