@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1 Detalles de Asignatura: #{asignatura.nombre}
+
+  h2 Información de la Asignatura
+  p Titulación: #{asignatura.titulacion}
+  p Código: #{asignatura.codigo}
+  p Acrónimo: #{asignatura.acronimo}
+
+  h2 Grupos
+  if asignatura.grupos.length > 0
+    table.table.table-striped
+      thead
+        tr
+          th(scope='col') Tipo
+          th(scope='col') Grupo
+          th(scope='col') Cuatrimestre
+          th(scope='col') Acreditación
+          th(scope='col') Horario
+      tbody
+        each grupo in grupos
+          tr
+            td= grupo.tipo
+            td= grupo.grupo
+            td= grupo.cuatrimestre
+            td= grupo.acreditacion
+            td= grupo.horario.join(', ')
+  else
+    p No hay grupos asociados a esta asignatura.

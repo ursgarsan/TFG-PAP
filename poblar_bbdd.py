@@ -29,7 +29,8 @@ for indice, fila in asignaturas.iterrows():
         'nombre': fila[2],
         'titulacion': fila[0],
         'codigo': fila[1],
-        'acronimo': fila[3]
+        'acronimo': fila[3],
+        'grupos': []
     }
 
     asignatura_existente = asign_colecc.find_one({
@@ -44,6 +45,7 @@ for indice, fila in asignaturas.iterrows():
 
 print("Datos insertados en la colección 'asignaturas' de la base de datos 'PAP'.")
 
+# Ahora actualizamos el campo 'grupos' de las asignaturas
 for indice, fila in asignaturas.iterrows():
     horario = []
     if not pd.isnull(fila[9]):
@@ -67,11 +69,16 @@ for indice, fila in asignaturas.iterrows():
         grupo['horario'] = horario
 
     # Buscar la asignatura correspondiente utilizando el acrónimo
-    asignatura_correspondiente = asign_colecc.find_one({'acronimo': fila[3]})
+    asignatura_correspondiente = asign_colecc.find_one({'codigo': fila[1]})
     if asignatura_correspondiente:
         grupo['asignatura_id'] = asignatura_correspondiente['_id']
         grupo_colecc.insert_one(grupo)
+        # Actualizar la lista de grupos de la asignatura
+        asign_colecc.update_one(
+            {'_id': asignatura_correspondiente['_id']},
+            {'$push': {'grupos': grupo['_id']}}
+        )
     else:
-        print(f"No se pudo encontrar la asignatura correspondiente al acrónimo '{fila[3]}' para el grupo '{fila[5]}'")
+        print(f"No se pudo encontrar la asignatura correspondiente al código '{fila[1]}' para el grupo '{fila[5]}'")
 
 print("Datos insertados en la colección 'grupos' de la base de datos 'PAP'.")

@@ -12,7 +12,7 @@ block content
         th(scope='col') Acrónimo
     tbody
       each asignatura in asignaturas
-        tr
+        tr(data-href=`/asignaturas/${asignatura._id}`)
           td= asignatura.nombre
           td= asignatura.titulacion
           td= asignatura.codigo
@@ -20,5 +20,8 @@ block content
 
   script.
     $(document).ready(function() {
+      $('#tablaAsignaturas').on('click', 'tr[data-href]', function() {
+        window.location.href = $(this).data('href');
+      });
       $('#tablaAsignaturas').DataTable();
     });
