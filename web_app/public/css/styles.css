@@ -56,3 +56,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* TABLAS */
+
+.tr{
+  width: fit-content;
+}
+
+.td{
+  width: fit-content;
+}

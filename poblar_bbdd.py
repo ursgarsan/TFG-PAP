@@ -56,7 +56,7 @@ for indice, fila in asignaturas.iterrows():
     if fila[4] in ['Turno 1', 'Turno 2']:
         tipo = fila[4]
     else:
-        tipo = 'T' if fila[4] in ['A', 'B'] else 'L'
+        tipo = 'Teoría' if fila[4] in ['A', 'B'] else 'Laboratorio'
     
     grupo = {
         'tipo': tipo,
