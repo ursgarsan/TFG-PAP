@@ -19,6 +19,9 @@ block content
           td= asignatura.nombre
           td= asignatura.titulacion
 
+  div.button-container
+    a.btn.btn-primary#btnDescargar(href='/plantillas/asignaturasPlantilla.xlsx', download='asignaturasPlantilla.xlsx') Descargar plantilla para cargar asignaturas
+
   script.
     $(document).ready(function() {
       $('#tablaAsignaturas').DataTable({
@@ -52,5 +55,15 @@ block content
       $('#tablaAsignaturas').on('click', 'tr[data-href]', function() {
         window.location.href = $(this).data('href');
       });
+
+      $('#btnDescargar').on('click', function() {
+        Swal.fire({
+          icon: 'success',
+          text: '¡La plantilla se ha descargado correctamente!',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      });
+
     });
 

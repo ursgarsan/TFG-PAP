@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
+const Swal = require('sweetalert2');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
@@ -33,4 +34,4 @@ app.listen(PORT, () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}`);
 });
 
-module.exports = app;
+module.exports = {app, Swal};

@@ -66,3 +66,25 @@ body {
 .td{
   width: fit-content;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  padding-bottom: 8vh;
+}
+
+.btn.btn-primary {
+  background-color: var(--azul-medio);
+  color: var(--gris-oscuro);
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--gris-oscuro);
+}
