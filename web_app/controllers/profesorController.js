@@ -1,4 +1,5 @@
 const Profesor = require('../models/profesorModel');
+const { esAdmin } = require('../utils/authUtils');
 
 exports.getAllProfesores = async (req, res) => {
     try {
@@ -10,4 +11,3 @@ exports.getAllProfesores = async (req, res) => {
       res.status(500).json({ message: 'Error interno del servidor' });
     }
   };
-  
