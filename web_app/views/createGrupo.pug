@@ -1,0 +1,85 @@
+extends layout
+
+block content
+  h1= title
+
+  form(id="grupoForm", action="/grupos/create", method="POST")
+    label(for="tipo") Tipo:
+    input(type="text", id="tipo", name="tipo", required)
+    br
+
+    label(for="grupo") Grupo:
+    input(type="text", id="grupo", name="grupo", required)
+    br
+
+    label(for="cuatrimestre") Cuatrimestre:
+    input(type="text", id="cuatrimestre", name="cuatrimestre", required)
+    br
+
+    label(for="acreditacion") Acreditación:
+    input(type="text", id="acreditacion", name="acreditacion", required)
+    br
+
+    label(for="curso") Curso:
+    input(type="text", id="curso", name="curso", required)
+    br
+
+    label(for="asignatura_id") Asignatura:
+    select(id="asignatura_id", name="asignatura_id", required)
+      each asignatura in asignaturas
+        option(value=asignatura._id)= asignatura.nombre
+    br
+
+    #horarioContainer
+      .horarioEntry
+        each day in ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']
+          input(type="checkbox", id="horario_#{day.toLowerCase()}", name="horario[0][dias]", value=day)
+          label(for="horario_#{day.toLowerCase()}")= day
+          br
+        label(for="hora") Hora:
+        input(type="text", id="hora", name="horario[0][hora]", required)
+        br
+
+    button(type="button", id="agregarHorario") Agregar Horario
+
+    button(type="submit") Crear Grupo
+
+  script.
+    document.getElementById('agregarHorario').addEventListener('click', function() {
+      var horarioContainer = document.getElementById('horarioContainer');
+      var numHorarios = document.querySelectorAll('.horarioEntry').length;
+
+      var newHorarioEntry = document.createElement('div');
+      newHorarioEntry.classList.add('horarioEntry');
+
+      ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'].forEach(function(day) {
+        var checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = 'horario_' + day.toLowerCase();
+        checkbox.name = `horario[${numHorarios}][dias]`;
+        checkbox.value = day;
+
+        var label = document.createElement('label');
+        label.htmlFor = 'horario_' + day.toLowerCase();
+        label.textContent = day;
+
+        newHorarioEntry.appendChild(checkbox);
+        newHorarioEntry.appendChild(label);
+        newHorarioEntry.appendChild(document.createElement('br'));
+      });
+
+      var horaLabel = document.createElement('label');
+      horaLabel.htmlFor = 'hora';
+      horaLabel.textContent = 'Hora:';
+      newHorarioEntry.appendChild(horaLabel);
+
+      var horaInput = document.createElement('input');
+      horaInput.type = 'text';
+      horaInput.id = 'hora';
+      horaInput.name = `horario[${numHorarios}][hora]`;
+      horaInput.required = true;
+      newHorarioEntry.appendChild(horaInput);
+      newHorarioEntry.appendChild(document.createElement('br'));
+
+      horarioContainer.appendChild(newHorarioEntry);
+    });
