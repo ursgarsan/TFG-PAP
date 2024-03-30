@@ -5,6 +5,7 @@ const { exec } = require('child_process');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
+const gruposRoutes = require('./routes/grupoRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -14,8 +15,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/PAP')
   .catch(err => console.error('Error al conectar a MongoDB:\n', err));
 
 app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   res.render('index', { title: 'Inicio' });
@@ -24,9 +27,7 @@ app.get('/', (req, res) => {
 // Rutas para otras funcionalidades
 app.use('/profesores', profesoresRoutes);
 app.use('/asignaturas', asignaturasRoutes);
-
-// Establecer el directorio de vistas
-app.set('views', path.join(__dirname, 'views'));
+app.use('/grupos', gruposRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
