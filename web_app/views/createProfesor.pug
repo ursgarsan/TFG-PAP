@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Agregar Nuevo Profesor
+  form(action="/profesores/create", method="post")
+    label(for="orden") Orden:
+    input(type="number", name="orden", required)
+    br
+    label(for="nombre") Nombre:
+    input(type="text", name="nombre", required)
+    br
+    label(for="uvus") UVUS:
+    input(type="text", name="uvus", required)
+    br
+    label(for="capacidad") Capacidad:
+    input(type="number", name="capacidad", required)
+    br
+    button(type="submit") Agregar Profesor
