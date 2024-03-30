@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const peticionSchema = new Schema({
-    user: {
+    profesor: {
         type: Schema.Types.ObjectId,
         ref: 'Profesor',
         require: true,

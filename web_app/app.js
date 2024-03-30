@@ -6,6 +6,7 @@ const { exec } = require('child_process');
 const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
 const gruposRoutes = require('./routes/grupoRoutes');
+const peticionesRoutes = require('./routes/peticionRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +29,7 @@ app.get('/', (req, res) => {
 app.use('/profesores', profesoresRoutes);
 app.use('/asignaturas', asignaturasRoutes);
 app.use('/grupos', gruposRoutes);
+app.use('/peticiones', peticionesRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
