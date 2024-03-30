@@ -5,6 +5,7 @@ const asignaturaSchema = new mongoose.Schema({
   titulacion: String,
   codigo: String,
   acronimo: String,
+  curso: String,
   grupos: [
     {
       type: mongoose.Schema.Types.ObjectId,
