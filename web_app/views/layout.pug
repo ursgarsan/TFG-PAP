@@ -24,10 +24,11 @@ head
               a.nav-link(href='/asignaturas') Asignaturas
             li.nav-item
               a.nav-link(href='/profesores') Profesores
-            form.d-inline-flex.align-items-center(role='search').d-search-custom
-              input.form-control.me-2(type='search', placeholder='Buscar', aria-label='Buscar')
-              button.btn.btn-outline-success.btn-search-custom(type='submit')
-                i.bi.bi-search
+            li.nav-item
+              if isAdminLoggedIn
+                a.nav-link(href='/auth/logout') Cerrar Administrador
+              else
+                a.nav-link(href='/auth/login') Iniciar Administrador
     .container-fluid
       block content
 

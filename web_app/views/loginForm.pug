@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .container.mt-5
+    .row
+      .col-md-6.offset-md-3
+        h2.text-center Iniciar sesión
+        form(action="/auth/login", method="POST")
+          .form-group
+            label(for="usuario") Usuario:
+            input(type="text", id="usuario", name="usuario", class="form-control", required)
+          .form-group
+            label(for="pass") Contraseña:
+            input(type="password", id="pass", name="pass", class="form-control", required)
+          button.btn.btn-primary.btn-block(type="submit") Iniciar sesión

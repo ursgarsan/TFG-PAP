@@ -1,4 +1,6 @@
 const express = require('express');
+const session = require('express-session');
+const authRouter = require('./utils/authRouter');
 const mongoose = require('mongoose');
 const path = require('path');
 const { exec } = require('child_process');
@@ -20,9 +22,19 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(session({
+  secret: 'secreto',
+  resave: false,
+  saveUninitialized: false
+}));
+
+app.use((req, res, next) => {
+  res.locals.isAdminLoggedIn = req.session.adminId ? true : false;
+  next();
+});
 
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Inicio' });
+  res.render('index', { title: 'Inicio'});
 });
 
 // Rutas para otras funcionalidades
@@ -30,6 +42,7 @@ app.use('/profesores', profesoresRoutes);
 app.use('/asignaturas', asignaturasRoutes);
 app.use('/grupos', gruposRoutes);
 app.use('/peticiones', peticionesRoutes);
+app.use('/auth', authRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 

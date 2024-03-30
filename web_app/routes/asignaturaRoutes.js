@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const asignaturaController = require('../controllers/asignaturaController');
+const { requireAdmin } = require('../utils/authUtils');
 
 router.get('/', asignaturaController.getAllAsignaturas);
-router.get('/create', asignaturaController.createForm);
-router.post('/create', asignaturaController.createAsignatura);
+router.get('/create', requireAdmin, asignaturaController.createForm);
+router.post('/create', requireAdmin, asignaturaController.createAsignatura);
 router.get('/:id', asignaturaController.getAsignaturaDetails);
 
 
