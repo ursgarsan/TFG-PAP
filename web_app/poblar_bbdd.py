@@ -14,8 +14,8 @@ prof_colecc = db['profesores']
 asign_colecc = db['asignaturas']
 grupo_colecc = db['grupos']
 
-datos_prof = pd.read_excel("docs_iniciales/infoProf.xlsx", usecols=[0, 1, 2], header=None)
-datos_dep = pd.read_excel("docs_iniciales/infoDep.xlsx", header=None)
+datos_prof = pd.read_excel("data/infoProf.xlsx", usecols=[0, 1, 2], header=None)
+datos_dep = pd.read_excel("data/infoDep.xlsx", header=None)
 
 admin = {
     'nombre': 'Administrador',
@@ -38,7 +38,7 @@ for indice,fila in datos_prof.iterrows():
     }
     prof_colecc.insert_one(profesor)
 
-print("Datos insertados en la colección 'profesores' de la base de datos 'PAP'.")
+print("Datos insertados en 'profesores' de la base de datos 'PAP'.")
 
 asignaturas = datos_dep.iloc[7:, :11]
 
@@ -61,7 +61,7 @@ for indice, fila in asignaturas.iterrows():
     if asignatura_existente is None:
         asign_colecc.insert_one(asignatura)
 
-print("Datos insertados en la colección 'asignaturas' de la base de datos 'PAP'.")
+print("Datos insertados en 'asignaturas' de la base de datos 'PAP'.")
 
 def formatHorario(horario):
     new_horario = []
@@ -126,6 +126,6 @@ for indice, fila in asignaturas.iterrows():
             {'$push': {'grupos': grupo['_id']}}
         )
     else:
-        print(f"No se pudo encontrar la asignatura correspondiente al código '{fila[1]}' para el grupo '{fila[5]}'")
+        print(f"No se pudo encontrar la asignatura correspondiente al codigo '{fila[1]}' para el grupo '{fila[5]}'")
 
-print("Datos insertados en la colección 'grupos' de la base de datos 'PAP'.")
+print("Datos insertados en 'grupos' de la base de datos 'PAP'.")

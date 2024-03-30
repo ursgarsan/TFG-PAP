@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
-const Swal = require('sweetalert2');
+const { exec } = require('child_process');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
@@ -30,8 +30,25 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}`);
-});
 
-module.exports = {app, Swal};
+  // Ejecuta el script Python como un proceso secundario
+  const child = exec('poblar_bbdd.py');
+
+  child.stdout.on('data', (data) => {
+    console.log(`Salida del script de inicialización de la base de datos: ${data}`);
+  });
+
+  child.stderr.on('data', (data) => {
+    console.error(`Error al ejecutar el script de inicialización de la base de datos: ${data}`);
+  });
+
+  child.on('close', (code) => {
+    if (code === 0) {
+      console.log('Script de inicialización de la base de datos ejecutado exitosamente.');
+    } else {
+      console.error(`El script de inicialización de la base de datos se cerró con el código de salida ${code}.`);
+    }
+  });
+});
