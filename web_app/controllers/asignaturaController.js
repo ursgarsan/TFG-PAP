@@ -29,4 +29,24 @@ exports.getAllAsignaturas = async (req, res) => {
     }
 };
 
+exports.createForm = async (req, res) => {
+  try {
+    res.render('createAsignatura', { title: 'Agregar Nueva Asignatura' });
+  } catch (error) {
+    console.error('Error al renderizar formulario:', error);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+};
+
+exports.createAsignatura = async (req, res) => {
+  try {
+    const { nombre, titulacion, codigo, acronimo, curso } = req.body;
+    const nuevaAsignatura = new Asignatura({ nombre, titulacion, codigo, acronimo, curso });
+    await nuevaAsignatura.save();
+    res.redirect('/asignaturas');
+  } catch (error) {
+    console.error('Error al crear asignatura:', error);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+};
   

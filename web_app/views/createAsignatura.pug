@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 Agregar Nueva Asignatura
+  form(action="/asignaturas/create", method="post")
+    label(for="nombre") Nombre:
+    input(type="text", name="nombre", required)
+    br
+    label(for="titulacion") Titulación:
+    input(type="text", name="titulacion", required)
+    br
+    label(for="codigo") Código:
+    input(type="text", name="codigo", required)
+    br
+    label(for="acronimo") Acrónimo:
+    input(type="text", name="acronimo", required)
+    br
+    label(for="curso") Curso:
+    input(type="text", name="curso", required)
+    br
+    button(type="submit") Agregar Asignatura
