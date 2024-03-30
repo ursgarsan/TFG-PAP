@@ -4,6 +4,7 @@ const authRouter = require('./utils/authRouter');
 const mongoose = require('mongoose');
 const path = require('path');
 const { exec } = require('child_process');
+const crypto = require('crypto');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
@@ -20,10 +21,12 @@ mongoose.connect('mongodb://127.0.0.1:27017/PAP')
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
+const pass = crypto.randomBytes(32).toString('hex');
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
-  secret: 'secreto',
+  secret: pass,
   resave: false,
   saveUninitialized: false
 }));
