@@ -64,11 +64,21 @@ body {
 
 /* TABLAS */
 
-.tr {
+table {
+  border-collapse: collapse;
+  width: 100%; /* Ajusta el ancho de la tabla al 100% del contenedor */
+}
+
+table th,
+table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  vertical-align: middle;
   width: fit-content;
 }
 
-.td {
+
+.tr {
   width: fit-content;
 }
 

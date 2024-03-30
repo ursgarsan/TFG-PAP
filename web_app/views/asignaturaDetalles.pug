@@ -25,7 +25,13 @@ block content
             td= grupo.grupo
             td= grupo.cuatrimestre
             td= grupo.acreditacion
-            //- td= grupo.horario.join(', ')
+            td
+              each horarioItem in grupo.horario
+                p
+                  | Día(s): #{horarioItem.dias.join(', ')}
+                  br
+                  | Horario: #{horarioItem.hora}
+
   else
     p No hay grupos asociados a esta asignatura.
 

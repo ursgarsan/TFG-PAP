@@ -20,6 +20,7 @@ exports.getAllAsignaturas = async (req, res) => {
             return await Grupo.findById(grupoId);
         });
         const grupos = await Promise.all(gruposPromises);
+        console.log(grupos)
         res.render('asignaturaDetalles', { asignatura, grupos });
         
     } catch (error) {

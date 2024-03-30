@@ -89,7 +89,7 @@ def formatHorario(horario):
                         horas_aux +=1
                     hora_aux = f"{horas_aux}:{minutos_aux:02d}"
                     hora = hora + ' a ' + hora_aux
-            dias = dia.replace('.', '').split(' ')
+            dias = dia.split(' ')
             new_horario.append({'dias': dias, 'hora': hora})
 
     return new_horario
