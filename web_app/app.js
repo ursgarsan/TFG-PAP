@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(PORT, async () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}`);
 
-  // Ejecuta el script Python como un proceso secundario
+  // Ejecuta el script Python para la inicialización de la base de datos Mongo
   const child = exec('poblar_bbdd.py');
 
   child.stdout.on('data', (data) => {
