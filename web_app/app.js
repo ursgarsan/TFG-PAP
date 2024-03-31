@@ -4,11 +4,13 @@ const authRouter = require('./utils/authRouter');
 const mongoose = require('mongoose');
 const path = require('path');
 const crypto = require('crypto');
+const Profesor = require('./models/profesorModel');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
 const gruposRoutes = require('./routes/grupoRoutes');
 const peticionesRoutes = require('./routes/peticionRoutes');
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -32,6 +34,32 @@ app.use(session({
 
 app.use((req, res, next) => {
   res.locals.isAdminLoggedIn = req.session.adminId ? true : false;
+  next();
+});
+
+app.use(async (req, res, next) => {
+  try {
+    const uvus = await Profesor.distinct('uvus');
+    res.locals.profesoresUvus = uvus;
+    next();
+  } catch (error) {
+    console.error('Error al obtener los uvus de los profesores:', error);
+    next(error);
+  }
+});
+
+app.post('/setSelectedUVUS', (req, res) => {
+  const { selectedUVUS } = req.body;
+  req.session.selectedUVUS = selectedUVUS;
+  res.sendStatus(200);
+});
+
+app.use((req, res, next) => {
+  if (req.session.selectedUVUS) {
+    res.locals.selectedUVUS = req.session.selectedUVUS;
+  } else {
+    res.locals.selectedUVUS = null;
+  }
   next();
 });
 

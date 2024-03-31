@@ -1,16 +1,17 @@
 doctype html
 html
-head
-  title= title
-  link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
-  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css')
-  link(rel='stylesheet', href='/css/styles.css')
-  link(rel='stylesheet', href='/css/jquery.dataTables.css')
-  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
-  script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
-  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
-  script(src='https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js')
-  script(src='https://cdn.jsdelivr.net/npm/sweetalert2@10')
+  head
+    title= title
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css')
+    link(rel='stylesheet', href='/css/styles.css')
+    link(rel='stylesheet', href='/css/jquery.dataTables.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    script(src='https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/sweetalert2@10')
+    script(src='uvus_navbar.js')
 
   body
     nav.navbar.navbar-expand-lg.navbar-light.bg-custom
@@ -24,11 +25,25 @@ head
               a.nav-link(href='/asignaturas') Asignaturas
             li.nav-item
               a.nav-link(href='/profesores') Profesores
+            if !isAdminLoggedIn
+              li.nav-item
+                ul.nav-item.dropdown
+                  a.nav-link.dropdown-toggle(href='/', id='profesoresDropdown', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | UVUS
+                  ul.dropdown-menu(aria-labelledby='profesoresDropdown')
+                    each uvus in profesoresUvus
+                      li
+                        a.dropdown-item(href='/' onclick='setSelectedUVUS("' + uvus + '")')= uvus
+                  li.nav-item
+                    span#selectedUVUSPlaceholder.nav-link.disabled No UVUS selected
+                  li.nav-item
+                    button.btn.btn-outline-secondary.ml-2(type='button', onclick='clearSelectedUVUS()') Borrar UVUS
             li.nav-item
               if isAdminLoggedIn
                 a.nav-link(href='/auth/logout') Cerrar Administrador
               else
                 a.nav-link(href='/auth/login') Iniciar Administrador
+
     .container-fluid
       block content
 

@@ -1,11 +1,11 @@
 const Peticion = require('../models/peticionModel');
-const Profesor = require('../models/profesorModel'); // Importa el modelo del profesor
-const Grupo = require('../models/grupoModel'); // Importa el modelo del grupo
+const Profesor = require('../models/profesorModel');
+const Grupo = require('../models/grupoModel');
 
 exports.mostrarFormulario = async (req, res) => {
     try {
-      const profesores = await Profesor.find(); // Obtiene todos los profesores
-      const grupos = await Grupo.find(); // Obtiene todos los grupos
+      const profesores = await Profesor.find();
+      const grupos = await Grupo.find();
   
       res.render('createPeticion', { title: 'Agregar Nueva Petición', profesores, grupos });
     } catch (error) {
