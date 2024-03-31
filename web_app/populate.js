@@ -1,7 +1,7 @@
 const { exec } = require('child_process');
 
 // Ejecuta el script Python para la inicialización de la base de datos Mongo
-const child = exec('poblar_bbdd.py');
+const child = exec('populate_db.py');
 
 child.stdout.on('data', (data) => {
     console.log(`Salida del script de inicialización de la base de datos:\n${data}`);
