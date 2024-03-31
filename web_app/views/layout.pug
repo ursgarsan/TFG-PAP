@@ -35,14 +35,16 @@ html
                       li
                         a.dropdown-item(href='/' onclick='setSelectedUVUS("' + uvus + '")')= uvus
                   li.nav-item
-                    span#selectedUVUSPlaceholder.nav-link.disabled No UVUS selected
+                    span#selectedUVUSPlaceholder.nav-link.disabled
                   li.nav-item
                     button.btn.btn-outline-secondary.ml-2(type='button', onclick='clearSelectedUVUS()') Borrar UVUS
             li.nav-item
               if isAdminLoggedIn
-                a.nav-link(href='/auth/logout') Cerrar Administrador
+                form(action='/auth/logout', method='GET')
+                  button.btn.btn-primary(type='submit') Cerrar Administrador
               else
-                a.nav-link(href='/auth/login') Iniciar Administrador
+                form(action='/auth/login', method='GET')
+                  button.btn.btn-primary(type='submit') Iniciar Administrador
 
     .container-fluid
       block content
