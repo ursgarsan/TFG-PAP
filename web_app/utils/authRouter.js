@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const bcrypt = require('bcrypt');
 const Admin = require('../models/adminModel');
 
 router.get('/login', (req, res) => {
@@ -14,9 +15,11 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ message: 'Usuario no encontrado' });
     }
 
-    if (pass !== admin.pass) {
+    const contraseñaValida = await bcrypt.compare(pass, admin.pass);
+    if (!contraseñaValida) {
       return res.status(401).json({ message: 'Contraseña incorrecta' });
     }
+
     req.session.adminId = admin._id;
     res.redirect('/');
   } catch (error) {

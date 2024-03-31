@@ -1,4 +1,5 @@
 import pandas as pd
+import bcrypt
 from pymongo import MongoClient
 
 client = MongoClient('localhost', 27017)
@@ -17,11 +18,14 @@ grupo_colecc = db['grupos']
 datos_prof = pd.read_excel("data/infoProf.xlsx", usecols=[0, 1, 2], header=None)
 datos_dep = pd.read_excel("data/infoDep.xlsx", header=None)
 
+def generar_hash_contraseña(contraseña_plana):
+    return bcrypt.hashpw(contraseña_plana.encode('utf-8'), bcrypt.gensalt())
+
 admin = {
     'nombre': 'Administrador',
     'apellidos': 'Administrador',
     'usuario': 'admin',
-    'pass': 'admin'
+    'pass': generar_hash_contraseña('admin')
 }
 
 admin_colecc.insert_one(admin)
