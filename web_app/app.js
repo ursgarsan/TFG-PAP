@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect('mongodb://127.0.0.1:27017/PAP')
-  .then(() => console.log('Conexión exitosa a MongoDB\n'))
+  .then(() => console.log('Conexión exitosa a MongoDB'))
   .catch(err => console.error('Error al conectar a MongoDB:\n', err));
 
 app.set('view engine', 'pug');
