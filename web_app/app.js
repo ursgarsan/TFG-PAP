@@ -1,6 +1,5 @@
 const express = require('express');
 const session = require('express-session');
-const authRouter = require('./utils/authRouter');
 const mongoose = require('mongoose');
 const path = require('path');
 const crypto = require('crypto');
@@ -10,6 +9,7 @@ const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
 const gruposRoutes = require('./routes/grupoRoutes');
 const peticionesRoutes = require('./routes/peticionRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 
 const app = express();
@@ -72,7 +72,7 @@ app.use('/profesores', profesoresRoutes);
 app.use('/asignaturas', asignaturasRoutes);
 app.use('/grupos', gruposRoutes);
 app.use('/peticiones', peticionesRoutes);
-app.use('/auth', authRouter);
+app.use('/auth', authRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 

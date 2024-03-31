@@ -1,13 +1,11 @@
-const express = require('express');
-const router = express.Router();
 const bcrypt = require('bcrypt');
 const Admin = require('../models/adminModel');
 
-router.get('/login', (req, res) => {
+exports.loginForm = (req, res) => {
   res.render('loginForm', { title: 'Iniciar sesión' });
-});
+};
 
-router.post('/login', async (req, res) => {
+exports.login = async (req, res) => {
   const { usuario, pass } = req.body;
   try {
     const admin = await Admin.findOne({ usuario });
@@ -26,11 +24,9 @@ router.post('/login', async (req, res) => {
     console.error('Error al iniciar sesión:', error);
     res.status(500).json({ message: 'Error interno del servidor' });
   }
-});
+};
 
-router.get('/logout', (req, res) => {
+exports.logout = (req, res) => {
   req.session.destroy();
   res.redirect('/');
-});
-
-module.exports = router;
+};
