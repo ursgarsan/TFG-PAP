@@ -3,7 +3,6 @@ const session = require('express-session');
 const authRouter = require('./utils/authRouter');
 const mongoose = require('mongoose');
 const path = require('path');
-const { exec } = require('child_process');
 const crypto = require('crypto');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
@@ -51,23 +50,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(PORT, async () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}\n`);
-
-  // Ejecuta el script Python para la inicialización de la base de datos Mongo
-  // const child = exec('poblar_bbdd.py');
-
-  // child.stdout.on('data', (data) => {
-  //   console.log(`Salida del script de inicialización de la base de datos:\n${data}`);
-  // });
-
-  // child.stderr.on('data', (data) => {
-  //   console.error(`Error al ejecutar el script de inicialización de la base de datos:\n${data}`);
-  // });
-
-  // child.on('close', (code) => {
-  //   if (code === 0) {
-  //     console.log('Script de inicialización de la base de datos ejecutado exitosamente.');
-  //   } else {
-  //     console.error(`El script de inicialización de la base de datos se cerró con el código de salida ${code}.`);
-  //   }
-  // });
 });

@@ -17,5 +17,5 @@ const asignacionSchema = new Schema({
     }
 })
 
-const Asignacion = model('Asignacion', asignacionSchema);
+const Asignacion = model('asignaciones', asignacionSchema);
 module.exports = Asignacion;

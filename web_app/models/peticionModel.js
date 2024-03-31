@@ -29,5 +29,5 @@ const peticionSchema = new Schema({
         require: true,
     }
 })
-const Peticion = model('Peticion', peticionSchema);
+const Peticion = model('peticiones', peticionSchema);
 module.exports = Peticion;
