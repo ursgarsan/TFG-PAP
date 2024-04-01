@@ -33,11 +33,14 @@ block content
     #horarioContainer
       .horarioEntry
         each day in ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']
-          input(type="checkbox", id="horario_#{day.toLowerCase()}", name="horario[0][dias]", value=day)
-          label(for="horario_#{day.toLowerCase()}")= day
+          input(type="checkbox", id=`horario_${day.toLowerCase()}`, name=`horario[0][dias]`, value=day)
+          label(for=`horario_${day.toLowerCase()}`)= day
           br
-        label(for="hora") Hora:
-        input(type="text", id="hora", name="horario[0][hora]", required)
+        label(for="hora_inicio") Hora de inicio:
+        input(type="text", id="hora_inicio", name="horario[0][hora_inicio]", required)
+        br
+        label(for="hora_fin") Hora de fin:
+        input(type="text", id="hora_fin", name="horario[0][hora_fin]", required)
         br
 
     button(type="button", id="agregarHorario") Agregar Horario
@@ -68,17 +71,30 @@ block content
         newHorarioEntry.appendChild(document.createElement('br'));
       });
 
-      var horaLabel = document.createElement('label');
-      horaLabel.htmlFor = 'hora';
-      horaLabel.textContent = 'Hora:';
-      newHorarioEntry.appendChild(horaLabel);
+      var horaInicioLabel = document.createElement('label');
+      horaInicioLabel.htmlFor = 'hora_inicio';
+      horaInicioLabel.textContent = 'Hora de inicio:';
+      newHorarioEntry.appendChild(horaInicioLabel);
 
-      var horaInput = document.createElement('input');
-      horaInput.type = 'text';
-      horaInput.id = 'hora';
-      horaInput.name = `horario[${numHorarios}][hora]`;
-      horaInput.required = true;
-      newHorarioEntry.appendChild(horaInput);
+      var horaInicioInput = document.createElement('input');
+      horaInicioInput.type = 'text';
+      horaInicioInput.id = 'hora_inicio';
+      horaInicioInput.name = `horario[${numHorarios}][hora_inicio]`;
+      horaInicioInput.required = true;
+      newHorarioEntry.appendChild(horaInicioInput);
+      newHorarioEntry.appendChild(document.createElement('br'));
+
+      var horaFinLabel = document.createElement('label');
+      horaFinLabel.htmlFor = 'hora_fin';
+      horaFinLabel.textContent = 'Hora de fin:';
+      newHorarioEntry.appendChild(horaFinLabel);
+
+      var horaFinInput = document.createElement('input');
+      horaFinInput.type = 'text';
+      horaFinInput.id = 'hora_fin';
+      horaFinInput.name = `horario[${numHorarios}][hora_fin]`;
+      horaFinInput.required = true;
+      newHorarioEntry.appendChild(horaFinInput);
       newHorarioEntry.appendChild(document.createElement('br'));
 
       horarioContainer.appendChild(newHorarioEntry);

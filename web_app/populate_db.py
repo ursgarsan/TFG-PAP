@@ -79,10 +79,12 @@ def formatHorario(horario):
                 dia = clase
                 hora = None
             if hora is None:
-                hora = '18:30 a 19:50'
+                hora_inicio = '18:30'
+                hora_fin = '19:50'
             else:
                 # si no existe hora de fin se le pone la predeterminada con su duración redeterminada (1h y 50min)
                 if 'a' not in hora:
+                    hora_inicio = hora
                     horas_aux, minutos_aux = hora.split(':')
                     horas_aux = int(horas_aux)
                     minutos_aux = int(minutos_aux)
@@ -92,9 +94,11 @@ def formatHorario(horario):
                         minutos_aux -= 60
                         horas_aux +=1
                     hora_aux = f"{horas_aux}:{minutos_aux:02d}"
-                    hora = hora + ' a ' + hora_aux
+                    hora_fin = hora_aux
+                else:
+                    hora_inicio, hora_fin = hora.split(' a ')
             dias = dia.split(' ')
-            new_horario.append({'dias': dias, 'hora': hora})
+            new_horario.append({'dias': dias, 'hora_inicio': hora_inicio, 'hora_fin': hora_fin})
 
     return new_horario
 
