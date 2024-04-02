@@ -10,6 +10,7 @@ const asignaturasRoutes = require('./routes/asignaturaRoutes');
 const gruposRoutes = require('./routes/grupoRoutes');
 const peticionesRoutes = require('./routes/peticionRoutes');
 const authRoutes = require('./routes/authRoutes');
+const xlsxUploader = require('./xlsxUploader');
 
 
 const app = express();
@@ -68,6 +69,7 @@ app.get('/', (req, res) => {
 });
 
 // Rutas para otras funcionalidades
+app.post('/upload', xlsxUploader);
 app.use('/profesores', profesoresRoutes);
 app.use('/asignaturas', asignaturasRoutes);
 app.use('/grupos', gruposRoutes);
