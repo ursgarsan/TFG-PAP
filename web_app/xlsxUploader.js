@@ -7,18 +7,31 @@ const path = require('path');
 const router = express.Router();
 const upload = multer();
 const Asignatura = require('./models/asignaturaModel');
+const Profesor = require('./models/profesorModel');
+const Grupo = require('./models/grupoModel');
 
 router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   try {
     const file = req.file;
     if (!file) {
-      return res.redirect('/asignaturas?uploaded=false&error=No se ha proporcionado ningún archivo');
+      return res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'No se ha proporcionado ningún archivo' }));
     }
 
-    // Verificar que el archivo sea de tipo xlsx
     const fileExtension = path.extname(file.originalname);
     if (fileExtension.toLowerCase() !== '.xlsx') {
-      return res.redirect('/asignaturas?uploaded=false&error=El archivo no es de tipo .xlsx');
+      return res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
+    }
+
+    const fileName = file.originalname;
+    let prefix = '';
+    if (fileName.startsWith('asignatura')) {
+      prefix = 'asignatura';
+    } else if (fileName.startsWith('profesores')) {
+      prefix = 'profesores';
+    } else if (fileName.startsWith('grupos')) {
+      prefix = 'grupos';
+    } else {
+      return res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'Nombre de archivo no reconocido' }));
     }
 
     const workbook = XLSX.read(file.buffer, { type: 'buffer' });
@@ -26,30 +39,45 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     const worksheet = workbook.Sheets[sheetName];
     const data = XLSX.utils.sheet_to_json(worksheet);
 
-    const asignaturas = [];
-
-    // Recorrer los datos y crear instancias de Asignatura
-    for (const row of data) {
-      const asignaturaData = {
-        nombre: row.Nombre,
-        titulacion: row.Titulacion,
-        codigo: row.Codigo,
-        acronimo: row.Acronimo,
-        curso: row.Curso
-      };
-
-      const asignatura = new Asignatura(asignaturaData);
-      asignaturas.push(asignatura);
+    // Dependiendo del prefijo, realiza la acción correspondiente
+    switch (prefix) {
+      case 'asignatura':
+        const asignaturas = [];
+        for (const row of data) {
+          const asignaturaData = {
+            nombre: row.Nombre,
+            titulacion: row.Titulacion,
+            codigo: row.Codigo,
+            acronimo: row.Acronimo,
+            curso: row.Curso
+          };
+          const asignatura = new Asignatura(asignaturaData);
+          asignaturas.push(asignatura);
+        }
+        await Asignatura.insertMany(asignaturas);
+        res.redirect(addQueryParams('/asignaturas', { uploaded: true }));
+        break;
+      case 'profesores':
+        // Lógica para cargar datos de profesores
+        break;
+      case 'grupos':
+        // Lógica para cargar datos de grupos
+        break;
+      default:
+        break;
     }
-
-    await Asignatura.insertMany(asignaturas);
-
-    res.redirect('/asignaturas?uploaded=true');
   } catch (error) {
     console.error('Error al procesar el archivo XLSX:', error);
-    res.redirect('/asignaturas?uploaded=false&error=Error al procesar el archivo XLSX');
+    res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
   }
 });
 
+function addQueryParams(url, params) {
+  const urlParams = new URLSearchParams();
+  for (const key in params) {
+    urlParams.set(key, params[key]);
+  }
+  return url + '?' + urlParams.toString();
+}
 
 module.exports = router;
