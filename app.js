@@ -10,7 +10,7 @@ const asignaturasRoutes = require('./routes/asignaturaRoutes');
 const gruposRoutes = require('./routes/grupoRoutes');
 const peticionesRoutes = require('./routes/peticionRoutes');
 const authRoutes = require('./routes/authRoutes');
-const xlsxUploader = require('./xlsxUploader');
+const xlsxUploader = require('./upload/xlsxUploader');
 
 
 const app = express();

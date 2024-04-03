@@ -6,9 +6,9 @@ const path = require('path');
 
 const router = express.Router();
 const upload = multer();
-const Asignatura = require('./models/asignaturaModel');
-const Profesor = require('./models/profesorModel');
-const Grupo = require('./models/grupoModel');
+const Asignatura = require('../models/asignaturaModel');
+const Profesor = require('../models/profesorModel');
+const Grupo = require('../models/grupoModel');
 
 router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   try {
