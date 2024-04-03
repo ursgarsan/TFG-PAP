@@ -3,7 +3,7 @@ extends layout
 block content
   h1 Listado de Profesores
 
-  table#tablaProfesores.table.table-striped
+  table#tablaData.table.table-striped
     thead
       tr
         th(scope='col') Nombre
@@ -24,47 +24,3 @@ block content
     form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
       input(type='file', name='xlsxFile')
       button.btn.btn-primary(type='submit') Cargar archivo XLSX para procesar en la base de datos
-
-  script.
-    $(document).ready(function() {
-      $('#tablaProfesores').on('click', 'tr[data-href]', function() {
-        window.location.href = $(this).data('href');
-      });
-
-      $('#btnDescargar').on('click', function() {
-        Swal.fire({
-          icon: 'success',
-          text: '¡La plantilla se ha descargado correctamente!',
-          showConfirmButton: false,
-          timer: 1500
-        });
-      });
-
-       // Verificar si el archivo se cargó correctamente o si hubo un error y mostrar SweetAlert2
-      const urlParams = new URLSearchParams(window.location.search);
-      const uploaded = urlParams.get('uploaded');
-      const error = urlParams.get('error');
-      if (uploaded === 'true') {
-        Swal.fire({
-          icon: 'success',
-          text: '¡El archivo se ha cargado correctamente!',
-          showConfirmButton: false,
-          timer: 1500
-        }).then(() => {
-          // Eliminar los parámetros de la URL
-          window.history.replaceState({}, document.title, window.location.pathname);
-        });
-      } else if (uploaded === 'false' && error) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: error,
-          showConfirmButton: true
-        }).then(() => {
-          // Eliminar los parámetros de la URL
-          window.history.replaceState({}, document.title, window.location.pathname);
-        });
-      } 
-    });
-
-    
