@@ -58,7 +58,20 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         res.redirect(addQueryParams('/asignaturas', { uploaded: true }));
         break;
       case 'profesores':
-        // Lógica para cargar datos de profesores
+        const profesores = [];
+        for (const row of data) {
+          const profesorData = {
+            orden: row.Orden,
+            nombre: row.Nombre,
+            apellidos: row.Apellidos,
+            uvus: row.UVUS,
+            capacidad: row.Capacidad
+          };
+          const profesor = new Profesor(profesorData);
+          profesores.push(profesor);
+        }
+        await Profesor.insertMany(profesores);
+        res.redirect(addQueryParams('/profesores', { uploaded: true }));
         break;
       case 'grupos':
         // Lógica para cargar datos de grupos
