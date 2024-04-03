@@ -5,7 +5,7 @@ exports.getAllProfesores = async (req, res) => {
   try {
     const profesores = await Profesor.find();
     const title = 'Profesores';
-    res.render('profesores', { profesores, title });
+    res.render('list/profesores', { profesores, title });
   } catch (error) {
     console.error('Error al obtener profesores:', error);
     res.status(500).json({ message: 'Error interno del servidor' });
@@ -14,7 +14,7 @@ exports.getAllProfesores = async (req, res) => {
 
 exports.createForm = async (req, res) => {
   try {
-    res.render('createProfesor', { title: 'Agregar Nuevo Profesor' });
+    res.render('create/createProfesor', { title: 'Agregar Nuevo Profesor' });
   } catch (error) {
     console.error('Error al renderizar formulario:', error);
     res.status(500).json({ message: 'Error interno del servidor' });

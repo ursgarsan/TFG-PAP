@@ -5,7 +5,7 @@ exports.getAllAsignaturas = async (req, res) => {
     try {
       const asignaturas = await Asignatura.find();
       const title = 'Asignaturas';
-      res.render('asignaturas', { asignaturas, title});
+      res.render('list/asignaturas', { asignaturas, title});
     } catch (error) {
       console.error('Error al obtener asignaturas:', error);
       res.status(500).json({ message: 'Error interno del servidor' });
@@ -20,7 +20,7 @@ exports.getAllAsignaturas = async (req, res) => {
             return await Grupo.findById(grupoId);
         });
         const grupos = await Promise.all(gruposPromises);
-        res.render('asignaturaDetalles', { asignatura, grupos });
+        res.render('details/asignaturaDetalles', { asignatura, grupos });
         
     } catch (error) {
         console.error('Error al obtener detalles de la asignatura:', error);
@@ -30,7 +30,7 @@ exports.getAllAsignaturas = async (req, res) => {
 
 exports.createForm = async (req, res) => {
   try {
-    res.render('createAsignatura', { title: 'Agregar Nueva Asignatura' });
+    res.render('create/createAsignatura', { title: 'Agregar Nueva Asignatura' });
   } catch (error) {
     console.error('Error al renderizar formulario:', error);
     res.status(500).json({ message: 'Error interno del servidor' });

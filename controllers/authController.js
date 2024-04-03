@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const Admin = require('../models/adminModel');
 
 exports.loginForm = (req, res) => {
-  res.render('loginForm', { title: 'Iniciar sesión' });
+  res.render('login/loginForm', { title: 'Iniciar sesión' });
 };
 
 exports.login = async (req, res) => {

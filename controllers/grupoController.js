@@ -1,10 +1,10 @@
 const Grupo = require('../models/grupoModel');
 const Asignatura = require('../models/asignaturaModel');
 
-exports.mostrarFormulario = async (req, res) => {
+exports.createForm = async (req, res) => {
   try {
     const asignaturas = await Asignatura.find({}, '_id nombre');
-    res.render('createGrupo', { title: 'Agregar Nuevo Grupo', asignaturas });
+    res.render('create/createGrupo', { title: 'Agregar Nuevo Grupo', asignaturas });
   } catch (error) {
     console.error('Error al renderizar formulario:', error);
     res.status(500).json({ message: 'Error interno del servidor' });

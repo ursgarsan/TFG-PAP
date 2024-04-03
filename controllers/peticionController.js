@@ -7,7 +7,7 @@ exports.mostrarFormulario = async (req, res) => {
       const profesores = await Profesor.find();
       const grupos = await Grupo.find();
   
-      res.render('createPeticion', { title: 'Agregar Nueva Petición', profesores, grupos });
+      res.render('create/createPeticion', { title: 'Agregar Nueva Petición', profesores, grupos });
     } catch (error) {
       console.error('Error al renderizar formulario de petición:', error);
       res.status(500).json({ message: 'Error interno del servidor' });
