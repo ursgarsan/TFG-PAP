@@ -15,7 +15,7 @@ prof_colecc = db['profesores']
 asign_colecc = db['asignaturas']
 grupo_colecc = db['grupos']
 
-datos_prof = pd.read_excel("data/infoProf.xlsx", usecols=[0, 1, 2], header=None)
+datos_prof = pd.read_excel("data/infoProf.xlsx", usecols=[0, 1, 2, 3], header=None)
 datos_dep = pd.read_excel("data/infoDep.xlsx", header=None)
 
 def generar_hash_contraseña(contraseña_plana):
@@ -32,11 +32,17 @@ admin_colecc.insert_one(admin)
 
 print("Administrador creado e insertado correctamente.")
 
+def formatNombre(nombre_original):
+    apellidos, nombre = nombre_original.split(', ')
+    return nombre, apellidos
+
 capacidades = datos_dep.iloc[1, 11:]
 for indice,fila in datos_prof.iterrows():
+    nombre,apellidos = formatNombre(fila[3])
     profesor = {
         'orden': fila[0],
-        'nombre': fila[1],
+        'nombre': nombre,
+        'apellidos': apellidos,
         'uvus': fila[2],
         'capacidad': capacidades[indice + 11]
     }

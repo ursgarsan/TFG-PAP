@@ -7,12 +7,14 @@ block content
     thead
       tr
         th(scope='col') Nombre
+        th(scope='col') Apellidos
         th(scope='col') UVUS
         th(scope='col') Capacidad
     tbody
       each profesor in profesores
         tr
           td= profesor.nombre
+          td= profesor.apellidos
           td= profesor.uvus
           td= profesor.capacidad
   div.button-container

@@ -23,8 +23,8 @@ exports.createForm = async (req, res) => {
 
 exports.createProfesor = async (req, res) => {
   try {
-    const { orden, nombre, uvus, capacidad } = req.body;
-    const nuevoProfesor = new Profesor({ orden, nombre, uvus, capacidad });
+    const { orden, nombre, apellidos, uvus, capacidad } = req.body;
+    const nuevoProfesor = new Profesor({ orden, nombre, apellidos, uvus, capacidad });
     await nuevoProfesor.save();
     res.redirect('/profesores'); 
   } catch (error) {
