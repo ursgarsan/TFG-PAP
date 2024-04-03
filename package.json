@@ -1,12 +1,12 @@
 {
-  "name": "web_app",
+  "name": "TFG_PAP",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "populate": "node populate.js"
+    "populate": "node database/populate.js"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +24,7 @@
     "nodemon": "^3.1.0",
     "path": "^0.12.7",
     "pug": "^3.0.2",
-    "sweetalert2": "^11.10.6",
+    "sweetalert2": "^11.10.7",
     "xlsx": "^0.18.5"
   }
 }

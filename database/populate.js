@@ -1,7 +1,9 @@
 const { exec } = require('child_process');
+const path = require('path');
+const scriptPath = path.join(__dirname, 'populate_db.py');
 
-// Ejecuta el script Python para la inicialización de la base de datos Mongo
-const child = exec('populate_db.py');
+// Ejecutar el script Python para la inicialización de la base de datos Mongo
+const child = exec(`python ${scriptPath}`);
 
 child.stdout.on('data', (data) => {
     console.log(`Salida del script de inicialización de la base de datos:\n${data}`);

@@ -15,8 +15,8 @@ prof_colecc = db['profesores']
 asign_colecc = db['asignaturas']
 grupo_colecc = db['grupos']
 
-datos_prof = pd.read_excel("data/infoProf.xlsx", usecols=[0, 1, 2, 3], header=None)
-datos_dep = pd.read_excel("data/infoDep.xlsx", header=None)
+datos_prof = pd.read_excel("database/data/infoProf.xlsx", usecols=[0, 1, 2, 3], header=None)
+datos_dep = pd.read_excel("database/data/infoDep.xlsx", header=None)
 
 def generar_hash_contraseña(contraseña_plana):
     return bcrypt.hashpw(contraseña_plana.encode('utf-8'), bcrypt.gensalt())
