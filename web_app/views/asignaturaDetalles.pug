@@ -38,35 +38,17 @@ block content
   div.button-container
     a.btn.btn-primary#btnDescargar(href='/plantillas/gruposPlantilla.xlsx', download='gruposPlantilla.xlsx') Descargar plantilla para cargar grupos de la asignatura
 
+  div.button-container
+    form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
+      input(type='file', name='xlsxFile')
+      button.btn.btn-primary(type='submit') Cargar archivo XLSX para procesar en la base de datos
+
 
   script.
     $(document).ready(function() {
-      $('#tablaGrupos').DataTable({
-        pagingType: 'simple_numbers',
-        language: {
-          "sProcessing":     "Procesando...",
-          "sLengthMenu":     "Mostrar _MENU_ registros",
-          "sZeroRecords":    "No se encontraron resultados",
-          "sEmptyTable":     "Ningún dato disponible en esta tabla",
-          "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-          "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-          "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-          "sInfoPostFix":    "",
-          "sSearch":         "Buscar:",
-          "sUrl":            "",
-          "sInfoThousands":  ",",
-          "sLoadingRecords": "Cargando...",
-          "oPaginate": {
-              "sFirst":    "Primero",
-              "sLast":     "Último",
-              "sNext":     "Siguiente",
-              "sPrevious": "Anterior"
-          },
-          "oAria": {
-              "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-              "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-          }
-        }
+    $(document).ready(function() {
+      $('#tablaGrupos').on('click', 'tr[data-href]', function() {
+        window.location.href = $(this).data('href');
       });
 
       $('#btnDescargar').on('click', function() {
@@ -78,4 +60,29 @@ block content
         });
       });
 
+      // Verificar si el archivo se cargó correctamente o si hubo un error y mostrar SweetAlert2
+      const urlParams = new URLSearchParams(window.location.search);
+      const uploaded = urlParams.get('uploaded');
+      const error = urlParams.get('error');
+      if (uploaded === 'true') {
+        Swal.fire({
+          icon: 'success',
+          text: '¡El archivo se ha cargado correctamente!',
+          showConfirmButton: false,
+          timer: 1500
+        }).then(() => {
+          // Eliminar los parámetros de la URL
+          window.history.replaceState({}, document.title, window.location.pathname);
+        });
+      } else if (uploaded === 'false' && error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: error,
+          showConfirmButton: true
+        }).then(() => {
+          // Eliminar los parámetros de la URL
+          window.history.replaceState({}, document.title, window.location.pathname);
+        });
+      }
     });

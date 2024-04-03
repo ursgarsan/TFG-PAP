@@ -74,7 +74,23 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         res.redirect(addQueryParams('/profesores', { uploaded: true }));
         break;
       case 'grupos':
-        // Lógica para cargar datos de grupos
+        // falta añadir el horario que no se como gestionar y el codigo de asignatura, tambien tendria que buscar 
+        // esta y añadirle a grupos la id del que meto
+        const grupos = [];
+        for (const row of data) {
+          const grupoData = {
+            tipo: row.Tipo,
+            grupo: row.Grupo,
+            cuatrimestre: row.Cuatrimestre,
+            acreditacion: row.Acreditacion,
+            curso: row.Curso
+          };
+          const grupo = new Grupo(grupoData);
+          grupos.push(grupo);
+        }
+        await Grupo.insertMany(grupos);
+        // tiene que redirigir a la asignatura que estoy poniendo o a una lista de grupos
+        res.redirect(addQueryParams('/asignaturas', { uploaded: true }));
         break;
       default:
         break;
