@@ -74,24 +74,79 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         res.redirect(addQueryParams('/profesores', { uploaded: true }));
         break;
       case 'grupos':
-        // falta añadir el horario que no se como gestionar y el codigo de asignatura, tambien tendria que buscar 
-        // esta y añadirle a grupos la id del que meto
         const grupos = [];
         for (const row of data) {
+          const asignatura = await Asignatura.findOne({ codigo: String(row.Codigo) });
+
+          if (!asignatura) {
+            console.error('No se encontró la asignatura con el código:', String(row.Codigo));
+            continue;
+          }
+        
+          const existingGrupo = await Grupo.findOne({
+            tipo: row.Tipo,
+            grupo: row.Grupo,
+            cuatrimestre: row.Cuatrimestre,
+            acreditacion: row.Acreditacion,
+            curso: row.Curso,
+            asignatura_id: asignatura._id
+          });
+        
+          if (existingGrupo) {
+            // Verificar si ya existe un horario con las mismas horas
+            const existingHorario = existingGrupo.horario.find(item =>
+              item.hora_inicio === row.Hora_Inicio && item.hora_fin === row.Hora_Fin
+            );
+          
+            // Si existe un horario con las mismas horas, agregar los nuevos días al horario existente
+            if (existingHorario) {
+              const nuevosDias = row.Dias.split(',').map(dia => dia.trim());
+              for (const dia of nuevosDias) {
+                if (!existingHorario.dias.includes(dia)) {
+                  existingHorario.dias.push(dia);
+                }
+              }
+              existingGrupo.save();
+              continue;
+            }
+          
+            // Si no hay ningún horario con las mismas horas, crear un nuevo objeto de horario y añadirlo al grupo
+            const horario = {
+              dias: row.Dias.split(',').map(dia => dia.trim()),
+              hora_inicio: row.Hora_Inicio,
+              hora_fin: row.Hora_Fin
+            };
+            existingGrupo.horario.push(horario);
+            existingGrupo.save();
+            continue;
+          }
+          
           const grupoData = {
             tipo: row.Tipo,
             grupo: row.Grupo,
             cuatrimestre: row.Cuatrimestre,
             acreditacion: row.Acreditacion,
-            curso: row.Curso
-          };
+            curso: row.Curso,
+            asignatura_id: asignatura._id
+            };
+        
           const grupo = new Grupo(grupoData);
+          const horario = {
+            dias: row.Dias.split(',').map(dia => dia.trim()),
+            hora_inicio: row.Hora_Inicio,
+            hora_fin: row.Hora_Fin
+          };
+          grupo.horario.push(horario);
           grupos.push(grupo);
+
+          asignatura.grupos.push(grupo._id);
+          await asignatura.save();
         }
         await Grupo.insertMany(grupos);
-        // tiene que redirigir a la asignatura que estoy poniendo o a una lista de grupos
         res.redirect(addQueryParams('/asignaturas', { uploaded: true }));
         break;
+        
+        
       default:
         break;
     }
