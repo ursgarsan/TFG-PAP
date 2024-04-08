@@ -103,3 +103,17 @@ table td {
 .btn.btn-primary:hover {
   background-color: var(--gris-oscuro);
 }
+
+/* MENSAJES DE ERROR */
+
+.error-input {
+  border-bottom: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -1.8em;
+  text-align: right;
+}
+
