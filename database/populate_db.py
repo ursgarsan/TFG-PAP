@@ -56,7 +56,7 @@ for indice, fila in asignaturas.iterrows():
     asignatura = {
         'nombre': fila[2],
         'titulacion': fila[0],
-        'codigo': fila[1],
+        'codigo': str(fila[1]),
         'acronimo': fila[3],
         'curso': '2023-2024',
         'grupos': []
@@ -65,7 +65,7 @@ for indice, fila in asignaturas.iterrows():
     asignatura_existente = asign_colecc.find_one({
         'nombre': asignatura['nombre'],
         'titulacion': asignatura['titulacion'],
-        'codigo': asignatura['codigo'],
+        'codigo': str(asignatura['codigo']),
         'acronimo': asignatura['acronimo']
     })
 
@@ -132,7 +132,7 @@ for indice, fila in asignaturas.iterrows():
         grupo['horario'] = formatHorario(horario)
 
     # Buscar la asignatura correspondiente utilizando el acrónimo
-    asignatura_correspondiente = asign_colecc.find_one({'codigo': fila[1]})
+    asignatura_correspondiente = asign_colecc.find_one({'codigo': str(fila[1])})
     if asignatura_correspondiente:
         grupo['asignatura_id'] = asignatura_correspondiente['_id']
         grupo_colecc.insert_one(grupo)
