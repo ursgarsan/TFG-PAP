@@ -2,17 +2,19 @@ const mongoose = require('mongoose');
 
 const horarioSchema = new mongoose.Schema({
   dias: [{ type: String, enum: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'] }],  
-  // hora: {
-  //   type: String,
-  //   validate: {
-  //     validator: function(v) {
-  //       return /\d{2}:\d{2}/.test(v);
-  //     },
-  //     message: props => `${props.value} no es un formato de hora válido. Debe ser HH:MM`
-  //   }
-  // }
-  hora_inicio: String,
-  hora_fin: String
+  hora_inicio: {
+    type: String,
+    required: true,
+    match: /\d{2}:\d{2}/,
+    message: 'El formato de hora debe ser HH:MM'
+  },
+  hora_fin: {
+    type: String,
+    required: true,
+    match: /\d{2}:\d{2}/,
+    message: 'El formato de hora debe ser HH:MM'
+  }
+  
 });
 
 const grupoSchema = new mongoose.Schema({
