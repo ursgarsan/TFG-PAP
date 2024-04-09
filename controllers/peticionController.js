@@ -23,7 +23,6 @@ exports.createPeticion = async (req, res) => {
       const grupos = await Grupo.find();
       const errorObj = errors.array().reduce((acc, error) => {
         acc[error.path] = { msg: error.msg };
-        console.log(acc);
         return acc;
       }, {});
       return res.render('create/createPeticion', { title: 'Agregar Nueva Petición', data: req.body, errors: errorObj, profesores, grupos });      
