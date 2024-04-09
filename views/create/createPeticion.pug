@@ -6,8 +6,11 @@ block content
   form(id="peticionForm", action="/peticiones/create", method="post")
     label(for="profesor") Docente:
     select(id="profesor", name="profesor", class=`form-select ${errors && errors.profesor ? 'error-input' : ''}`)
-      option(value="", selected)= ''
+      - if (!data.profesor)
+        option(value="", selected)= ''
       each profesor in profesores
+        - if (data.profesor == profesor._id)
+          option(value=data.profesor, selected)= profesor.uvus
         option(value=profesor._id)= profesor.uvus
     br
     if errors && errors.profesor
@@ -15,8 +18,11 @@ block content
 
     label(for="grupo") Grupo:
     select(id="grupo", name="grupo", class=`form-select ${errors && errors.grupo ? 'error-input' : ''}`)
-      option(value="", selected)= ''
+      - if (!data.grupo)
+        option(value="", selected)= ''
       each grupo in grupos
+        - if (data.grupo == grupo._id)
+          option(value=data.grupo, selected)= grupo.grupo
         option(value=grupo._id)= grupo.grupo
     br
     if errors && errors.grupo
