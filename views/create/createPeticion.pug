@@ -5,23 +5,33 @@ block content
 
   form(id="peticionForm", action="/peticiones/create", method="post")
     label(for="profesor") Docente:
-    select(id="profesor", name="profesor", required)
+    select(id="profesor", name="profesor", class=`form-select ${errors && errors.profesor ? 'error-input' : ''}`)
+      option(value="", selected)= ''
       each profesor in profesores
         option(value=profesor._id)= profesor.uvus
     br
+    if errors && errors.profesor
+      p.error-message= errors.profesor.msg
 
     label(for="grupo") Grupo:
-    select(id="grupo", name="grupo", required)
+    select(id="grupo", name="grupo", class=`form-select ${errors && errors.grupo ? 'error-input' : ''}`)
+      option(value="", selected)= ''
       each grupo in grupos
         option(value=grupo._id)= grupo.grupo
     br
+    if errors && errors.grupo
+      p.error-message= errors.grupo.msg
 
     label(for="orden") Orden:
-    input(type="text", id="orden", name="orden", required)
+    input(type="text", id="orden", name="orden", class=`form-control ${errors && errors.orden ? 'error-input' : ''}`, value= data.orden ? data.orden : "")
     br
+    if errors && errors.orden
+      p.error-message= errors.orden.msg
 
     label(for="curso") Curso:
-    input(type="text", id="curso", name="curso", required)
+    input(type="text", id="curso", name="curso", class=`form-control ${errors && errors.curso ? 'error-input' : ''}`, value= data.curso ? data.curso : "")
     br
+    if errors && errors.curso
+      p.error-message= errors.curso.msg
 
-    button(type="submit") Crear Petición
+    button(type="submit", class="btn btn-primary") Crear Petición
