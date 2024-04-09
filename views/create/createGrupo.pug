@@ -36,9 +36,13 @@ block content
 
     label(for="asignatura_id") Asignatura:
     select(id="asignatura_id", name="asignatura_id", class=`form-select ${errors && errors.asignatura_id ? 'error-input' : ''}`)
-      option(value="", selected)= ''
+      - if (!data.asignatura_id)
+        option(value="", selected)= ''
       each asignatura in asignaturas
+        - if (data.asignatura_id == asignatura._id)
+          option(value=data.asignatura_id, selected)= asignatura.nombre
         option(value=asignatura._id)= asignatura.nombre
+
     br
     if errors && errors.asignatura_id
       p.error-message= errors.asignatura_id.msg 
