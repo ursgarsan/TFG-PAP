@@ -8,8 +8,14 @@ block content
         form(action="/auth/login", method="POST")
           .form-group
             label(for="usuario") Usuario:
-            input(type="text", id="usuario", name="usuario", class="form-control", required)
+            input(type="text", name="usuario", class=`form-control ${errors && errors.user ? 'error-input' : ''}`, value= data.usuario ? data.usuario : "")
+            br
+            if errors && errors.user
+              p.error-message=errors.user
           .form-group
             label(for="pass") Contraseña:
-            input(type="password", id="pass", name="pass", class="form-control", required)
+            input(type="password", name="pass", class=`form-control ${errors && errors.pass ? 'error-input' : ''}`, value= data.pass ? data.pass : "")
+            br
+            if errors && errors.pass
+              p.error-message=errors.pass
           button.btn.btn-primary.btn-block(type="submit") Iniciar sesión

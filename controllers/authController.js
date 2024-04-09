@@ -2,29 +2,41 @@ const bcrypt = require('bcrypt');
 const Admin = require('../models/adminModel');
 
 exports.loginForm = (req, res) => {
-  res.render('login/loginForm', { title: 'Iniciar sesión' });
+  const data = req.body;
+  res.render('login/loginForm', { title: 'Iniciar sesión', data });
 };
 
 exports.login = async (req, res) => {
   const { usuario, pass } = req.body;
+  const errors = {}; // Objeto para almacenar los errores
+
   try {
     const admin = await Admin.findOne({ usuario });
     if (!admin) {
-      return res.status(401).json({ message: 'Usuario no encontrado' });
+      errors.user = 'Usuario no encontrado';
+    } else {
+      const contraseñaValida = await bcrypt.compare(pass, admin.pass);
+      if (!contraseñaValida) {
+        errors.pass = 'Contraseña incorrecta';
+      } else {
+        req.session.adminId = admin._id;
+        return res.redirect('/');
+      }
     }
-
-    const contraseñaValida = await bcrypt.compare(pass, admin.pass);
-    if (!contraseñaValida) {
-      return res.status(401).json({ message: 'Contraseña incorrecta' });
-    }
-
-    req.session.adminId = admin._id;
-    res.redirect('/');
   } catch (error) {
     console.error('Error al iniciar sesión:', error);
-    res.status(500).json({ message: 'Error interno del servidor' });
+    return res.status(500).json({ message: 'Error interno del servidor' });
   }
+
+  res.render('login/loginForm', { title: 'Iniciar sesión', data: req.body, errors });
 };
+
+exports.logout = (req, res) => {
+  req.session.destroy();
+  res.redirect('/');
+};
+
+
 
 exports.logout = (req, res) => {
   req.session.destroy();
