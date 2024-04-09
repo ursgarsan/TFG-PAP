@@ -1,5 +1,6 @@
 const Asignatura = require('../models/asignaturaModel');
 const Grupo = require('../models/grupoModel');
+const { validationResult } = require('express-validator');
 
 exports.getAllAsignaturas = async (req, res) => {
     try {
@@ -30,7 +31,8 @@ exports.getAllAsignaturas = async (req, res) => {
 
 exports.createForm = async (req, res) => {
   try {
-    res.render('create/createAsignatura', { title: 'Agregar Nueva Asignatura' });
+    const data = req.body;
+    res.render('create/createAsignatura', { title: 'Agregar Nueva Asignatura', data });
   } catch (error) {
     console.error('Error al renderizar formulario:', error);
     res.status(500).json({ message: 'Error interno del servidor' });
@@ -38,7 +40,16 @@ exports.createForm = async (req, res) => {
 };
 
 exports.createAsignatura = async (req, res) => {
+  const errors = validationResult(req);
   try {
+    if (!errors.isEmpty()) {
+      const errorObj = errors.array().reduce((acc, error) => {
+        acc[error.path] = { msg: error.msg };
+        return acc;
+      }, {});
+      return res.render('create/createAsignatura', { title: 'Agregar Nueva Asignatura', data: req.body, errors: errorObj });
+    }
+
     const { nombre, titulacion, codigo, acronimo, curso } = req.body;
     const nuevaAsignatura = new Asignatura({ nombre, titulacion, codigo, acronimo, curso });
     await nuevaAsignatura.save();
@@ -48,4 +59,5 @@ exports.createAsignatura = async (req, res) => {
     res.status(500).json({ message: 'Error interno del servidor' });
   }
 };
+
   
