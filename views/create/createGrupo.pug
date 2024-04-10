@@ -1,8 +1,6 @@
-extends ../layout
+extends ../layout-form
 
-block content
-  h1= title
-
+block formContent
   form(id="grupoForm", action="/grupos/create", method="POST")
     label(for="tipo") Tipo:
     input(type="text", id="tipo", name="tipo", class=`form-control ${errors && errors.tipo ? 'error-input' : ''}`, value= data.tipo ? data.tipo : "")
