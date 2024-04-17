@@ -9,6 +9,7 @@ const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
 const gruposRoutes = require('./routes/grupoRoutes');
 const peticionesRoutes = require('./routes/peticionRoutes');
+const asignacionesRoutes = require('./routes/asignacionRoutes');
 const authRoutes = require('./routes/authRoutes');
 const xlsxUploader = require('./upload/xlsxUploader');
 
@@ -74,6 +75,7 @@ app.use('/profesores', profesoresRoutes);
 app.use('/asignaturas', asignaturasRoutes);
 app.use('/grupos', gruposRoutes);
 app.use('/peticiones', peticionesRoutes);
+app.use('/asignaciones', asignacionesRoutes);
 app.use('/auth', authRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
