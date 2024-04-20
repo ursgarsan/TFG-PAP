@@ -1,8 +1,6 @@
-extends ../layout
+extends ../layout-form
 
-block content
-  h1= title
-
+block formContent
   form(id="peticionForm", action="/peticiones/create", method="post")
     label(for="profesor") Docente:
     select(id="profesor", name="profesor", class=`form-select ${errors && errors.profesor ? 'error-input' : ''}`)

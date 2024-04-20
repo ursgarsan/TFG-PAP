@@ -1,7 +1,6 @@
-extends ../layout
+extends ../layout-form
 
-block content
-  h1 Agregar Nueva Asignatura
+block formContent
   form(action="/asignaturas/create", method="post")
     label(for="nombre") Nombre:
     input(type="text", name="nombre", class=`form-control ${errors && errors.nombre ? 'error-input' : ''}`, value= data.nombre ? data.nombre : "")

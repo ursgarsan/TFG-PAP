@@ -1,7 +1,6 @@
-extends ../layout
+extends ../layout-form
 
-block content
-  h1 Agregar Nuevo Profesor
+block formContent
   form(action="/profesores/create", method="post")
     label(for="orden") Orden:
     input(type="number", name="orden", required)

@@ -10,7 +10,6 @@
 /* BARRA DE NAVEGACIÓN */
 .bg-custom {
   background-color: var(--azul-medio);
-  margin-bottom: 2dvh;
 }
 
 .btn-search-custom {
@@ -38,6 +37,18 @@
 .nav-item {
   display: flex;
   align-items: center;
+}
+
+.navbar-height {
+  height: 8vh;
+}
+
+.main-content {
+  min-height: 84vh;
+}
+
+.footer-height {
+  height: 8vh;
 }
 
 /* CONTENIDO */
@@ -116,4 +127,22 @@ table td {
   margin-top: -1.8em;
   text-align: right;
 }
+
+/* LAYOUT-FORM */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 84vh;
+}
+
+.form-content {
+  padding: 4vh;
+  margin: 4vh;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 
