@@ -18,7 +18,7 @@ block content
           td= profesor.uvus
           td= profesor.capacidad
   div.button-container
-    a.btn.btn-primary#btnDescargar(href='/plantillas/profesoresPlantilla.xlsx', download='profesoresPlantilla.xlsx') Descargar plantilla para cargar profesores
+    a.btn.btn-primary#btnDescargar(href='/upload/plantillas/profesoresPlantilla.xlsx', download='profesoresPlantilla.xlsx') Descargar plantilla para cargar profesores
   
   div.button-container
     form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
