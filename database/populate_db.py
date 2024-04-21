@@ -44,7 +44,7 @@ for indice,fila in datos_prof.iterrows():
         'nombre': nombre,
         'apellidos': apellidos,
         'uvus': fila[2],
-        'capacidad': capacidades[indice + 11]
+        'capacidad': float(capacidades[indice + 11])
     }
     prof_colecc.insert_one(profesor)
 
@@ -124,7 +124,7 @@ for indice, fila in asignaturas.iterrows():
         'tipo': tipo,
         'grupo': fila[5],
         'cuatrimestre': fila[6],
-        'acreditacion': fila[7],
+        'acreditacion': float(fila[7]),
         'curso': '2023-2024'
     }
 
