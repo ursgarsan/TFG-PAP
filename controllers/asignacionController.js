@@ -90,5 +90,10 @@ async function conflictoHorario(grupo1, grupo2) {
     return false; // no hay solapamiento horario
 }
 
+// hay que hacer una funcion que compruebe si es apto o no el docente respecto a créditos (si se pasa por debajo por encima en limites o de los creditos del cuatrimestre)
 
+// mas que asignaciones igual haria una lista de grupos que se le van a asignar y que pasen por aqui aunque también puedo ir haciendo asignaciones y guardarlas al final las definitivas
+async function condicionesNecesarias(docente, grupo, asignaciones) {
+// aquí hay que comprobar si no hay conflicto ni de horario ni de creditos con la funcion que hay que hacer arriba
 
+}

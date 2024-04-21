@@ -3,7 +3,7 @@ extends ../layout
 block content
   h1 Listado de Asignaturas
 
-  table#tablaData.table.table-striped(style='table-layout: auto;')
+  table#tablaData.table.table-striped
     thead
       tr
         th(scope='col') Código
@@ -20,7 +20,7 @@ block content
           td= asignatura.titulacion
 
   div.button-container
-    a.btn.btn-primary#btnDescargar(href='/upload/plantillas/profesoresPlantilla.xlsx', download='asignaturasPlantilla.xlsx') Descargar plantilla para cargar asignaturas
+    a.btn.btn-primary#btnDescargar(href='/upload/plantillas/asignaturasPlantilla.xlsx', download='asignaturasPlantilla.xlsx') Descargar plantilla para cargar asignaturas
 
   div.button-container
     form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
