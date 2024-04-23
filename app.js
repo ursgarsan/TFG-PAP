@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const crypto = require('crypto');
 const Profesor = require('./models/profesorModel');
+const { requireAdmin } = require('./utils/authUtils');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');
@@ -70,7 +71,7 @@ app.get('/', (req, res) => {
 });
 
 // Rutas para otras funcionalidades
-app.post('/upload', xlsxUploader);
+app.post('/upload', requireAdmin, xlsxUploader);
 app.use('/profesores', profesoresRoutes);
 app.use('/asignaturas', asignaturasRoutes);
 app.use('/grupos', gruposRoutes);
