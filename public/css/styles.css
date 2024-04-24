@@ -44,7 +44,11 @@ body {
 }
 
 .btn {
-  font-size: 1.5vmax;
+  font-size: 2vh;
+}
+
+.btn-no-border {
+  border: none;
 }
 
 /* CONTENIDO */
@@ -111,6 +115,12 @@ table td {
   color: inherit;
 }
 
+.dropdown-menu {
+  max-height: 50vh;
+  overflow-y: auto;
+  position: absolute;
+}
+
 /* MENSAJES DE ERROR */
 .error-input {
   border-bottom: 1px solid red;
@@ -139,15 +149,13 @@ table td {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (min-width: 600px) {
-
-}
-
 @media only screen and (min-width: 1000px) {
-  /* Tus estilos aquí */
-}
-
-@media only screen and (min-width: 1300px) {
-  /* Tus estilos aquí */
+  .btn {
+    font-size: 2.5vh;
+  }
+  body {
+    font-size: 2.5vh;
+    overflow-x: hidden;
+  }
 }
 

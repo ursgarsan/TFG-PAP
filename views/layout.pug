@@ -27,11 +27,6 @@ html
               a.nav-link(href='/asignaturas') Asignaturas
             li.nav-item
               a.nav-link(href='/profesores') Profesores
-            li.nav-item
-              if isAdminLoggedIn
-                a.nav-link(href='/auth/logout') Cerrar Administrador
-              else
-                a.nav-link(href='/auth/login') Iniciar Administrador
             if !isAdminLoggedIn
               li.nav-item
                 ul.nav-item.dropdown
@@ -43,8 +38,15 @@ html
                         a.dropdown-item(href='/' onclick='setSelectedUVUS("' + uvus + '")')= uvus
                   li.nav-item
                     span#selectedUVUSPlaceholder.nav-link.disabled
-                  li.nav-item
-                    button.btn.btn-outline-secondary.ml-2(type='button', onclick='clearSelectedUVUS()') Borrar UVUS
+                  if selectedUVUS
+                    li.nav-item
+                      button.btn.btn-no-border.ml-2(type='button', onclick='clearSelectedUVUS()')
+                        i.bi.bi-eraser
+              li.nav-item
+                a.btn.btn-outline-secondary.ml-2(type='button', href='/auth/login') Iniciar Administrador
+            else
+              li.nav-item
+                a.btn.btn-outline-secondary.ml-2(type='button', href='/auth/logout', onclick='clearSelectedUVUS()') Cerrar Administrador
 
     .container-fluid.main-content
       block content
