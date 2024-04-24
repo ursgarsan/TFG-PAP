@@ -10,30 +10,33 @@ block content
 
   h2 Grupos
   if asignatura.grupos.length > 0
-    table#tablaData.table.table-striped
-      thead
-        tr
-          th(scope='col') Tipo
-          th(scope='col') Grupo
-          th(scope='col') Cuatrimestre
-          th(scope='col') Acreditación
-          th(scope='col') Horario
-      tbody
-        each grupo in grupos
+    .table-container
+      table#tablaData.table.table-striped
+        thead
           tr
-            td= grupo.tipo
-            td= grupo.grupo
-            td= grupo.cuatrimestre
-            td= grupo.acreditacion
-            td
-              each horarioItem in grupo.horario
-                p
-                  | Día(s): #{horarioItem.dias.join(', ')}
-                  br
-                  | Horario: #{horarioItem.hora_inicio} a #{horarioItem.hora_fin}
-
-  else
-    p No hay grupos asociados a esta asignatura.
+            th(scope='col') Tipo
+            th(scope='col') Grupo
+            th(scope='col') Cuat.
+            th(scope='col') Cred.
+            th(scope='col') Horario
+        tbody
+          if grupos.length > 0
+            each grupo in grupos
+              tr
+                td= grupo.tipo
+                td= grupo.grupo
+                td= grupo.cuatrimestre
+                td= grupo.acreditacion
+                td
+                  each horarioItem in grupo.horario
+                    p
+                      span.underline Día(s):
+                      | #{horarioItem.dias.join(', ')}
+                      br
+                      span.underline Horario:
+                      | #{horarioItem.hora_inicio} a #{horarioItem.hora_fin}
+          else
+            p No hay grupos asociados a esta asignatura.
 
   if isAdminLoggedIn
     div.button-container

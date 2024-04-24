@@ -2,21 +2,21 @@ extends ../layout
 
 block content
   h1 Listado de Profesores
-
-  table#tablaData.table.table-striped
-    thead
-      tr
-        th(scope='col') Nombre
-        th(scope='col') Apellidos
-        th(scope='col') UVUS
-        th(scope='col') Capacidad
-    tbody
-      each profesor in profesores
+  .table-container
+    table#tablaData.table.table-striped
+      thead
         tr
-          td= profesor.nombre
-          td= profesor.apellidos
-          td= profesor.uvus
-          td= profesor.capacidad
+          th(scope='col') Nombre
+          th(scope='col') Apellidos
+          th(scope='col') UVUS
+          th(scope='col') Capacidad
+      tbody
+        each profesor in profesores
+          tr
+            td= profesor.nombre
+            td= profesor.apellidos
+            td= profesor.uvus
+            td= profesor.capacidad
   if isAdminLoggedIn
     div.button-container
       a.btn.btn-primary#btnDescargar(href='/upload/plantillas/profesoresPlantilla.xlsx', download='profesoresPlantilla.xlsx') Descargar plantilla para cargar profesores

@@ -31,8 +31,12 @@
 }
 
 body {
-  font-size: 1.5vmax;
+  font-size: 2vh;
   overflow-x: hidden;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .navbar-brand {
@@ -65,9 +69,13 @@ h1 {
 }
 
 /* TABLAS */
+.table-container {
+  overflow-x: auto;
+}
+
 table {
   border-collapse: collapse;
-  width: 100%;
+  max-width: 100%;
 }
 
 table th,
@@ -130,3 +138,16 @@ table td {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 1000px) {
+  /* Tus estilos aquí */
+}
+
+@media only screen and (min-width: 1300px) {
+  /* Tus estilos aquí */
+}
+
