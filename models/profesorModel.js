@@ -5,7 +5,9 @@ const profesorSchema = new mongoose.Schema({
   nombre: String,
   apellidos: String,
   uvus: String,
-  capacidad: Number
+  capacidad: Number,
+  asignados: Number,
+  excedente: Number
 });
 
 const Profesor = mongoose.model('profesores', profesorSchema);
