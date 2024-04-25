@@ -195,6 +195,7 @@ function darGrupo(grupo, profesor) {
     }
 }
 
+// asigna las peticiones que pueda en orden mirando que cumplan las condiciones de creditos y horarios
 function asignacionPeticiones () {
     for (const peticion of peticiones) {
         const profesor = peticion.profesor;
