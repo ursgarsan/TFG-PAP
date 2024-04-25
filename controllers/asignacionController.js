@@ -4,12 +4,14 @@ const Peticion = require('../models/peticionModel');
 const Asignacion = require('../models/asignacionModel');
 
 let index = 0;
+let limCuatrimestre = 12;
 let asignaciones = [];
 let peticiones;
 let profesores;
+let gruposPendientes;
 
 (async function() {
-    ({ peticiones, profesores } = await getData('2023-2024'));
+    ({ peticiones, profesores, gruposPendientes } = await getData('2023-2024'));
 })();
 
 
@@ -37,8 +39,10 @@ async function getData(curso) {
     let profesoresRaw = await Profesor.find();
     profesoresRaw = profesoresRaw.sort((a, b) => a.orden - b.orden);
     const peticionesRaw = await Peticion.find();
+    const gruposRaw = await Grupo.find()
     let peticiones = [];
     let profesores = [];
+    let gruposPendientes = gruposRaw.map(grupo => grupo._id);
     let orden = 0;
 
     for (const profesor of profesoresRaw) {
@@ -67,7 +71,7 @@ async function getData(curso) {
         }
     }
 
-    return { peticiones, profesores };
+    return { peticiones, profesores, gruposPendientes };
 }
 
 function grupoOnline(grupo) {
@@ -169,13 +173,13 @@ function conflictoCreditosCuatrimestre(grupo, profesor) {
     switch (grupo.cuatrimestre) {
         case 1:
             const c1 = grupo.acreditacion + profesor.creditos1;
-            if (c1 > 12) {
+            if (c1 > limCuatrimestre) {
                 return true;
             }
             break;
         case 2:
             const c2 = grupo.acreditacion + profesor.creditos2;
-            if (c2 > 12) {
+            if (c2 > limCuatrimestre) {
                 return true;
             }
             break;
@@ -195,17 +199,53 @@ function darGrupo(grupo, profesor) {
     }
 }
 
+// asigna un grupo a un profesor si cumple las condiciones
+function asignarGrupoSiEsPosible(profesor, grupo) {
+    const existeAsignacion = asignaciones.find(asignacion => asignacion.grupo === grupo);
+    if (!existeAsignacion) {
+        if (darGrupo(grupo, profesor) && !conflictoCreditosCuatrimestre(grupo, profesor) && !conflictoHorario(grupo, profesor)) {
+            const asignacion = crearAsignacionObj(profesor, grupo, index++);
+            asignaciones.push(asignacion);
+            // si se asigna un grupo se quita de los pendientes
+            gruposPendientes = gruposPendientes.filter(id => id !== grupo._id);                
+        }
+    }
+}
+
 // asigna las peticiones que pueda en orden mirando que cumplan las condiciones de creditos y horarios
 function asignacionPeticiones () {
     for (const peticion of peticiones) {
         const profesor = peticion.profesor;
         const grupo = peticion.grupo;
-        if (darGrupo(grupo, profesor) && !conflictoCreditosCuatrimestre(grupo, profesor) && !conflictoHorario(grupo, profesor)) {
-            const existeAsignacion = asignaciones.find(asignacion => asignacion.grupo === grupo);
-            if (!existeAsignacion) {
-                const asignacion = crearAsignacionObj(profesor, grupo, index++);
-                asignaciones.push(asignacion);
-            }
+        asignarGrupoSiEsPosible(profesor, grupo);
+    }
+}
+
+// asigna los grupos que han sobrado a profesores que cumplan todas las condiciones
+function asignacionGruposRestantes () {
+    for (const profesor of profesores) {
+        for (const grupo of gruposPendientes) {
+            asignarGrupoSiEsPosible(profesor, grupo);
         }
     }
+}
+
+function asignacionBack() {
+
+    
+}
+
+
+
+// función principal que va a devolver una lista con las asignaciones definitivas
+function generaAsignaciones () {
+    asignacionPeticiones();
+    if(gruposPendientes.length == 0) {
+        return;
+    }
+    asignacionGruposRestantes();
+    if (gruposPendientes.length == 0) {
+        return;
+    }
+    asignacionBack();
 }
