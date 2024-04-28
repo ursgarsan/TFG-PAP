@@ -119,14 +119,9 @@ for indice, fila in asignaturas.iterrows():
         horario.append(fila[9])
     if not pd.isnull(fila[10]):
         horario.append(fila[10])
-
-    if fila[4] in ['Turno 1', 'Turno 2']:
-        tipo = fila[4]
-    else:
-        tipo = 'Teoría' if fila[4] in ['A', 'B'] else 'Laboratorio'
     
     grupo = {
-        'tipo': tipo,
+        'tipo': fila[4],
         'grupo': fila[5],
         'cuatrimestre': fila[6],
         'acreditacion': float(fila[7]),
@@ -155,14 +150,9 @@ for i in range(7, 554):
     for j in range(11, 100):
         if pd.notnull(peticiones.iloc[i, j]):
             nombre,apellidos = formatNombre(peticiones.iloc[0, j])
-            profesor_correspondiente = prof_colecc.find_one({'nombre': str(nombre)})
-
-            if peticiones.iloc[i, 4] in ['Turno 1', 'Turno 2']:
-                tipo = peticiones.iloc[i, 4]
-            else:
-                tipo = 'Teoría' if peticiones.iloc[i, 4] in ['A', 'B'] else 'Laboratorio'
+            profesor_correspondiente = prof_colecc.find_one({'nombre': str(nombre), 'apellidos': str(apellidos)})
             asignatura_correspondiente = asign_colecc.find_one({'codigo': str(peticiones.iloc[i,1])})
-            grupo_correspondiente = grupo_colecc.find_one({'tipo': tipo, 'grupo': peticiones.iloc[i, 5], 'acreditacion': float(peticiones.iloc[i, 7]), 'curso': '2023-2024', 'asignatura_id': asignatura_correspondiente['_id']})
+            grupo_correspondiente = grupo_colecc.find_one({'tipo': peticiones.iloc[i, 4], 'grupo': peticiones.iloc[i, 5], 'acreditacion': float(peticiones.iloc[i, 7]), 'curso': '2023-2024', 'asignatura_id': asignatura_correspondiente['_id']})
             peticion = {
             'profesor': profesor_correspondiente['_id'],
             'grupo': grupo_correspondiente['_id'],
