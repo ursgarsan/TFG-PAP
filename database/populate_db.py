@@ -1,6 +1,7 @@
 import pandas as pd
 import bcrypt
 from pymongo import MongoClient
+from datetime import datetime
 
 client = MongoClient('localhost', 27017)
 db_name = 'PAP'
@@ -14,9 +15,11 @@ admin_colecc = db['administradores']
 prof_colecc = db['profesores']
 asign_colecc = db['asignaturas']
 grupo_colecc = db['grupos']
+peticion_colecc = db['peticiones']
 
 datos_prof = pd.read_excel("database/data/infoProf.xlsx", usecols=[0, 1, 2, 3], header=None)
 datos_dep = pd.read_excel("database/data/infoDep.xlsx", header=None)
+datos_pet = pd.read_excel("database/data/infoDepLleno.xlsx", header=None)
 
 def generar_hash_contraseña(contraseña_plana):
     return bcrypt.hashpw(contraseña_plana.encode('utf-8'), bcrypt.gensalt())
@@ -145,5 +148,28 @@ for indice, fila in asignaturas.iterrows():
         )
     else:
         print(f"No se pudo encontrar la asignatura correspondiente al codigo '{fila[1]}' para el grupo '{fila[5]}'")
-
 print("Datos insertados en 'grupos' de la base de datos 'PAP'.")
+
+peticiones = datos_pet
+for i in range(7, 554):
+    for j in range(11, 100):
+        if pd.notnull(peticiones.iloc[i, j]):
+            nombre,apellidos = formatNombre(peticiones.iloc[0, j])
+            profesor_correspondiente = prof_colecc.find_one({'nombre': str(nombre)})
+
+            if peticiones.iloc[i, 4] in ['Turno 1', 'Turno 2']:
+                tipo = peticiones.iloc[i, 4]
+            else:
+                tipo = 'Teoría' if peticiones.iloc[i, 4] in ['A', 'B'] else 'Laboratorio'
+            asignatura_correspondiente = asign_colecc.find_one({'codigo': str(peticiones.iloc[i,1])})
+            grupo_correspondiente = grupo_colecc.find_one({'tipo': tipo, 'grupo': peticiones.iloc[i, 5], 'acreditacion': float(peticiones.iloc[i, 7]), 'curso': '2023-2024', 'asignatura_id': asignatura_correspondiente['_id']})
+            peticion = {
+            'profesor': profesor_correspondiente['_id'],
+            'grupo': grupo_correspondiente['_id'],
+            'orden': peticiones.iloc[i, j],
+            'status': 'solicitado',
+            'createdAt': datetime.now(),
+            'curso': '2023-2024'
+            }
+            peticion_colecc.insert_one(peticion)
+print("Datos insertados en 'peticiones' de la base de datos 'PAP'.")
