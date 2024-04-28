@@ -9,9 +9,11 @@ let asignaciones = [];
 let peticiones;
 let profesores;
 let gruposPendientes;
+let numGrupos;
+let numProf;
 
 (async function() {
-    ({ peticiones, profesores, gruposPendientes } = await getData('2023-2024'));
+    ({ peticiones, profesores, gruposPendientes, numGrupos, numProf } = await getData('2023-2024'));
 })();
 
 
@@ -23,7 +25,9 @@ exports.createAsignaciones = async (req, res) => {
     // const asignaciones = await asignarGrupos(profesores, grupos);
     // for (const asignacion of asignaciones) {
     //     await asignacion.save();
-    // }
+    // }  
+    await generaAsignaciones();
+    // console.log(gruposPendientes);
     res.render('list/asignaciones', { title });
 }
 
@@ -38,11 +42,13 @@ function crearAsignacionObj(profesor, grupo, index) {
 async function getData(curso) {
     let profesoresRaw = await Profesor.find();
     profesoresRaw = profesoresRaw.sort((a, b) => a.orden - b.orden);
+    let numProf = profesoresRaw.length;
     const peticionesRaw = await Peticion.find();
-    const gruposRaw = await Grupo.find()
+    const gruposRaw = await Grupo.find();
+    let numGrupos = gruposRaw.length;
     let peticiones = [];
     let profesores = [];
-    let gruposPendientes = gruposRaw.map(grupo => grupo._id);
+    let gruposPendientes = gruposRaw.map(grupo => grupo._id.toString());
     let orden = 0;
 
     for (const profesor of profesoresRaw) {
@@ -71,7 +77,7 @@ async function getData(curso) {
         }
     }
 
-    return { peticiones, profesores, gruposPendientes };
+    return { peticiones, profesores, gruposPendientes, numGrupos, numProf };
 }
 
 function grupoOnline(grupo) {
@@ -200,52 +206,67 @@ function darGrupo(grupo, profesor) {
 }
 
 // asigna un grupo a un profesor si cumple las condiciones
-function asignarGrupoSiEsPosible(profesor, grupo) {
+async function asignarGrupoSiEsPosible(profesor, grupo) {
     const existeAsignacion = asignaciones.find(asignacion => asignacion.grupo === grupo);
     if (!existeAsignacion) {
         if (darGrupo(grupo, profesor) && !conflictoCreditosCuatrimestre(grupo, profesor) && !conflictoHorario(grupo, profesor)) {
             const asignacion = crearAsignacionObj(profesor, grupo, index++);
             asignaciones.push(asignacion);
             // si se asigna un grupo se quita de los pendientes
-            gruposPendientes = gruposPendientes.filter(id => id !== grupo._id);                
+            gruposPendientes = gruposPendientes.filter(id => id !== grupo._id.toString());              
         }
     }
 }
 
 // asigna las peticiones que pueda en orden mirando que cumplan las condiciones de creditos y horarios
-function asignacionPeticiones () {
+async function asignacionPeticiones () {
     for (const peticion of peticiones) {
         const profesor = peticion.profesor;
         const grupo = peticion.grupo;
-        asignarGrupoSiEsPosible(profesor, grupo);
+        await asignarGrupoSiEsPosible(profesor, grupo);
     }
 }
 
 // asigna los grupos que han sobrado a profesores que cumplan todas las condiciones
-function asignacionGruposRestantes () {
-    for (const profesor of profesores) {
-        for (const grupo of gruposPendientes) {
-            asignarGrupoSiEsPosible(profesor, grupo);
+async function asignacionGruposRestantes() {
+    let intentos = 0;
+    const maxIntentos = (numGrupos ** numGrupos) * numProf;
+
+    for (let i = 0; i < gruposPendientes.length; i++) {
+        const grupo = await Grupo.findById(gruposPendientes[i]);
+        let asignado = false;
+
+        for (const profesor of profesores) {
+            if (asignarGrupoSiEsPosible(profesor, grupo)) {
+                asignado = true;
+                break;
+            }
+        }
+
+        if (!asignado && asignaciones.length > 0) {
+            const ultimaAsignacion = asignaciones.pop();
+            gruposPendientes.push(ultimaAsignacion.grupo._id.toString());
+            i--;
+            intentos++;
+        }
+
+        if (intentos >= maxIntentos) {
+            console.log('ha llegado al máximo de intentos');
+            break;
         }
     }
 }
 
-function asignacionBack() {
-
-    
-}
-
-
-
 // función principal que va a devolver una lista con las asignaciones definitivas
-function generaAsignaciones () {
-    asignacionPeticiones();
+async function generaAsignaciones () {
+    await asignacionPeticiones();
+    console.log(gruposPendientes.length)
     if(gruposPendientes.length == 0) {
         return;
     }
-    asignacionGruposRestantes();
-    if (gruposPendientes.length == 0) {
-        return;
-    }
-    asignacionBack();
+    await asignacionGruposRestantes();
+    console.log(gruposPendientes.length)
+    // if (gruposPendientes.length == 0) {
+    //     return;
+    // }
 }
