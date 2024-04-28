@@ -213,9 +213,11 @@ async function asignarGrupoSiEsPosible(profesor, grupo) {
             const asignacion = crearAsignacionObj(profesor, grupo, index++);
             asignaciones.push(asignacion);
             // si se asigna un grupo se quita de los pendientes
-            gruposPendientes = gruposPendientes.filter(id => id !== grupo._id.toString());              
+            gruposPendientes = gruposPendientes.filter(id => id !== grupo._id.toString()); 
+            return true;             
         }
     }
+    return false;
 }
 
 // asigna las peticiones que pueda en orden mirando que cumplan las condiciones de creditos y horarios
@@ -231,8 +233,9 @@ async function asignacionPeticiones () {
 async function asignacionGruposRestantes() {
     let intentos = 0;
     const maxIntentos = (numGrupos ** numGrupos) * numProf;
+    let i = 0;
 
-    for (let i = 0; i < gruposPendientes.length; i++) {
+    while (i < gruposPendientes.length && intentos < maxIntentos) {
         const grupo = await Grupo.findById(gruposPendientes[i]);
         let asignado = false;
 
@@ -246,8 +249,9 @@ async function asignacionGruposRestantes() {
         if (!asignado && asignaciones.length > 0) {
             const ultimaAsignacion = asignaciones.pop();
             gruposPendientes.push(ultimaAsignacion.grupo._id.toString());
-            i--;
             intentos++;
+        } else {
+            i++;
         }
 
         if (intentos >= maxIntentos) {
