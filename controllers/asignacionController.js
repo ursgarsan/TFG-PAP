@@ -21,17 +21,16 @@ let numProf;
 exports.createAsignaciones = async (req, res) => {
     const title = 'Asignaciones';
 
-    // hay que añadir tambien los atributos que faltan de las asignaciones, hay que mirar el modelo
+    // hay que añadir tambien los atributos que faltan de las asignaciones, hay que mirar el modelo y también hay que actualizar los profesores
     // const asignaciones = await asignarGrupos(profesores, grupos);
     // for (const asignacion of asignaciones) {
     //     await asignacion.save();
     // }  
     await generaAsignaciones();
-    // console.log(gruposPendientes);
     res.render('list/asignaciones', { title });
 }
 
-function crearAsignacionObj(profesor, grupo, index) {
+async function crearAsignacionObj(profesor, grupo, index) {
     return {
         profesor: profesor,
         grupo: grupo,
@@ -80,11 +79,11 @@ async function getData(curso) {
     return { peticiones, profesores, gruposPendientes, numGrupos, numProf };
 }
 
-function grupoOnline(grupo) {
+async function grupoOnline(grupo) {
     return !grupo.horario || (Array.isArray(grupo.horario) && grupo.horario.length === 0);
 }
 
-function formatHorario(horario) {
+async function formatHorario(horario) {
     const [horaStr, minutoStr] = horario.split(":");
     const hora = parseInt(horaStr);
     const minuto = parseInt(minutoStr);
@@ -92,14 +91,14 @@ function formatHorario(horario) {
 }
 
 // comprueba si existen conflictos entre dos grupos
-function conflictoHorarioEntreGrupos(grupo1, grupo2) {
+async function conflictoHorarioEntreGrupos(grupo1, grupo2) {
     // si son de distintos cuatrimestres no hay conflictos
     if (grupo1.cuatrimestre != grupo2.cuatrimestre) {
         return false;
     }
 
     // si al menos una de las dos es online no hay conflicto
-    if (grupoOnline(grupo1) || grupoOnline(grupo2)) {
+    if (await grupoOnline(grupo1) || await grupoOnline(grupo2)) {
         return false;
     }
 
@@ -129,10 +128,10 @@ function conflictoHorarioEntreGrupos(grupo1, grupo2) {
             if (horario1.dias.includes(dia)) {
                 for (const horario2 of grupo2.horario) {
                     if (horario2.dias.includes(dia)) {
-                        const inicio1 = formatHorario(horario1.hora_inicio);
-                        const inicio2 = formatHorario(horario2.hora_inicio);
-                        const fin1 = formatHorario(horario1.hora_fin);
-                        const fin2 = formatHorario(horario2.hora_fin);
+                        const inicio1 = await formatHorario(horario1.hora_inicio);
+                        const inicio2 = await formatHorario(horario2.hora_inicio);
+                        const fin1 = await formatHorario(horario1.hora_fin);
+                        const fin2 = await formatHorario(horario2.hora_fin);
 
                         if (
                             (inicio1 <= inicio2 && inicio2 < fin1) ||
@@ -151,13 +150,13 @@ function conflictoHorarioEntreGrupos(grupo1, grupo2) {
     return false; // no hay solapamiento horario
 }
 
-function filtroPorProfesor(profesorId) {
+async function filtroPorProfesor(profesorId) {
     return asignaciones.filter(a => a.profesor._id.equals(profesorId));
 }
 
 // comprueba si existe un conflicto horario entre las asignaciones del profesor y el grupo a asignar
-function conflictoHorario(grupo, profesor) {
-    const asignacionesProf = filtroPorProfesor(profesor._id);
+async function conflictoHorario(grupo, profesor) {
+    const asignacionesProf = await filtroPorProfesor(profesor._id);
 
     // Si no hay asignaciones para el profesor, no hay conflicto
     if (asignaciones.length === 0) {
@@ -166,7 +165,7 @@ function conflictoHorario(grupo, profesor) {
 
     for (const asignacion of asignacionesProf) {
         const grupo2 = asignacion.grupo;
-        if (conflictoHorarioEntreGrupos(grupo, grupo2)) {
+        if (await conflictoHorarioEntreGrupos(grupo, grupo2)) {
             return true;
         }
     }
@@ -175,7 +174,7 @@ function conflictoHorario(grupo, profesor) {
 }
 
 // comprueba si es óptimo darle la asignatura al profesor dado por créditos
-function conflictoCreditosCuatrimestre(grupo, profesor) {    
+async function conflictoCreditosCuatrimestre(grupo, profesor) {    
     switch (grupo.cuatrimestre) {
         case 1:
             const c1 = grupo.acreditacion + profesor.creditos1;
@@ -194,7 +193,7 @@ function conflictoCreditosCuatrimestre(grupo, profesor) {
 }
 
 // decide si es mejor dar el grupo o no a un profesor
-function darGrupo(grupo, profesor) {
+async function darGrupo(grupo, profesor) {
     const credNo = profesor.creditos1 + profesor.creditos2;
     const credSi = credNo + grupo.acreditacion;
 
@@ -205,12 +204,26 @@ function darGrupo(grupo, profesor) {
     }
 }
 
+async function asignaCreditos(profesor, grupo) {
+    profesor.as
+    switch (grupo.cuatrimestre) {
+        case 1:
+            profesor.creditos1 += grupo.acreditacion;
+
+            break;
+        case 2:
+            profesor.creditos2 += grupo.acreditacion;
+            break;
+    }  
+}
+
 // asigna un grupo a un profesor si cumple las condiciones
 async function asignarGrupoSiEsPosible(profesor, grupo) {
     const existeAsignacion = asignaciones.find(asignacion => asignacion.grupo === grupo);
     if (!existeAsignacion) {
-        if (darGrupo(grupo, profesor) && !conflictoCreditosCuatrimestre(grupo, profesor) && !conflictoHorario(grupo, profesor)) {
-            const asignacion = crearAsignacionObj(profesor, grupo, index++);
+        if (await darGrupo(grupo, profesor) && !(await conflictoCreditosCuatrimestre(grupo, profesor)) && !(await conflictoHorario(grupo, profesor))) {
+            const asignacion = await crearAsignacionObj(profesor, grupo, index++);
+            await asignaCreditos(profesor, grupo);
             asignaciones.push(asignacion);
             // si se asigna un grupo se quita de los pendientes
             gruposPendientes = gruposPendientes.filter(id => id !== grupo._id.toString()); 
@@ -224,7 +237,7 @@ async function asignarGrupoSiEsPosible(profesor, grupo) {
 async function asignacionPeticiones () {
     for (const peticion of peticiones) {
         const profesor = peticion.profesor;
-        const grupo = peticion.grupo;
+        const grupo = await Grupo.findById(peticion.grupo);
         await asignarGrupoSiEsPosible(profesor, grupo);
     }
 }
@@ -232,45 +245,39 @@ async function asignacionPeticiones () {
 // asigna los grupos que han sobrado a profesores que cumplan todas las condiciones
 async function asignacionGruposRestantes() {
     let intentos = 0;
-    const maxIntentos = (numGrupos ** numGrupos) * numProf;
-    let i = 0;
+    let maxIntentos = (numGrupos ** numGrupos) * numProf;
 
-    while (i < gruposPendientes.length && intentos < maxIntentos) {
-        const grupo = await Grupo.findById(gruposPendientes[i]);
-        let asignado = false;
+    while (gruposPendientes.length>0 && intentos <= maxIntentos) {
+        for (const grupoId of gruposPendientes) {
+            const grupo = await Grupo.findById(grupoId);
+            let asignado = false;
 
-        for (const profesor of profesores) {
-            if (asignarGrupoSiEsPosible(profesor, grupo)) {
-                asignado = true;
-                break;
+            for (const profesor of profesores) {
+                if (await asignarGrupoSiEsPosible(profesor, grupo)) {
+                    asignado = true;
+                    break;
+                }
             }
-        }
 
-        if (!asignado && asignaciones.length > 0) {
-            const ultimaAsignacion = asignaciones.pop();
-            gruposPendientes.push(ultimaAsignacion.grupo._id.toString());
-            intentos++;
-        } else {
-            i++;
+            if(!asignado && asignaciones.length > 0) {
+                let ultima = asignaciones.pop();
+                index--;
+                gruposPendientes.push(ultima.grupo._id.toString());
+            }
+            
         }
-
-        if (intentos >= maxIntentos) {
-            console.log('ha llegado al máximo de intentos');
-            break;
-        }
+        intentos++;
     }
 }
 
 // función principal que va a devolver una lista con las asignaciones definitivas
 async function generaAsignaciones () {
     await asignacionPeticiones();
-    console.log(gruposPendientes.length)
     if(gruposPendientes.length == 0) {
         return;
     }
     await asignacionGruposRestantes();
-    console.log(gruposPendientes.length)
-    // if (gruposPendientes.length == 0) {
-    //     return;
-    // }
+    if (gruposPendientes.length == 0) {
+        return;
+    }
 }
