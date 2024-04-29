@@ -2,6 +2,7 @@ const Grupo = require('../models/grupoModel');
 const Profesor = require('../models/profesorModel');
 const Peticion = require('../models/peticionModel');
 const Asignacion = require('../models/asignacionModel');
+const fs = require('fs');
 
 let index = 0;
 let limCuatrimestre = 12;
@@ -172,13 +173,13 @@ async function conflictoHorario(grupo, profesor) {
 // comprueba si es óptimo darle la asignatura al profesor dado por créditos
 async function conflictoCreditosCuatrimestre(grupo, profesor) {    
     switch (grupo.cuatrimestre) {
-        case 1:
+        case '1':
             const c1 = grupo.acreditacion + profesor.creditos1;
             if (c1 > limCuatrimestre) {
                 return true;
             }
             break;
-        case 2:
+        case '2':
             const c2 = grupo.acreditacion + profesor.creditos2;
             if (c2 > limCuatrimestre) {
                 return true;
@@ -201,22 +202,24 @@ async function darGrupo(grupo, profesor) {
 }
 
 async function asignaCreditos(profesor, grupo) {
+    fs.appendFileSync('log.txt', `A __________ ${profesor.uvus} __________ ${grupo._id} __________ ${gruposPendientes.length}\n`)
     switch (grupo.cuatrimestre) {
-        case 1:
+        case '1':
             profesor.creditos1 += grupo.acreditacion;
             break;
-        case 2:
+        case '2':
             profesor.creditos2 += grupo.acreditacion;
             break;
     }  
 }
 
 async function desasignaCreditos(profesor, grupo) {
+    fs.appendFileSync('log.txt', `D __________ ${profesor.uvus} __________ ${grupo._id} __________ ${gruposPendientes.length}\n`)
     switch (grupo.cuatrimestre) {
-        case 1:
+        case '1':
             profesor.creditos1 -= grupo.acreditacion;
             break;
-        case 2:
+        case '2':
             profesor.creditos2 -= grupo.acreditacion;
             break;
     } 
@@ -224,14 +227,14 @@ async function desasignaCreditos(profesor, grupo) {
 
 // asigna un grupo a un profesor si cumple las condiciones
 async function asignarGrupoSiEsPosible(profesor, grupo) {
-    const existeAsignacion = asignaciones.find(asignacion => asignacion.grupo === grupo);
+    const existeAsignacion = await asignaciones.find(asignacion => asignacion.grupo._id === grupo._id);
     if (!existeAsignacion) {
         if (await darGrupo(grupo, profesor) && !(await conflictoCreditosCuatrimestre(grupo, profesor)) && !(await conflictoHorario(grupo, profesor))) {
-            const asignacion = await crearAsignacionObj(profesor, grupo, index++);
             await asignaCreditos(profesor, grupo);
+            const asignacion = await crearAsignacionObj(profesor, grupo, index++);
             asignaciones.push(asignacion);
             // si se asigna un grupo se quita de los pendientes
-            gruposPendientes = gruposPendientes.filter(id => id !== grupo._id.toString()); 
+            gruposPendientes = await gruposPendientes.filter(id => id !== grupo._id.toString()); 
             return true;             
         }
     }
@@ -265,14 +268,15 @@ async function asignacionGruposRestantes() {
             }
 
             if(!asignado && asignaciones.length > 0) {
-                let ultima = asignaciones.pop();
+                let ultima = await asignaciones.pop();
                 await desasignaCreditos(ultima.profesor, ultima.grupo);
                 index--;
-                gruposPendientes.push(ultima.grupo._id.toString());
+                await gruposPendientes.push(ultima.grupo._id.toString());
             }
             
         }
         intentos++;
+        console.log(intentos);
     }
 }
 
