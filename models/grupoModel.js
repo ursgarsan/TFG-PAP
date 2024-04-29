@@ -5,13 +5,13 @@ const horarioSchema = new mongoose.Schema({
   hora_inicio: {
     type: String,
     required: true,
-    match: /\d{2}:\d{2}/,
+    match: /\d{1,2}:\d{2}/,
     message: 'El formato de hora debe ser HH:MM'
   },
   hora_fin: {
     type: String,
     required: true,
-    match: /\d{2}:\d{2}/,
+    match: /\d{1,2}:\d{2}/,
     message: 'El formato de hora debe ser HH:MM'
   }
   

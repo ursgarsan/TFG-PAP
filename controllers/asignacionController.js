@@ -21,11 +21,7 @@ let numProf;
 exports.createAsignaciones = async (req, res) => {
     const title = 'Asignaciones';
 
-    // hay que añadir tambien los atributos que faltan de las asignaciones, hay que mirar el modelo y también hay que actualizar los profesores
-    // const asignaciones = await asignarGrupos(profesores, grupos);
-    // for (const asignacion of asignaciones) {
-    //     await asignacion.save();
-    // }  
+ 
     await generaAsignaciones();
     res.render('list/asignaciones', { title });
 }
@@ -205,16 +201,25 @@ async function darGrupo(grupo, profesor) {
 }
 
 async function asignaCreditos(profesor, grupo) {
-    profesor.as
     switch (grupo.cuatrimestre) {
         case 1:
             profesor.creditos1 += grupo.acreditacion;
-
             break;
         case 2:
             profesor.creditos2 += grupo.acreditacion;
             break;
     }  
+}
+
+async function desasignaCreditos(profesor, grupo) {
+    switch (grupo.cuatrimestre) {
+        case 1:
+            profesor.creditos1 -= grupo.acreditacion;
+            break;
+        case 2:
+            profesor.creditos2 -= grupo.acreditacion;
+            break;
+    } 
 }
 
 // asigna un grupo a un profesor si cumple las condiciones
@@ -261,6 +266,7 @@ async function asignacionGruposRestantes() {
 
             if(!asignado && asignaciones.length > 0) {
                 let ultima = asignaciones.pop();
+                await desasignaCreditos(ultima.profesor, ultima.grupo);
                 index--;
                 gruposPendientes.push(ultima.grupo._id.toString());
             }
@@ -272,12 +278,61 @@ async function asignacionGruposRestantes() {
 
 // función principal que va a devolver una lista con las asignaciones definitivas
 async function generaAsignaciones () {
+    console.log('DATOS INICIALES')
+    console.log(peticiones.length)
+    console.log(asignaciones.length)
+    console.log(gruposPendientes.length)
+
     await asignacionPeticiones();
+    console.log('DATOS DESPUÉS DE PETICIONES')
+    console.log(asignaciones.length)
+    console.log(gruposPendientes.length)
     if(gruposPendientes.length == 0) {
+        await guardaAsignaciones();
         return;
     }
     await asignacionGruposRestantes();
+    console.log('DATOS DESPUÉS DE ALGORITMO')
+    console.log(asignaciones.length)
+    console.log(gruposPendientes.length)
     if (gruposPendientes.length == 0) {
+        await guardaAsignaciones();
         return;
     }
 }
+
+async function guardaAsignaciones () {
+    for (const asignacion of asignaciones) {
+        let profesorDB = await Profesor.findById(asignacion.profesor._id);
+
+        await Profesor.findByIdAndUpdate( 
+            { _id: profesorDB._id }, 
+            { 
+                asignados: asignacion.profesor.creditos1 + asignacion.profesor.creditos2, 
+                excedente: profesorDB.capacidad - (asignacion.profesor.creditos1 + asignacion.profesor.creditos2) 
+            } 
+        ); 
+
+        profesorDB = await Profesor.findById(profesorDB._id);
+        const grupoDB = await Grupo.findById(asignacion.grupo._id)
+
+        
+        const nuevaAsignacion = new Asignacion({
+            profesor: profesorDB,
+            grupo: grupoDB,
+            curso: '2023-2024' //CAMBIAR POR EL QUE VENGA POR PARÁMETROS
+        });
+        await nuevaAsignacion.save();
+    }
+}
+
+exports.getAllAsignaciones = async (req, res) => {
+    try {
+      const asignaciones = await Asignacion.find();
+      const title = 'Asignaciones';
+      res.render('list/asignaciones', { asignaciones, title});
+    } catch (error) {
+      console.error('Error al obtener asignaciones:', error);
+      res.status(500).json({ message: 'Error interno del servidor' });
+    }
+  };

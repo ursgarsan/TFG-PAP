@@ -1,14 +1,14 @@
 const { Schema, model } = require('mongoose');
+const Profesor = require('./profesorModel');
+const Grupo = require('./grupoModel');
 
 const asignacionSchema = new Schema({
-    docente: {
-        type: Schema.Types.ObjectId,
-        ref: 'Profesor',
+    profesor: {
+        type: Profesor.schema,
         require: true,
     },
     grupo: {
-        type: Schema.Types.ObjectId,
-        ref: 'Grupo',
+        type: Grupo.schema,
         require: true,
     },
     curso: {
