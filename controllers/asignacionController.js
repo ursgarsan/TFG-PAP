@@ -7,6 +7,7 @@ const fs = require('fs');
 let index = 0;
 let limCuatrimestre = 12;
 let asignaciones = [];
+let memoria = new Set();
 let peticiones;
 let profesores;
 let gruposPendientes;
@@ -225,6 +226,25 @@ async function desasignaCreditos(profesor, grupo) {
     } 
 }
 
+async function desasignaGrupo () {
+    let ultima = await asignaciones.pop();
+    await desasignaCreditos(ultima.profesor, ultima.grupo);
+    index--;
+    await gruposPendientes.push(ultima.grupo._id.toString());
+    let anterior = asignaciones[asignaciones.length - 1];
+    let memoriaObj = JSON.stringify({
+        profesor: ultima.profesor._id.toString(),
+        grupo: ultima.profesor._id.toString(),
+        anterior: anterior.grupo._id.toString()
+    });
+
+    if(memoria.has(memoriaObj)) {
+        await desasignaGrupo();
+    } else {
+        memoria.add(memoriaObj);
+    }
+}
+
 // asigna un grupo a un profesor si cumple las condiciones
 async function asignarGrupoSiEsPosible(profesor, grupo) {
     const existeAsignacion = await asignaciones.find(asignacion => asignacion.grupo._id === grupo._id);
@@ -268,10 +288,7 @@ async function asignacionGruposRestantes() {
             }
 
             if(!asignado && asignaciones.length > 0) {
-                let ultima = await asignaciones.pop();
-                await desasignaCreditos(ultima.profesor, ultima.grupo);
-                index--;
-                await gruposPendientes.push(ultima.grupo._id.toString());
+                await desasignaGrupo();
             }
             
         }
@@ -282,23 +299,16 @@ async function asignacionGruposRestantes() {
 
 // función principal que va a devolver una lista con las asignaciones definitivas
 async function generaAsignaciones () {
-    console.log('DATOS INICIALES')
-    console.log(peticiones.length)
-    console.log(asignaciones.length)
-    console.log(gruposPendientes.length)
-
+    fs.appendFileSync('log.txt', ` __________ DATOS INICIALES __________ \n ${peticiones.length} __________ ${asignaciones.length} __________ ${gruposPendientes.length}\n`)
+    
     await asignacionPeticiones();
-    console.log('DATOS DESPUÉS DE PETICIONES')
-    console.log(asignaciones.length)
-    console.log(gruposPendientes.length)
+    fs.appendFileSync('log.txt', ` __________ DATOS DESPUÉS DE PETICIONES __________ \n ${peticiones.length} __________ ${asignaciones.length} __________ ${gruposPendientes.length}\n`)
     if(gruposPendientes.length == 0) {
         await guardaAsignaciones();
         return;
     }
     await asignacionGruposRestantes();
-    console.log('DATOS DESPUÉS DE ALGORITMO')
-    console.log(asignaciones.length)
-    console.log(gruposPendientes.length)
+    fs.appendFileSync('log.txt', ` __________ DATOS DESPUÉS DEL ALGORITMO __________ \n ${peticiones.length} __________ ${asignaciones.length} __________ ${gruposPendientes.length}\n`)
     if (gruposPendientes.length == 0) {
         await guardaAsignaciones();
         return;
@@ -317,12 +327,12 @@ async function guardaAsignaciones () {
             } 
         ); 
 
-        profesorDB = await Profesor.findById(profesorDB._id);
+        const profesorAsign = await Profesor.findById(profesorDB._id);
         const grupoDB = await Grupo.findById(asignacion.grupo._id)
 
         
         const nuevaAsignacion = new Asignacion({
-            profesor: profesorDB,
+            profesor: profesorAsign,
             grupo: grupoDB,
             curso: '2023-2024' //CAMBIAR POR EL QUE VENGA POR PARÁMETROS
         });
