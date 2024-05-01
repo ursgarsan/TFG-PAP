@@ -21,11 +21,7 @@ let numProf;
 
 
 exports.createAsignaciones = async (req, res) => {
-    const title = 'Asignaciones';
-
- 
     await generaAsignaciones();
-    res.render('list/asignaciones', { title });
 }
 
 async function crearAsignacionObj(profesor, grupo, index) {
@@ -340,7 +336,7 @@ async function guardaAsignaciones () {
     }
 }
 
-exports.getAllAsignaciones = async (req, res) => {
+  exports.getAllAsignaciones = async (req, res) => {
     try {
       const asignaciones = await Asignacion.find();
       const title = 'Asignaciones';

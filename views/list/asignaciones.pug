@@ -1,20 +1,21 @@
-//- extends ../layout
+extends ../layout
 
-//- block content
-//-   h1 Listado de Asignaciones
-//-   .table-container
-//-     table#tablaData.table.table-striped
-//-       thead
-//-         tr
-//-           th(scope='col') Código
-//-           th(scope='col') Acrónimo
-//-           th(scope='col') Nombre
-//-           th(scope='col') Titulación
+block content
+  h1 Listado de Asignaciones
+  .table-container
+    table#tablaData.table.table-striped
+      thead
+        tr
+          th(scope='col') Curso
+          th(scope='col') UVUS
+        //-   th(scope='col') Nombre
+        //-   th(scope='col') Titulación
 
-//-       tbody
-//-         each asignatura in asignaturas
-//-           tr(data-href=`/asignaturas/${asignatura._id}`)
-//-             td= asignatura.codigo
-//-             td= asignatura.acronimo
-//-             td= asignatura.nombre
-//-             td= asignatura.titulacion
+      tbody
+        each asignacion in asignaciones
+          tr
+            td= asignacion.curso
+            //- td= 
+            td= asignacion.profesor.uvus
+            //- td= asignatura.nombre
+            //- td= asignatura.titulacion
