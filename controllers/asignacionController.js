@@ -18,10 +18,13 @@ let numProf;
     ({ peticiones, profesores, gruposPendientes, numGrupos, numProf } = await getData('2023-2024'));
 })();
 
+exports.crearAsignaciones = (req, res) => {
+    res.render('loading');
+}
 
-
-exports.createAsignaciones = async (req, res) => {
+exports.generarAsignaciones = async (req, res) => {
     await generaAsignaciones();
+    res.status(200).send();
 }
 
 async function crearAsignacionObj(profesor, grupo, index) {

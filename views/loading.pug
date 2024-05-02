@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title Cargando...
+    body
+        h1 Cargando...
+        script.
+            window.onload = function() {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', '/asignaciones/generar', true);
+                xhr.onload = function() {
+                    if (this.status == 200) {
+                        window.location = '/asignaciones';
+                    }
+                };
+                xhr.onerror = function() {
+                    console.error('Error during AJAX request');
+                };
+                xhr.send();
+            };
