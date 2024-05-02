@@ -2,7 +2,9 @@ const Grupo = require('../models/grupoModel');
 const Profesor = require('../models/profesorModel');
 const Peticion = require('../models/peticionModel');
 const Asignacion = require('../models/asignacionModel');
+const Asignatura = require('../models/asignaturaModel');
 const fs = require('fs');
+const ExcelJS = require('exceljs');
 
 let index = 0;
 let limCuatrimestre = 12;
@@ -349,3 +351,55 @@ async function guardaAsignaciones () {
       res.status(500).json({ message: 'Error interno del servidor' });
     }
   };
+
+  exports.exportarAsignaciones = async (req, res) => {
+    // Crear un nuevo libro de trabajo
+    let workbook = new ExcelJS.Workbook();
+    let worksheet = workbook.addWorksheet('Asignaciones');
+
+    // Obtener todos los profesores y asignaturas desde la base de datos
+    let profesores = await Profesor.find().sort('orden');
+    let asignaturas = await Asignatura.find().sort('nombre');
+
+    // Crear las columnas del archivo Excel con los detalles de los profesores
+    let columnId = 1;
+    for(let profesor of profesores) {
+        let column = worksheet.getColumn(columnId++);
+        column.key = profesor.id;
+        column.width = 10;
+        column.header = profesor.nombre;
+
+        column = worksheet.getColumn(columnId++);
+        column.key = profesor.id + 'apellido';
+        column.width = 10;
+        column.header = profesor.apellidos;
+
+        column = worksheet.getColumn(columnId++);
+        column.key = profesor.id + 'capacidad';
+        column.width = 10;
+        column.header = profesor.capacidad;
+    }
+
+    // Para cada asignatura, crear una fila con el nombre de la asignatura en la primera columna
+    // y una 'x' en la columna del profesor que tiene asignada esa asignatura
+    let rowId = 2;
+    for(let asignatura of asignaturas) {
+        let row = worksheet.getRow(rowId++);
+        row.getCell(1).value = asignatura.nombre;
+
+        let asignaciones = await Asignacion.find({ asignatura: asignatura.id });
+        for(let asignacion of asignaciones) {
+            let columnId = profesores.findIndex(profesor => profesor.id === asignacion.profesor) * 3 + 2;
+            row.getCell(columnId).value = 'x';
+        }
+    }
+
+    // Configurar los encabezados de la respuesta para indicar que se trata de un archivo descargable
+    res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+    res.setHeader('Content-Disposition', 'attachment; filename=Asignaciones.xlsx');
+
+    // Enviar el archivo Excel al cliente
+    await workbook.xlsx.write(res);
+
+    res.end();
+}
