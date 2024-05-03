@@ -376,7 +376,7 @@ exports.exportarAsignaciones = async (req, res) => {
     asignadosRow.push('Asignados');
     creditos1Row.push('C1');
     creditos2Row.push('C2');
-    headerGrupoRow.push('Titulación', 'Código', 'Nombre', 'Acrónimo', 'Tipo', 'Grupo', 'Cuatrimestre', 'Acreditación', 'Horario', 'Horario');
+    headerGrupoRow.push('Titulación', 'Código', 'Nombre', 'Acrónimo', 'Tipo', 'Grupo', 'Cuatrimestre', 'Acreditación', 'Horario1', 'Horario2');
 
     profesores.forEach(profesor => {
         uvusRow.push(profesor.uvus);
