@@ -40,32 +40,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(async (req, res, next) => {
-  try {
-    const uvus = await Profesor.distinct('uvus');
-    res.locals.profesoresUvus = uvus;
-    next();
-  } catch (error) {
-    console.error('Error al obtener los uvus de los profesores:', error);
-    next(error);
-  }
-});
-
-app.post('/setSelectedUVUS', (req, res) => {
-  const { selectedUVUS } = req.body;
-  req.session.selectedUVUS = selectedUVUS;
-  res.sendStatus(200);
-});
-
-app.use((req, res, next) => {
-  if (req.session.selectedUVUS) {
-    res.locals.selectedUVUS = req.session.selectedUVUS;
-  } else {
-    res.locals.selectedUVUS = null;
-  }
-  next();
-});
-
 app.get('/', (req, res) => {
   res.render('index', { title: 'Inicio'});
 });

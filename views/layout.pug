@@ -12,7 +12,6 @@ html
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
     script(src='https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js')
     script(src='https://cdn.jsdelivr.net/npm/sweetalert2@10')
-    script(src='/js/uvus_navbar.js')
     script(src='/js/config.js')
 
   body
@@ -30,20 +29,6 @@ html
             li.nav-item
               a.nav-link(href='/asignaciones') Asignaciones              
             if !isAdminLoggedIn
-              li.nav-item
-                ul.nav-item.dropdown
-                  a.nav-link.dropdown-toggle(href='/', id='profesoresDropdown', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                    | UVUS
-                  ul.dropdown-menu(aria-labelledby='profesoresDropdown')
-                    each uvus in profesoresUvus
-                      li
-                        a.dropdown-item(href='/' onclick='setSelectedUVUS("' + uvus + '")')= uvus
-                  li.nav-item
-                    span#selectedUVUSPlaceholder.nav-link.disabled
-                  if selectedUVUS
-                    li.nav-item
-                      button.btn.btn-no-border.ml-2(type='button', onclick='clearSelectedUVUS()')
-                        i.bi.bi-eraser
               li.nav-item
                 a.btn.btn-outline-secondary.ml-2(type='button', href='/auth/login') Iniciar Administrador
             else
