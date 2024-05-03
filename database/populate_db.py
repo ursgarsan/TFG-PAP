@@ -49,7 +49,9 @@ for indice,fila in datos_prof.iterrows():
         'uvus': fila[2],
         'capacidad': float(capacidades[indice + 11]),
         'asignados': float(0),
-        'excedente': float(0)
+        'excedente': float(0),
+        'creditos1': float(0),
+        'creditos2': float(0)
     }
     prof_colecc.insert_one(profesor)
 

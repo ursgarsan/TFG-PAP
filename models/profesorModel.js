@@ -7,7 +7,10 @@ const profesorSchema = new mongoose.Schema({
   uvus: String,
   capacidad: Number,
   asignados: Number,
-  excedente: Number
+  excedente: Number,
+  creditos1: Number,
+  creditos2: Number,
+
 });
 
 const Profesor = mongoose.model('profesores', profesorSchema);

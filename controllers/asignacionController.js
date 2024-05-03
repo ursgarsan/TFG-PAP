@@ -324,7 +324,9 @@ async function guardaAsignaciones () {
             { _id: profesorDB._id }, 
             { 
                 asignados: asignacion.profesor.creditos1 + asignacion.profesor.creditos2, 
-                excedente: profesorDB.capacidad - (asignacion.profesor.creditos1 + asignacion.profesor.creditos2) 
+                excedente: profesorDB.capacidad - (asignacion.profesor.creditos1 + asignacion.profesor.creditos2),
+                creditos1: asignacion.profesor.creditos1, 
+                creditos2: asignacion.profesor.creditos2                 
             } 
         ); 
 
@@ -351,54 +353,58 @@ exports.getAllAsignaciones = async (req, res) => {
     }
 };
 
-  exports.exportarAsignaciones = async (req, res) => {
-    // Crear un nuevo libro de trabajo
-    let workbook = new ExcelJS.Workbook();
-    let worksheet = workbook.addWorksheet('Asignaciones');
+exports.exportarAsignaciones = async (req, res) => {
+    const workbook = new ExcelJS.Workbook();
 
-    // Obtener todos los profesores y asignaturas desde la base de datos
-    let profesores = await Profesor.find().sort('orden');
-    let asignaturas = await Asignatura.find().sort('nombre');
+    // Crear una nueva hoja de trabajo
+    const worksheet = workbook.addWorksheet('Asignaciones');
+    
+    // Obtener los datos de los profesores
+    const profesores = await Profesor.find();
+    
+    // Crear las filas con los datos de los profesores
+    const uvusRow = Array(10).fill(null);
+    const nombresRow = Array(10).fill(null);
+    const capacidadRow = Array(9).fill(null);
+    const excedenteRow = Array(9).fill(null);
+    const asignadosRow = Array(9).fill(null);  
+    const creditos1Row = Array(9).fill(null);  
+    const creditos2Row = Array(9).fill(null);
+    const headerGrupoRow = [];          
+    capacidadRow.push('Capacidad efect.') ;
+    excedenteRow.push('Excedente');
+    asignadosRow.push('Asignados');
+    creditos1Row.push('C1');
+    creditos2Row.push('C2');
+    headerGrupoRow.push('Titulación', 'Código', 'Nombre', 'Acrónimo', 'Tipo', 'Grupo', 'Cuatrimestre', 'Acreditación', 'Horario', 'Horario');
 
-    // Crear las columnas del archivo Excel con los detalles de los profesores
-    let columnId = 1;
-    for(let profesor of profesores) {
-        let column = worksheet.getColumn(columnId++);
-        column.key = profesor.id;
-        column.width = 10;
-        column.header = profesor.nombre;
-
-        column = worksheet.getColumn(columnId++);
-        column.key = profesor.id + 'apellido';
-        column.width = 10;
-        column.header = profesor.apellidos;
-
-        column = worksheet.getColumn(columnId++);
-        column.key = profesor.id + 'capacidad';
-        column.width = 10;
-        column.header = profesor.capacidad;
-    }
-
-    // Para cada asignatura, crear una fila con el nombre de la asignatura en la primera columna
-    // y una 'x' en la columna del profesor que tiene asignada esa asignatura
-    let rowId = 2;
-    for(let asignatura of asignaturas) {
-        let row = worksheet.getRow(rowId++);
-        row.getCell(1).value = asignatura.nombre;
-
-        let asignaciones = await Asignacion.find({ asignatura: asignatura.id });
-        for(let asignacion of asignaciones) {
-            let columnId = profesores.findIndex(profesor => profesor.id === asignacion.profesor) * 3 + 2;
-            row.getCell(columnId).value = 'x';
+    profesores.forEach(profesor => {
+        uvusRow.push(profesor.uvus);
+        nombresRow.push(`${profesor.apellidos}, ${profesor.nombre}`);
+        capacidadRow.push(profesor.capacidad);
+        excedenteRow.push(profesor.excedente);
+        asignadosRow.push(profesor.asignados);
+        creditos1Row.push(profesor.creditos1);
+        creditos2Row.push(profesor.creditos2);
+    });
+    
+    // Agregar todas las filas a la hoja de trabajo a la vez
+    worksheet.addRows([uvusRow, nombresRow, capacidadRow, excedenteRow, asignadosRow, creditos1Row, creditos2Row, headerGrupoRow]);
+    
+    // Dar formato a las celdas de los nombres
+    nombresRow.forEach((nombre, index) => {
+        if (index >= 4) { // Ignorar las primeras 4 celdas vacías
+            const cell = worksheet.getCell(2, index + 1);
+            cell.alignment = { textRotation: 90, wrapText: true };
         }
-    }
-
+    });
+    
     // Configurar los encabezados de la respuesta para indicar que se trata de un archivo descargable
     res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     res.setHeader('Content-Disposition', 'attachment; filename=Asignaciones.xlsx');
-
+    
     // Enviar el archivo Excel al cliente
     await workbook.xlsx.write(res);
-
+    
     res.end();
 }
