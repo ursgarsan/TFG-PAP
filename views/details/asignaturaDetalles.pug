@@ -20,23 +20,22 @@ block content
             th(scope='col') Cred.
             th(scope='col') Horario
         tbody
-          if grupos.length > 0
-            each grupo in grupos
-              tr
-                td= grupo.tipo
-                td= grupo.grupo
-                td= grupo.cuatrimestre
-                td= grupo.acreditacion
-                td
-                  each horarioItem in grupo.horario
-                    p
-                      span.underline Día(s):
-                      | #{horarioItem.dias.join(', ')}
-                      br
-                      span.underline Horario:
-                      | #{horarioItem.hora_inicio} a #{horarioItem.hora_fin}
-          else
-            p No hay grupos asociados a esta asignatura.
+          each grupo in asignatura.grupos
+            tr
+              td= grupo.tipo
+              td= grupo.grupo
+              td= grupo.cuatrimestre
+              td= grupo.acreditacion
+              td
+                each horarioItem in grupo.horario
+                  p
+                    span.underline Día(s):
+                    | #{horarioItem.dias.join(', ')}
+                    br
+                    span.underline Horario:
+                    | #{horarioItem.hora_inicio} a #{horarioItem.hora_fin}
+  else
+    p No hay grupos asociados a esta asignatura.
 
   if isAdminLoggedIn
     div.button-container

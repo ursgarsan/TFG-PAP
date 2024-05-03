@@ -20,8 +20,8 @@ block formContent
         option(value="", selected)= ''
       each grupo in grupos
         - if (data.grupo == grupo._id)
-          option(value=data.grupo, selected)= grupo.grupo
-        option(value=grupo._id)= grupo.grupo
+          option(value=data.grupo, selected)= `${grupo.asignatura_id.acronimo} - ${grupo.grupo} - ${grupo.tipo} - ${grupo.cuatrimestre}`
+        option(value=grupo._id)= `${grupo.asignatura_id.acronimo} - ${grupo.grupo} - ${grupo.tipo} - ${grupo.cuatrimestre}º cuatr.`
     br
     if errors && errors.grupo
       p.error-message= errors.grupo.msg

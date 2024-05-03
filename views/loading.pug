@@ -7,7 +7,7 @@ html
         script.
             window.onload = function() {
                 var xhr = new XMLHttpRequest();
-                xhr.open('GET', '/asignaciones/generar', true);
+                xhr.open('GET', '/asignaciones/generate', true);
                 xhr.onload = function() {
                     if (this.status == 200) {
                         window.location = '/asignaciones';

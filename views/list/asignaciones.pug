@@ -6,14 +6,21 @@ block content
     table#tablaData.table.table-striped
       thead
         tr
+          th(scope='col') Asignatura
+          th(scope='col') Grupo
+          th(scope='col') Tipo
+          th(scope='col') Cuat.
           th(scope='col') UVUS
-        //-   th(scope='col') Nombre
-        //-   th(scope='col') Titulación
+          th(scope='col') Asignados 
+          th(scope='col') Excedente
 
       tbody
         each asignacion in asignaciones
           tr
-            //- td= 
+            td= asignacion.grupo.asignatura_id.acronimo
+            td= asignacion.grupo.grupo
+            td= asignacion.grupo.tipo   
+            td= asignacion.grupo.cuatrimestre                    
             td= asignacion.profesor.uvus
-            //- td= asignatura.nombre
-            //- td= asignatura.titulacion
+            td= asignacion.profesor.asignados.toFixed(2) 
+            td= asignacion.profesor.excedente.toFixed(2)
