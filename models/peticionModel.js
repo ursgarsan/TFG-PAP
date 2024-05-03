@@ -23,10 +23,6 @@ const peticionSchema = new Schema({
     createdAt: {
         type: Date,
         default: Date.now,
-    },
-    curso: {
-        type: String,
-        require: true,
     }
 })
 const Peticion = model('peticiones', peticionSchema);

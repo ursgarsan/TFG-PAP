@@ -17,7 +17,7 @@ let numGrupos;
 let numProf;
 
 (async function() {
-    ({ peticiones, profesores, gruposPendientes, numGrupos, numProf } = await getData('2023-2024'));
+    ({ peticiones, profesores, gruposPendientes, numGrupos, numProf } = await getData());
 })();
 
 exports.crearAsignaciones = (req, res) => {
@@ -37,7 +37,7 @@ async function crearAsignacionObj(profesor, grupo, index) {
     };
 }
 
-async function getData(curso) {
+async function getData() {
     let profesoresRaw = await Profesor.find();
     profesoresRaw = profesoresRaw.sort((a, b) => a.orden - b.orden);
     let numProf = profesoresRaw.length;
@@ -335,7 +335,6 @@ async function guardaAsignaciones () {
         const nuevaAsignacion = new Asignacion({
             profesor: profesorAsign,
             grupo: grupoDB,
-            curso: '2023-2024' //CAMBIAR POR EL QUE VENGA POR PARÁMETROS
         });
         await nuevaAsignacion.save();
     }

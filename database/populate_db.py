@@ -63,7 +63,6 @@ for indice, fila in asignaturas.iterrows():
         'titulacion': fila[0],
         'codigo': str(fila[1]),
         'acronimo': fila[3],
-        'curso': '2023-2024',
         'grupos': []
     }
 
@@ -125,7 +124,6 @@ for indice, fila in asignaturas.iterrows():
         'grupo': fila[5],
         'cuatrimestre': fila[6],
         'acreditacion': float(fila[7]),
-        'curso': '2023-2024'
     }
 
     if horario:
@@ -152,14 +150,13 @@ for i in range(7, 554):
             nombre,apellidos = formatNombre(peticiones.iloc[0, j])
             profesor_correspondiente = prof_colecc.find_one({'nombre': str(nombre), 'apellidos': str(apellidos)})
             asignatura_correspondiente = asign_colecc.find_one({'codigo': str(peticiones.iloc[i,1])})
-            grupo_correspondiente = grupo_colecc.find_one({'tipo': peticiones.iloc[i, 4], 'grupo': peticiones.iloc[i, 5], 'acreditacion': float(peticiones.iloc[i, 7]), 'curso': '2023-2024', 'asignatura_id': asignatura_correspondiente['_id']})
+            grupo_correspondiente = grupo_colecc.find_one({'tipo': peticiones.iloc[i, 4], 'grupo': peticiones.iloc[i, 5], 'acreditacion': float(peticiones.iloc[i, 7]), 'asignatura_id': asignatura_correspondiente['_id']})
             peticion = {
             'profesor': profesor_correspondiente['_id'],
             'grupo': grupo_correspondiente['_id'],
             'orden': peticiones.iloc[i, j],
             'status': 'solicitado',
             'createdAt': datetime.now(),
-            'curso': '2023-2024'
             }
             peticion_colecc.insert_one(peticion)
 print("Datos insertados en 'peticiones' de la base de datos 'PAP'.")

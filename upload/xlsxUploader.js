@@ -48,8 +48,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
             nombre: row.Nombre,
             titulacion: row.Titulacion,
             codigo: row.Codigo,
-            acronimo: row.Acronimo,
-            curso: row.Curso
+            acronimo: row.Acronimo
           };
           const asignatura = new Asignatura(asignaturaData);
           asignaturas.push(asignatura);
@@ -88,7 +87,6 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
             grupo: row.Grupo,
             cuatrimestre: row.Cuatrimestre,
             acreditacion: row.Acreditacion,
-            curso: row.Curso,
             asignatura_id: asignatura._id
           });
         
@@ -126,7 +124,6 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
             grupo: row.Grupo,
             cuatrimestre: row.Cuatrimestre,
             acreditacion: row.Acreditacion,
-            curso: row.Curso,
             asignatura_id: asignatura._id
             };
         

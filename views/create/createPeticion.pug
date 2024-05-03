@@ -32,10 +32,4 @@ block formContent
     if errors && errors.orden
       p.error-message= errors.orden.msg
 
-    label(for="curso") Curso:
-    input(type="text", id="curso", name="curso", class=`form-control ${errors && errors.curso ? 'error-input' : ''}`, value= data.curso ? data.curso : "")
-    br
-    if errors && errors.curso
-      p.error-message= errors.curso.msg
-
     button(type="submit", class="btn btn-primary") Crear Petición

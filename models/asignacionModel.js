@@ -10,10 +10,6 @@ const asignacionSchema = new Schema({
     grupo: {
         type: Grupo.schema,
         require: true,
-    },
-    curso: {
-        type: String,
-        require: true,
     }
 })
 

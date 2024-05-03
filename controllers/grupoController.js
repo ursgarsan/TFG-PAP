@@ -19,7 +19,7 @@ exports.createGrupo = async (req, res) => {
   const errors = validationResult(req);
   try {
     const asignaturas = await Asignatura.find({}, '_id nombre');
-    const { tipo, grupo, cuatrimestre, acreditacion, curso, horario, asignatura_id } = req.body;
+    const { tipo, grupo, cuatrimestre, acreditacion, horario, asignatura_id } = req.body;
     if (!errors.isEmpty()) {
       const errorObj = errors.array().reduce((acc, error) => {
         acc[error.path] = { msg: error.msg };
@@ -28,7 +28,7 @@ exports.createGrupo = async (req, res) => {
       return res.render('create/createGrupo', { title: 'Agregar Nuevo Grupo', asignaturas, data: req.body, errors: errorObj });
     }
 
-    const nuevoGrupo = new Grupo({ tipo, grupo, cuatrimestre, acreditacion, curso, horario, asignatura_id });
+    const nuevoGrupo = new Grupo({ tipo, grupo, cuatrimestre, acreditacion, horario, asignatura_id });
     await nuevoGrupo.save();
 
     await Asignatura.findByIdAndUpdate(asignatura_id, { $push: { grupos: nuevoGrupo._id } });

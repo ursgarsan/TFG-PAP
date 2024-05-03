@@ -60,7 +60,6 @@ for indice, fila in asignaturas.iterrows():
         'titulacion': fila[0],
         'codigo': str(fila[1]),
         'acronimo': fila[3],
-        'curso': '2023-2024',
         'grupos': []
     }
 
@@ -127,7 +126,6 @@ for indice, fila in asignaturas.iterrows():
         'grupo': fila[5],
         'cuatrimestre': fila[6],
         'acreditacion': float(fila[7]),
-        'curso': '2023-2024'
     }
 
     if horario:

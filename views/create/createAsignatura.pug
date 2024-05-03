@@ -26,10 +26,4 @@ block formContent
     if errors && errors.acronimo
       p.error-message= errors.acronimo.msg
 
-    label(for="curso") Curso:
-    input(type="text", name="curso", class=`form-control ${errors && errors.curso ? 'error-input' : ''}`, value= data.curso ? data.curso : "")
-    br
-    if errors && errors.curso
-      p.error-message= errors.curso.msg
-
     button(type="submit", class="btn btn-primary") Agregar Asignatura

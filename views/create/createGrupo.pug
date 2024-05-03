@@ -26,12 +26,6 @@ block formContent
     if errors && errors.acreditacion
       p.error-message= errors.acreditacion.msg
 
-    label(for="curso") Curso:
-    input(type="text", id="curso", name="curso", class=`form-control ${errors && errors.curso ? 'error-input' : ''}`, value= data.curso ? data.curso : "")
-    br
-    if errors && errors.curso
-      p.error-message= errors.curso.msg
-
     label(for="asignatura_id") Asignatura:
     select(id="asignatura_id", name="asignatura_id", class=`form-select ${errors && errors.asignatura_id ? 'error-input' : ''}`)
       - if (!data.asignatura_id)

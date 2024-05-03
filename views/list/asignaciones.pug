@@ -6,7 +6,6 @@ block content
     table#tablaData.table.table-striped
       thead
         tr
-          th(scope='col') Curso
           th(scope='col') UVUS
         //-   th(scope='col') Nombre
         //-   th(scope='col') Titulación
@@ -14,7 +13,6 @@ block content
       tbody
         each asignacion in asignaciones
           tr
-            td= asignacion.curso
             //- td= 
             td= asignacion.profesor.uvus
             //- td= asignatura.nombre

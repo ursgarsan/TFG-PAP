@@ -27,8 +27,8 @@ exports.createPeticion = async (req, res) => {
       }, {});
       return res.render('create/createPeticion', { title: 'Agregar Nueva Petición', data: req.body, errors: errorObj, profesores, grupos });      
     }
-    const { profesor, grupo, orden, curso } = req.body;
-    const nuevaPeticion = new Peticion({ profesor, grupo, orden, curso });
+    const { profesor, grupo, orden } = req.body;
+    const nuevaPeticion = new Peticion({ profesor, grupo, orden });
     await nuevaPeticion.save();
 
     res.redirect('/');

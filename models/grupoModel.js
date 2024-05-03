@@ -22,7 +22,6 @@ const grupoSchema = new mongoose.Schema({
   grupo: String,
   cuatrimestre: String,
   acreditacion: Number,
-  curso: String,
   horario: [horarioSchema],
   asignatura_id: {
     type: mongoose.Schema.Types.ObjectId,
