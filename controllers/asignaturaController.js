@@ -16,12 +16,8 @@ exports.getAllAsignaturas = async (req, res) => {
   exports.getAsignaturaDetails = async (req, res) => {
     try {
         const asignaturaId = req.params.id;
-        const asignatura = await Asignatura.findById(asignaturaId);
-        const gruposPromises = asignatura.grupos.map(async (grupoId) => {
-            return await Grupo.findById(grupoId);
-        });
-        const grupos = await Promise.all(gruposPromises);
-        res.render('details/asignaturaDetalles', { asignatura, grupos });
+        const asignatura = await Asignatura.findById(asignaturaId).populate('grupos');
+        res.render('details/asignaturaDetalles', { asignatura });
         
     } catch (error) {
         console.error('Error al obtener detalles de la asignatura:', error);

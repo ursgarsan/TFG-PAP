@@ -8,7 +8,7 @@ const asignaturaSchema = new mongoose.Schema({
   grupos: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Grupo'
+      ref: 'grupos'
     }
   ]
 });

@@ -340,16 +340,16 @@ async function guardaAsignaciones () {
     }
 }
 
-  exports.getAllAsignaciones = async (req, res) => {
+exports.getAllAsignaciones = async (req, res) => {
     try {
-      const asignaciones = await Asignacion.find();
+      const asignaciones = await Asignacion.find().populate('grupo.asignatura_id');
       const title = 'Asignaciones';
       res.render('list/asignaciones', { asignaciones, title});
     } catch (error) {
       console.error('Error al obtener asignaciones:', error);
       res.status(500).json({ message: 'Error interno del servidor' });
     }
-  };
+};
 
   exports.exportarAsignaciones = async (req, res) => {
     // Crear un nuevo libro de trabajo

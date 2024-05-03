@@ -25,7 +25,7 @@ const grupoSchema = new mongoose.Schema({
   horario: [horarioSchema],
   asignatura_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Asignatura'
+    ref: 'asignaturas'
   }
 });
 

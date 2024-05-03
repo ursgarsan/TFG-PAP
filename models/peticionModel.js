@@ -3,12 +3,12 @@ const { Schema, model } = require('mongoose');
 const peticionSchema = new Schema({
     profesor: {
         type: Schema.Types.ObjectId,
-        ref: 'Profesor',
+        ref: 'profesores',
         require: true,
     },
     grupo: {
         type: Schema.Types.ObjectId,
-        ref: 'Grupo',
+        ref: 'grupos',
         require: true,
     },
     orden: {

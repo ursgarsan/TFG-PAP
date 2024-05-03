@@ -6,7 +6,7 @@ const { validationResult } = require('express-validator');
 exports.createForm = async (req, res) => {
     try {
       const profesores = await Profesor.find();
-      const grupos = await Grupo.find();
+      const grupos = await Grupo.find().populate('asignatura_id');
       const data = req.body;
       res.render('create/createPeticion', { title: 'Agregar Nueva Petición', profesores, grupos, data });
     } catch (error) {
