@@ -22,131 +22,86 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       return res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
     }
 
-    const fileName = file.originalname;
-    let prefix = '';
-    if (fileName.startsWith('asignatura')) {
-      prefix = 'asignatura';
-    } else if (fileName.startsWith('profesores')) {
-      prefix = 'profesores';
-    } else if (fileName.startsWith('grupos')) {
-      prefix = 'grupos';
-    } else {
-      return res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'Nombre de archivo no reconocido' }));
-    }
-
     const workbook = XLSX.read(file.buffer, { type: 'buffer' });
     const sheetName = workbook.SheetNames[0];
     const worksheet = workbook.Sheets[sheetName];
-    const data = XLSX.utils.sheet_to_json(worksheet);
+    const fullRange = XLSX.utils.decode_range(worksheet['!ref']);
 
-    // Dependiendo del prefijo, realiza la acción correspondiente
-    switch (prefix) {
-      case 'asignatura':
-        const asignaturas = [];
-        for (const row of data) {
-          const asignaturaData = {
-            nombre: row.Nombre,
-            titulacion: row.Titulacion,
-            codigo: row.Codigo,
-            acronimo: row.Acronimo
-          };
-          const asignatura = new Asignatura(asignaturaData);
-          asignaturas.push(asignatura);
-        }
-        await Asignatura.insertMany(asignaturas);
-        res.redirect(addQueryParams('/asignaturas', { uploaded: true }));
-        break;
-      case 'profesores':
-        const profesores = [];
-        for (const row of data) {
-          const profesorData = {
-            orden: row.Orden,
-            nombre: row.Nombre,
-            apellidos: row.Apellidos,
-            uvus: row.UVUS,
-            capacidad: row.Capacidad
-          };
-          const profesor = new Profesor(profesorData);
-          profesores.push(profesor);
-        }
-        await Profesor.insertMany(profesores);
-        res.redirect(addQueryParams('/profesores', { uploaded: true }));
-        break;
-      case 'grupos':
-        const grupos = [];
-        for (const row of data) {
-          const asignatura = await Asignatura.findOne({ codigo: String(row.Codigo) });
 
-          if (!asignatura) {
-            console.error('No se encontró la asignatura con el código:', String(row.Codigo));
-            continue;
-          }
-        
-          const existingGrupo = await Grupo.findOne({
-            tipo: row.Tipo,
-            grupo: row.Grupo,
-            cuatrimestre: row.Cuatrimestre,
-            acreditacion: row.Acreditacion,
-            asignatura_id: asignatura._id
-          });
-        
-          if (existingGrupo) {
-            // Verificar si ya existe un horario con las mismas horas
-            const existingHorario = existingGrupo.horario.find(item =>
-              item.hora_inicio === row.Hora_Inicio && item.hora_fin === row.Hora_Fin
-            );
-          
-            // Si existe un horario con las mismas horas, agregar los nuevos días al horario existente
-            if (existingHorario) {
-              const nuevosDias = row.Dias.split(',').map(dia => dia.trim());
-              for (const dia of nuevosDias) {
-                if (!existingHorario.dias.includes(dia)) {
-                  existingHorario.dias.push(dia);
-                }
-              }
-              existingGrupo.save();
-              continue;
-            }
-          
-            // Si no hay ningún horario con las mismas horas, crear un nuevo objeto de horario y añadirlo al grupo
-            const horario = {
-              dias: row.Dias.split(',').map(dia => dia.trim()),
-              hora_inicio: row.Hora_Inicio,
-              hora_fin: row.Hora_Fin
-            };
-            existingGrupo.horario.push(horario);
-            existingGrupo.save();
-            continue;
-          }
-          
-          const grupoData = {
-            tipo: row.Tipo,
-            grupo: row.Grupo,
-            cuatrimestre: row.Cuatrimestre,
-            acreditacion: row.Acreditacion,
-            asignatura_id: asignatura._id
-            };
-        
-          const grupo = new Grupo(grupoData);
-          const horario = {
-            dias: row.Dias.split(',').map(dia => dia.trim()),
-            hora_inicio: row.Hora_Inicio,
-            hora_fin: row.Hora_Fin
-          };
-          grupo.horario.push(horario);
-          grupos.push(grupo);
-
-          asignatura.grupos.push(grupo._id);
-          await asignatura.save();
-        }
-        await Grupo.insertMany(grupos);
-        res.redirect(addQueryParams('/asignaturas', { uploaded: true }));
-        break;
-        
-        
-      default:
-        break;
+    const profesorRange = { s: { c: 8, r: 0 }, e: { c: fullRange.e.c, r: 5 } };
+    const profesores = XLSX.utils.sheet_to_json(worksheet, { range: XLSX.utils.encode_range(profesorRange), header: 1 });
+    
+    let profesoresDB = [];
+    
+      for (let i = 0; i < profesores[0].length; i++) {
+        [nombre, apellidos] = formatNombre(profesores[1][i])
+        const profesor = new Profesor({
+          orden: i,
+          nombre: nombre,
+          apellidos: apellidos,
+          uvus: profesores[0][i],
+          capacidad: profesores[2][i],
+          excedente: 0.0,
+          asignados: 0.0,
+          creditos1: 0.0,
+          creditos2: 0.0
+        });
+    
+        profesoresDB.push(profesor);
+      }
+    
+    try {
+      // await Profesor.insertMany(profesoresDB);
+      console.log('Todos los profesores han sido guardados en la base de datos.');
+    } catch (error) {
+      console.error('Error al guardar los profesores en la base de datos:', error);
+      // Aquí puedes manejar el error como prefieras...
     }
+
+    const gruposRange = { s: { c: 0, r: 7 }, e: { c: 7, r: fullRange.e.r } };
+    const grupos = XLSX.utils.sheet_to_json(worksheet, { range: XLSX.utils.encode_range(gruposRange), header: 1 }); 
+
+    let gruposDB = [];
+    let asignaturasDB = []
+
+    for (let i = 0; i < grupos.length; i++) {
+      const acronimo = grupos[i][0];
+      const asignaturaExistente = asignaturasDB.find(asignatura => asignatura.acronimo === acronimo);
+    
+      if (!asignaturaExistente) {
+        const asignatura = new Asignatura({
+          acronimo: acronimo
+        });
+    
+        asignaturasDB.push(asignatura);
+      }
+
+      const grupo = new Grupo({
+        tipo: grupos[i][1],
+        grupo: grupos[i][2],
+        cuatrimestre: grupos[i][3],
+        acreditacion: grupos[i][4],
+        horario1: grupos[i][6],
+        horario2: grupo[i][7]
+      });
+    
+      gruposDB.push(grupo);
+
+
+    }
+    
+    // Guarda todos los grupos en la base de datos
+    try {
+      // await Grupo.insertMany(gruposDB);
+      // console.log(asignaturasDB);
+      console.log(gruposDB);
+      console.log('Todos los grupos han sido guardados en la base de datos.');
+    } catch (error) {
+      console.error('Error al guardar los grupos en la base de datos:', error);
+      // Aquí puedes manejar el error como prefieras...
+    }
+
+
   } catch (error) {
     console.error('Error al procesar el archivo XLSX:', error);
     res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
@@ -159,6 +114,11 @@ function addQueryParams(url, params) {
     urlParams.set(key, params[key]);
   }
   return url + '?' + urlParams.toString();
+}
+
+function formatNombre(nombre_original) {
+  const [apellidos, nombre] = nombre_original.split(', ');
+  return [nombre, apellidos];
 }
 
 module.exports = router;
