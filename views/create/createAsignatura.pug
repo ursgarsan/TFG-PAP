@@ -2,23 +2,6 @@ extends ../layout-form
 
 block formContent
   form(action="/asignaturas/create", method="post")
-    label(for="nombre") Nombre:
-    input(type="text", name="nombre", class=`form-control ${errors && errors.nombre ? 'error-input' : ''}`, value= data.nombre ? data.nombre : "")
-    br
-    if errors && errors.nombre
-      p.error-message= errors.nombre.msg
-
-    label(for="titulacion") Titulación:
-    input(type="text", name="titulacion", class=`form-control ${errors && errors.titulacion ? 'error-input' : ''}`, value= data.titulacion ? data.titulacion : "")
-    br
-    if errors && errors.titulacion
-      p.error-message= errors.titulacion.msg
-
-    label(for="codigo") Código:
-    input(type="text", name="codigo", class=`form-control ${errors && errors.codigo ? 'error-input' : ''}`, value= data.codigo ? data.codigo : "")
-    br
-    if errors && errors.codigo
-      p.error-message= errors.codigo.msg
 
     label(for="acronimo") Acrónimo:
     input(type="text", name="acronimo", class=`form-control ${errors && errors.acronimo ? 'error-input' : ''}`, value= data.acronimo ? data.acronimo : "")

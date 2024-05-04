@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const horarioSchema = new mongoose.Schema({
-  dias: [{ type: String, enum: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'] }],  
+  dias: String,  
   hora_inicio: {
     type: String,
     required: true,
@@ -22,7 +22,9 @@ const grupoSchema = new mongoose.Schema({
   grupo: String,
   cuatrimestre: String,
   acreditacion: Number,
-  horario: [horarioSchema],
+  peticiones: Number,
+  horario1: horarioSchema,
+  horario2: horarioSchema,
   asignatura_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'asignaturas'

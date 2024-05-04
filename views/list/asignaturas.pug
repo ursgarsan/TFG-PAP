@@ -18,9 +18,6 @@ block content
             td= asignatura.acronimo
             td= asignatura.nombre
             td= asignatura.titulacion
-  if isAdminLoggedIn
-    div.button-container
-      a.btn.btn-primary#btnDescargar(href='/upload/plantillas/asignaturasPlantilla.xlsx', download='asignaturasPlantilla.xlsx') Descargar plantilla para cargar asignaturas
 
     div.button-container
       form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')

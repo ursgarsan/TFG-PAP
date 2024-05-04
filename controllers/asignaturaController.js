@@ -46,8 +46,8 @@ exports.createAsignatura = async (req, res) => {
       return res.render('create/createAsignatura', { title: 'Agregar Nueva Asignatura', data: req.body, errors: errorObj });
     }
 
-    const { nombre, titulacion, codigo, acronimo } = req.body;
-    const nuevaAsignatura = new Asignatura({ nombre, titulacion, codigo, acronimo});
+    const { acronimo } = req.body;
+    const nuevaAsignatura = new Asignatura({ acronimo });
     await nuevaAsignatura.save();
     res.redirect('/asignaturas');
   } catch (error) {

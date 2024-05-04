@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 
 const asignaturaSchema = new mongoose.Schema({
-  nombre: String,
-  titulacion: String,
-  codigo: String,
   acronimo: String,
   grupos: [
     {

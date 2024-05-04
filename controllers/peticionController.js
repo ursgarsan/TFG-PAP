@@ -30,6 +30,14 @@ exports.createPeticion = async (req, res) => {
     const { profesor, grupo, orden } = req.body;
     const nuevaPeticion = new Peticion({ profesor, grupo, orden });
     await nuevaPeticion.save();
+    
+    const grupoBD = await Grupo.findById(grupo);
+    await Grupo.findByIdAndUpdate( 
+      { _id: grupo }, 
+      { 
+          peticiones: grupoBD.peticiones + 1              
+      } 
+  ); 
 
     res.redirect('/');
   } catch (error) {

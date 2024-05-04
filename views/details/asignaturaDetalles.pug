@@ -39,9 +39,6 @@ block content
 
   if isAdminLoggedIn
     div.button-container
-      a.btn.btn-primary#btnDescargar(href='/plantillas/gruposPlantilla.xlsx', download='gruposPlantilla.xlsx') Descargar plantilla para cargar grupos de la asignatura
-
-    div.button-container
       form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
         input(type='file', name='xlsxFile')
         button.btn.btn-primary(type='submit') Cargar archivo XLSX para procesar en la base de datos

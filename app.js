@@ -3,7 +3,6 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 const path = require('path');
 const crypto = require('crypto');
-const Profesor = require('./models/profesorModel');
 const { requireAdmin } = require('./utils/authUtils');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
@@ -45,7 +44,6 @@ app.get('/', (req, res) => {
 });
 
 // Rutas para otras funcionalidades
-app.post('/upload', requireAdmin, xlsxUploader);
 app.use('/profesores', profesoresRoutes);
 app.use('/asignaturas', asignaturasRoutes);
 app.use('/grupos', gruposRoutes);
@@ -54,7 +52,9 @@ app.use('/asignaciones', asignacionesRoutes);
 app.use('/auth', authRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
+
 app.use('/upload', express.static(path.join(__dirname, 'upload')));
+app.post('/upload', xlsxUploader);
 
 app.listen(PORT, async () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}\n`);

@@ -14,15 +14,6 @@ const peticionSchema = new Schema({
     orden: {
         type: Number,
         require: true,
-    },
-    status: {
-        type: String,
-        require: true,
-        default: 'solicitado',
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
     }
 })
 const Peticion = model('peticiones', peticionSchema);
