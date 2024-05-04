@@ -1,7 +1,6 @@
 const express = require('express');
 const multer = require('multer');
 const XLSX = require('xlsx');
-const MongoClient = require('mongodb').MongoClient;
 const path = require('path');
 
 const router = express.Router();
@@ -25,14 +24,13 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     }
 
     try {
-      // Borrar todos los datos existentes
+      // borra todos los datos existentes
       await Profesor.deleteMany({});
       await Grupo.deleteMany({});
       await Asignatura.deleteMany({});
       await Asignacion.deleteMany({});
       await Peticion.deleteMany({});
   
-      // El resto de tu código...
     } catch (error) {
       console.error('Error al procesar el archivo XLSX:', error);
       res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
@@ -68,7 +66,6 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     
     try {
       await Profesor.insertMany(profesoresDB);
-      console.log('Todos los profesores han sido guardados en la base de datos.');
     } catch (error) {
       console.error('Error al guardar los profesores en la base de datos:', error);
       // Aquí puedes manejar el error como prefieras...
@@ -78,18 +75,18 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     const grupos = XLSX.utils.sheet_to_json(worksheet, { range: XLSX.utils.encode_range(gruposRange), header: 1 }); 
 
     let gruposDB = [];
-    let asignaturasDB = []
 
     for (let i = 0; i < grupos.length; i++) {
       const acronimo = grupos[i][0];
-      const asignaturaExistente = asignaturasDB.find(asignatura => asignatura.acronimo === acronimo);
+      const asignaturaExistente = await Asignatura.findOne({ acronimo: acronimo });
     
       if (!asignaturaExistente) {
         const asignatura = new Asignatura({
-          acronimo: acronimo
+          acronimo: acronimo,
+          grupos:[]
         });
     
-        asignaturasDB.push(asignatura);
+        await asignatura.save();
       }
 
       let horario1 = null;
@@ -107,7 +104,8 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         tipo: grupos[i][1],
         grupo: grupos[i][2],
         cuatrimestre: grupos[i][3],
-        acreditacion: grupos[i][4]
+        acreditacion: grupos[i][4],
+        peticiones: 0
       });
 
       if (horario1) {
@@ -117,6 +115,18 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       if (horario2) {
         grupo.horario2 = horario2;
       }
+      
+      const asigCorrespondiente = await Asignatura.findOne({ acronimo: acronimo })
+      grupo.asignatura_id = asigCorrespondiente._id;
+
+      await Asignatura.findByIdAndUpdate(
+        { _id: asigCorrespondiente._id }, 
+        { 
+          $push: {
+            grupos: grupo._id
+          }
+        }
+      );
     
       gruposDB.push(grupo);
 
@@ -124,12 +134,36 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     
     try {
       await Grupo.insertMany(gruposDB);
-      console.log('Todos los grupos han sido guardados en la base de datos.');
     } catch (error) {
       console.error('Error al guardar los grupos en la base de datos:', error);
       // Aquí puedes manejar el error como prefieras...
     }
 
+    const peticionesRange = { s: { c: 8, r: 7 }, e: { c: fullRange.e.c, r: fullRange.e.r } };
+    const peticiones = XLSX.utils.sheet_to_json(worksheet, { range: XLSX.utils.encode_range(peticionesRange), header: 1 });
+    for (let i = 0; i < peticiones.length; i++) {
+      for (let j = 0; j < peticiones[i].length; j++) {
+        if (peticiones[i][j]) {
+          const profesor = await Profesor.findOne({uvus: profesores[0][j]});
+          const asignatura = await Asignatura.findOne({acronimo:grupos[i][0]});
+          const grupo = await Grupo.findOne({tipo: grupos[i][1], grupo: grupos[i][2], cuatrimestre: grupos[i][3], acreditacion: grupos[i][4], asignatura_id: asignatura._id})
+          const peticion = new Peticion ({
+            profesor: profesor._id,
+            grupo: grupo._id,
+            orden: peticiones[i][j]
+          });
+
+          peticion.save();
+
+          await Grupo.findByIdAndUpdate(
+            { _id: grupo._id }, 
+            { 
+              peticiones: grupo.peticiones + 1
+            }
+          );
+        }
+      }
+    }
 
   } catch (error) {
     console.error('Error al procesar el archivo XLSX:', error);
