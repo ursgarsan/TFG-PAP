@@ -9,6 +9,8 @@ const upload = multer();
 const Asignatura = require('../models/asignaturaModel');
 const Profesor = require('../models/profesorModel');
 const Grupo = require('../models/grupoModel');
+const Asignacion = require('../models/asignacionModel');
+const Peticion = require('../models/peticionModel');
 
 router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   try {
@@ -20,6 +22,20 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     const fileExtension = path.extname(file.originalname);
     if (fileExtension.toLowerCase() !== '.xlsx') {
       return res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
+    }
+
+    try {
+      // Borrar todos los datos existentes
+      await Profesor.deleteMany({});
+      await Grupo.deleteMany({});
+      await Asignatura.deleteMany({});
+      await Asignacion.deleteMany({});
+      await Peticion.deleteMany({});
+  
+      // El resto de tu código...
+    } catch (error) {
+      console.error('Error al procesar el archivo XLSX:', error);
+      res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
     }
 
     const workbook = XLSX.read(file.buffer, { type: 'buffer' });
@@ -51,7 +67,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       }
     
     try {
-      // await Profesor.insertMany(profesoresDB);
+      await Profesor.insertMany(profesoresDB);
       console.log('Todos los profesores han sido guardados en la base de datos.');
     } catch (error) {
       console.error('Error al guardar los profesores en la base de datos:', error);
@@ -76,25 +92,38 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         asignaturasDB.push(asignatura);
       }
 
+      let horario1 = null;
+      let horario2 = null;
+
+      if (grupos[i][6]) {
+        horario1 = formatHorario(grupos[i][6]);
+      }
+      
+      if (grupos[i][7]) {
+        horario2 = formatHorario(grupos[i][7]);
+      }
+
       const grupo = new Grupo({
         tipo: grupos[i][1],
         grupo: grupos[i][2],
         cuatrimestre: grupos[i][3],
-        acreditacion: grupos[i][4],
-        horario1: grupos[i][6],
-        horario2: grupo[i][7]
+        acreditacion: grupos[i][4]
       });
+
+      if (horario1) {
+        grupo.horario1 = horario1;
+      }
+      
+      if (horario2) {
+        grupo.horario2 = horario2;
+      }
     
       gruposDB.push(grupo);
 
-
     }
     
-    // Guarda todos los grupos en la base de datos
     try {
-      // await Grupo.insertMany(gruposDB);
-      // console.log(asignaturasDB);
-      console.log(gruposDB);
+      await Grupo.insertMany(gruposDB);
       console.log('Todos los grupos han sido guardados en la base de datos.');
     } catch (error) {
       console.error('Error al guardar los grupos en la base de datos:', error);
@@ -119,6 +148,60 @@ function addQueryParams(url, params) {
 function formatNombre(nombre_original) {
   const [apellidos, nombre] = nombre_original.split(', ');
   return [nombre, apellidos];
+}
+
+function formatHorario(horario) {
+  let new_horario = {};
+  let horario_aux;
+  let hora_inicio;
+  let hora_fin;
+  let dias;
+
+  if (horario.includes(' - ')) {
+      horario_aux = horario.replace('.', '').split(' - ');
+
+      if (horario_aux[1].includes(' a ')) {
+          const horas = horario_aux[1].split(' a ');
+          hora_inicio = horas[0];
+          hora_fin = horas[1];
+      } else {
+          hora_inicio= horario_aux[1];
+          let horas_aux = parseInt(horario_aux[1].split(':')[0]);
+          let minutos_aux = parseInt(horario_aux[1].split(':')[1]);
+
+          horas_aux +=1;
+          minutos_aux +=50;
+
+          if (minutos_aux>60) {
+              horas_aux +=1;
+              minutos_aux -=60;
+          }
+          hora_fin= `${horas_aux}:${minutos_aux}`;
+      }
+
+      if(horario_aux[0].includes(',')) {
+          dias = horario_aux[0].split(', ');
+      } else {
+          dias = horario_aux[0];
+      }
+  } else {
+      if (horario.includes(',')) {
+          dias = horario.replace('.', '').split(', ');
+      } else {
+          dias= horario;
+      }
+
+      hora_inicio = '18:30';
+      hora_fin = '19:50';
+  }
+  
+  new_horario = {
+      'dias': dias,
+      'hora_inicio': hora_inicio,
+      'hora_fin': hora_fin
+  }
+  
+  return new_horario
 }
 
 module.exports = router;
