@@ -1,9 +1,34 @@
-doctype html
-html
+extends layout
+
+block content
     head
-        title Cargando...
+        title Cargando
+        style.
+            .center-screen {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .loader {
+                border: 16px solid #e8eef2ff;
+                border-top: 16px solid #37393aff;
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                animation: spin 2s linear infinite;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
     body
-        h1 Cargando...
+        h1 Espere mientras se generan las asignaciones
+        div.center-screen
+            div.loader
         script.
             window.onload = function() {
                 var xhr = new XMLHttpRequest();
