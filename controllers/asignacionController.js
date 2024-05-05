@@ -79,7 +79,7 @@ async function getData() {
 }
 
 async function grupoOnline(grupo) {
-    return !grupo.horario || (Array.isArray(grupo.horario) && grupo.horario.length === 0);
+    return !grupo.horario1 || (Array.isArray(grupo.horario1) && grupo.horario1.length === 0);
 }
 
 async function formatHorario(horario) {
@@ -87,6 +87,74 @@ async function formatHorario(horario) {
     const hora = parseInt(horaStr);
     const minuto = parseInt(minutoStr);
     return hora * 60 + minuto;
+}
+
+async function obtenerDiasComunes(grupo1, grupo2) {
+    const dias1 = new Set();
+    const dias2 = new Set();
+
+    for (const dia of grupo1.horario1.dias) {
+        dias1.add(dia);
+    }
+
+    if (grupo1.horario2) {
+        for (const dia of grupo1.horario2.dias) {
+            dias1.add(dia);
+        }
+    }
+
+    for (const dia of grupo2.horario1.dias) {
+        dias2.add(dia);
+    }
+
+    if (grupo2.horario2) {
+        for (const dia of grupo2.horario2.dias) {
+            dias2.add(dia);
+        }
+    }
+
+    const diasComunes = new Set([...dias1].filter(dia => dias2.has(dia)));
+
+    return diasComunes;
+}
+
+async function haySolapamiento(grupo1, grupo2, solo1) {
+    const horarios1 = [grupo1.horario1];
+    const horarios2 = [grupo2.horario1];
+
+    if (!solo1) {
+        if (grupo1.horario2) {
+            horarios1.push(grupo1.horario2);
+        }
+
+        if (grupo2.horario2) {
+            horarios2.push(grupo2.horario2);
+        }
+    }
+
+    for (const horario1 of horarios1) {
+        for (const dia of horario1.dias) {
+            for (const horario2 of horarios2) {
+                if (horario2.dias.includes(dia)) {
+                    const inicio1 = await formatHorario(horario1.hora_inicio);
+                    const inicio2 = await formatHorario(horario2.hora_inicio);
+                    const fin1 = await formatHorario(horario1.hora_fin);
+                    const fin2 = await formatHorario(horario2.hora_fin);
+
+                    if (
+                        (inicio1 <= inicio2 && inicio2 < fin1) ||
+                        (inicio2 <= inicio1 && inicio1 < fin2) ||
+                        (inicio1 <= inicio2 && fin2 <= fin1) ||
+                        (inicio2 <= inicio1 && fin1 <= fin2)
+                    ) {
+                        return true; // hay solapamiento horario
+                    }
+                }
+            }
+        }
+    }
+
+    return false; // no hay solapamiento horario
 }
 
 // comprueba si existen conflictos entre dos grupos
@@ -101,52 +169,52 @@ async function conflictoHorarioEntreGrupos(grupo1, grupo2) {
         return false;
     }
 
-    // en el caso de que sean del mismo cuatrimestre vamos a comprobar si se dan el mismo día
-    const dias1 = new Set();
-    const dias2 = new Set();
-    for (const horario of grupo1.horario) {
-        for (const dia of horario.dias) {
-            dias1.add(dia);
-        }
-    }
-    for (const horario of grupo2.horario) {
-        for (const dia of horario.dias) {
-            dias2.add(dia);
-        }
-    }
-    const diasComunes = new Set([...dias1].filter(dia => dias2.has(dia)));
-
-    // si no coinciden los días del horario no hay conflictos
-    if (diasComunes.size == 0) {
+    // si no comparten días no hay conflicto
+    if (await obtenerDiasComunes(grupo1, grupo2).size == 0) {
         return false;
     }
 
-    // en el caso de que los grupos sean en los mismos días vamos a comprobar si las horas coinciden
-    for (const dia of diasComunes) {
-        for (const horario1 of grupo1.horario) {
-            if (horario1.dias.includes(dia)) {
-                for (const horario2 of grupo2.horario) {
-                    if (horario2.dias.includes(dia)) {
-                        const inicio1 = await formatHorario(horario1.hora_inicio);
-                        const inicio2 = await formatHorario(horario2.hora_inicio);
-                        const fin1 = await formatHorario(horario1.hora_fin);
-                        const fin2 = await formatHorario(horario2.hora_fin);
+    const asignGrupo1 = await Asignatura.findById(grupo1.asignatura_id);
+    const asignGrupo2 = await Asignatura.findById(grupo2.asignatura_id);
+    let esGrupo1SO = false;
+    let esGrupo2SO = false;
+    let esGrupo1LAb = true;
+    let esGrupo2LAb = true;
 
-                        if (
-                            (inicio1 <= inicio2 && inicio2 < fin1) ||
-                            (inicio2 <= inicio1 && inicio1 < fin2) ||
-                            (inicio1 <= inicio2 && fin2 <= fin1) ||
-                            (inicio2 <= inicio1 && fin1 <= fin2)
-                        ) {
-                            return true; // hay solapamiento horario
-                        }
-                    }
-                }
-            }
-        }
+    const teorias = ['A', 'B', 'Turno 1', 'Turno 2'];
+
+    if(asignGrupo1.acronimo === 'SSOO-IS') {
+        esGrupo1SO = true;
     }
 
-    return false; // no hay solapamiento horario
+    if (asignGrupo2.acronimo === 'SSOO-IS') {
+        esGrupo2SO = true;
+    }
+
+    if(teorias.includes(grupo1.tipo)) {
+        esGrupo1LAb = false;
+    }
+
+    if(teorias.includes(grupo2.tipo)) {
+        esGrupo2LAb = false;
+    }
+
+    // si ambos grupos son SSOO-IS no hay conflicto
+    if (esGrupo1SO && esGrupo2SO) {
+        return false;
+    }
+
+    // si ambos grupos son lab o teoría hay que mirar todos los horarios
+    if (esGrupo1LAb === esGrupo2LAb) {
+        return await haySolapamiento(grupo1, grupo2, false);
+    } else {
+        if(esGrupo1SO || esGrupo2SO) {
+            return await haySolapamiento(grupo1, grupo2, false);
+        } else {
+            // si ninguno de los dos es SO y estoy comparando teoría y lab únicamente causa conflicto el horario1
+            return await haySolapamiento(grupo1, grupo2, true);
+        }
+    }
 }
 
 async function filtroPorProfesor(profesorId) {

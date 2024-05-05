@@ -15,12 +15,12 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   try {
     const file = req.file;
     if (!file) {
-      return res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'No se ha proporcionado ningún archivo' }));
+      return res.redirect(await addQueryParams('/asignaturas', { uploaded: false, error: 'No se ha proporcionado ningún archivo' }));
     }
 
     const fileExtension = path.extname(file.originalname);
     if (fileExtension.toLowerCase() !== '.xlsx') {
-      return res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
+      return res.redirect(await addQueryParams('/asignaturas', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
     }
 
     try {
@@ -33,7 +33,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   
     } catch (error) {
       console.error('Error al procesar el archivo XLSX:', error);
-      res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
+      res.redirect(await addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
     }
 
     const workbook = XLSX.read(file.buffer, { type: 'buffer' });
@@ -48,7 +48,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     let profesoresDB = [];
     
       for (let i = 0; i < profesores[0].length; i++) {
-        [nombre, apellidos] = formatNombre(profesores[1][i])
+        [nombre, apellidos] = await formatNombre(profesores[1][i])
         const profesor = new Profesor({
           orden: i,
           nombre: nombre,
@@ -93,11 +93,11 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       let horario2 = null;
 
       if (grupos[i][6]) {
-        horario1 = formatHorario(grupos[i][6]);
+        horario1 = await formatHorario(grupos[i][6]);
       }
       
       if (grupos[i][7]) {
-        horario2 = formatHorario(grupos[i][7]);
+        horario2 = await formatHorario(grupos[i][7]);
       }
 
       const grupo = new Grupo({
@@ -115,7 +115,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       if (horario2) {
         grupo.horario2 = horario2;
       }
-      
+
       const asigCorrespondiente = await Asignatura.findOne({ acronimo: acronimo })
       grupo.asignatura_id = asigCorrespondiente._id;
 
@@ -133,7 +133,14 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     }
     
     try {
-      await Grupo.insertMany(gruposDB);
+      for (const grupo of gruposDB) {
+        try {
+            await new Grupo(grupo).save();
+        } catch (error) {
+            console.error(`Error al guardar el grupo: ${JSON.stringify(grupo)}`);
+            console.error(error);
+        }
+    }
     } catch (error) {
       console.error('Error al guardar los grupos en la base de datos:', error);
       // Aquí puedes manejar el error como prefieras...
@@ -146,7 +153,40 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         if (peticiones[i][j]) {
           const profesor = await Profesor.findOne({uvus: profesores[0][j]});
           const asignatura = await Asignatura.findOne({acronimo:grupos[i][0]});
-          const grupo = await Grupo.findOne({tipo: grupos[i][1], grupo: grupos[i][2], cuatrimestre: grupos[i][3], acreditacion: grupos[i][4], asignatura_id: asignatura._id})
+
+          let horario1 = null;
+          let horario2 = null;
+          
+          if (grupos[i][6]) {
+              horario1 = await formatHorario(grupos[i][6]);
+          }
+          
+          if (grupos[i][7]) {
+              horario2 = await formatHorario(grupos[i][7]);
+          }
+          
+          let query = {
+              tipo: grupos[i][1], 
+              grupo: grupos[i][2].toString(), 
+              cuatrimestre: grupos[i][3].toString(), 
+              acreditacion: grupos[i][4], 
+              asignatura_id: asignatura._id
+          };
+          
+          if (horario1) {
+            query['horario1.dias'] = horario1.dias;
+            query['horario1.hora_inicio'] =horario1.hora_inicio
+            query['horario1.hora_fin'] =horario1.hora_fin
+          }
+          
+          if (horario2) {
+            query['horario2.dias'] = horario2.dias;
+            query['horario2.hora_inicio'] =horario2.hora_inicio
+            query['horario2.hora_fin'] =horario2.hora_fin
+          }
+          
+          const grupo = await Grupo.findOne(query);
+
           const peticion = new Peticion ({
             profesor: profesor._id,
             grupo: grupo._id,
@@ -164,14 +204,14 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         }
       }
     }
-
+    console.log('Datos insertados correctamente')
   } catch (error) {
     console.error('Error al procesar el archivo XLSX:', error);
-    res.redirect(addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
+    res.redirect(await addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
   }
 });
 
-function addQueryParams(url, params) {
+async function addQueryParams(url, params) {
   const urlParams = new URLSearchParams();
   for (const key in params) {
     urlParams.set(key, params[key]);
@@ -179,12 +219,12 @@ function addQueryParams(url, params) {
   return url + '?' + urlParams.toString();
 }
 
-function formatNombre(nombre_original) {
+async function formatNombre(nombre_original) {
   const [apellidos, nombre] = nombre_original.split(', ');
   return [nombre, apellidos];
 }
 
-function formatHorario(horario) {
+async function formatHorario(horario) {
   let new_horario = {};
   let horario_aux;
   let hora_inicio;
@@ -216,13 +256,13 @@ function formatHorario(horario) {
       if(horario_aux[0].includes(',')) {
           dias = horario_aux[0].split(', ');
       } else {
-          dias = horario_aux[0];
+          dias = [horario_aux[0]];
       }
   } else {
       if (horario.includes(',')) {
           dias = horario.replace('.', '').split(', ');
       } else {
-          dias= horario;
+          dias= [horario];
       }
 
       hora_inicio = '18:30';
@@ -230,9 +270,9 @@ function formatHorario(horario) {
   }
   
   new_horario = {
-      'dias': dias,
-      'hora_inicio': hora_inicio,
-      'hora_fin': hora_fin
+    'dias': dias.map(dia => dia.replace(/\.|\s/g, '')),
+    'hora_inicio': hora_inicio,
+    'hora_fin': hora_fin
   }
   
   return new_horario

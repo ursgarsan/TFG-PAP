@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const horarioSchema = new mongoose.Schema({
-  dias: [String],  
+  dias: [{ type: String, enum: ['L', 'Ma', 'Mi', 'J', 'V'] }],    
   hora_inicio: {
     type: String,
     required: true,
