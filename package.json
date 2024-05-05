@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
-    "populate": "node database/populate.js",
-    "populate-demo": "node database/populate_demo.js"
+    "populate": "node database/populate.js"
   },
   "keywords": [],
   "author": "",
