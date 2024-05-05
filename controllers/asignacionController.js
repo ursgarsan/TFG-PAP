@@ -462,6 +462,8 @@ exports.exportarAsignaciones = async (req, res) => {
     // Obtener los datos de los grupos
     const grupos = await Grupo.find().populate('asignatura_id');
 
+    const grupoRowMap = {};
+
     // Agregar una fila por cada grupo
     grupos.forEach(grupo => {
         const grupoRow = [
@@ -474,7 +476,30 @@ exports.exportarAsignaciones = async (req, res) => {
             horarioToString(grupo.horario1),
             horarioToString(grupo.horario2)
         ];
-        worksheet.addRow(grupoRow);
+        const row = worksheet.addRow(grupoRow);
+        grupoRowMap[grupo._id] = row.number;
+    });
+
+    // Obtener los datos de las asignaciones
+    const asignaciones = await Asignacion.find();
+
+    // Recorrer las asignaciones
+    asignaciones.forEach(asignacion => {
+        const grupoRow = worksheet.getRow(grupoRowMap[asignacion.grupo._id]);
+        const profesorColumn = uvusRow.indexOf(asignacion.profesor.uvus) + 1;
+
+        // Obtener la celda donde coinciden el profesor y el grupo
+        const cell = grupoRow.getCell(profesorColumn);
+        cell.value = 'X';
+
+        // Aplicar formato a la celda
+        cell.font = { bold: true, color: { argb: 'FFFF0000' } };
+        cell.alignment = { horizontal: 'center' };
+        cell.fill = {
+            type: 'pattern',
+            pattern: 'solid',
+            fgColor: { argb: 'FFFFC0CB' }
+        };
     });
 
     // Establecer el ancho de las columnas
