@@ -349,7 +349,7 @@ async function asignacionGruposRestantes() {
             const grupo = await Grupo.findById(grupoId);
             let asignado = false;
 
-            for (const profesor of profesores) {
+            for (const profesor of [...profesores].reverse()) {
                 if (await asignarGrupoSiEsPosible(profesor, grupo)) {
                     asignado = true;
                     break;
@@ -431,20 +431,20 @@ exports.exportarAsignaciones = async (req, res) => {
     const profesores = await Profesor.find();
     
     // Crear las filas con los datos de los profesores
-    const uvusRow = Array(10).fill(null);
-    const nombresRow = Array(10).fill(null);
-    const capacidadRow = Array(9).fill(null);
-    const excedenteRow = Array(9).fill(null);
-    const asignadosRow = Array(9).fill(null);  
-    const creditos1Row = Array(9).fill(null);  
-    const creditos2Row = Array(9).fill(null);
+    const uvusRow = Array(8).fill(null);
+    const nombresRow = Array(8).fill(null);
+    const capacidadRow = Array(7).fill(null);
+    const excedenteRow = Array(7).fill(null);
+    const asignadosRow = Array(7).fill(null);  
+    const creditos1Row = Array(7).fill(null);  
+    const creditos2Row = Array(7).fill(null);
     const headerGrupoRow = [];          
-    capacidadRow.push('Capacidad efect.') ;
+    capacidadRow.push('Capacidad') ;
     excedenteRow.push('Excedente');
     asignadosRow.push('Asignados');
     creditos1Row.push('C1');
     creditos2Row.push('C2');
-    headerGrupoRow.push('Titulación', 'Código', 'Nombre', 'Acrónimo', 'Tipo', 'Grupo', 'Cuatrimestre', 'Acreditación', 'Horario1', 'Horario2');
+    headerGrupoRow.push('Acrónimo', 'Tipo', 'Grupo', 'Cuatrimestre','Peticiones', 'Acreditación', 'Horario1', 'Horario2');
 
     profesores.forEach(profesor => {
         uvusRow.push(profesor.uvus);
@@ -458,6 +458,33 @@ exports.exportarAsignaciones = async (req, res) => {
     
     // Agregar todas las filas a la hoja de trabajo a la vez
     worksheet.addRows([uvusRow, nombresRow, capacidadRow, excedenteRow, asignadosRow, creditos1Row, creditos2Row, headerGrupoRow]);
+
+    // Obtener los datos de los grupos
+    const grupos = await Grupo.find().populate('asignatura_id');
+
+    // Agregar una fila por cada grupo
+    grupos.forEach(grupo => {
+        const grupoRow = [
+            grupo.asignatura_id.acronimo,
+            grupo.tipo,
+            Number(grupo.grupo),
+            Number(grupo.cuatrimestre),
+            grupo.peticiones,
+            grupo.acreditacion,
+            horarioToString(grupo.horario1),
+            horarioToString(grupo.horario2)
+        ];
+        worksheet.addRow(grupoRow);
+    });
+
+    // Establecer el ancho de las columnas
+    for(let i = 1; i <= worksheet.columnCount; i++) {
+        if (i === 7 || i === 8) {
+            worksheet.getColumn(i).width = 15;
+        } else {
+            worksheet.getColumn(i).width = 10.5;
+        }
+    }
     
     // Dar formato a las celdas de los nombres
     nombresRow.forEach((nombre, index) => {
@@ -475,4 +502,16 @@ exports.exportarAsignaciones = async (req, res) => {
     await workbook.xlsx.write(res);
     
     res.end();
+}
+
+function horarioToString(horario) {
+    if (!horario) {
+        return '';
+    }
+
+    const dias = horario.dias.join(', ');
+    const hora_inicio = horario.hora_inicio;
+    const hora_fin = horario.hora_fin;
+
+    return `${dias} - ${hora_inicio} a ${hora_fin}`;
 }
