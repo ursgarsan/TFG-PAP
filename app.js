@@ -3,7 +3,6 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 const path = require('path');
 const crypto = require('crypto');
-const { requireAdmin } = require('./utils/authUtils');
 
 const profesoresRoutes = require('./routes/profesorRoutes');
 const asignaturasRoutes = require('./routes/asignaturaRoutes');

@@ -15,12 +15,12 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   try {
     const file = req.file;
     if (!file) {
-      return res.redirect(await addQueryParams('/asignaturas', { uploaded: false, error: 'No se ha proporcionado ningún archivo' }));
+      return res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'No se ha proporcionado ningún archivo' }));
     }
 
     const fileExtension = path.extname(file.originalname);
     if (fileExtension.toLowerCase() !== '.xlsx') {
-      return res.redirect(await addQueryParams('/asignaturas', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
+      return res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
     }
 
     try {
@@ -33,7 +33,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   
     } catch (error) {
       console.error('Error al procesar el archivo XLSX:', error);
-      res.redirect(await addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
+      res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'Error al eliminar los datos anteriores' }));
     }
 
     const workbook = XLSX.read(file.buffer, { type: 'buffer' });
@@ -67,8 +67,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     try {
       await Profesor.insertMany(profesoresDB);
     } catch (error) {
-      console.error('Error al guardar los profesores en la base de datos:', error);
-      // Aquí puedes manejar el error como prefieras...
+      res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'Error al guardar los profesores en la base de datos, asegúrese de que el formato es el acordado' }));
     }
 
     const gruposRange = { s: { c: 0, r: 7 }, e: { c: 7, r: fullRange.e.r } };
@@ -142,7 +141,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         }
     }
     } catch (error) {
-      console.error('Error al guardar los grupos en la base de datos:', error);
+      res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'Error al guardar los grupos en la base de datos, asegúrese de que el formato es el acordado' }));
       // Aquí puedes manejar el error como prefieras...
     }
 
@@ -204,10 +203,9 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         }
       }
     }
-    console.log('Datos insertados correctamente')
+    res.redirect(await addQueryParams('/asignaciones', { uploaded: true}));
   } catch (error) {
-    console.error('Error al procesar el archivo XLSX:', error);
-    res.redirect(await addQueryParams('/asignaturas', { uploaded: false, error: 'Error al procesar el archivo XLSX' }));
+    res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'Error al procesar el archivo' }));
   }
 });
 

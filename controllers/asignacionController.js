@@ -16,15 +16,12 @@ let gruposPendientes;
 let numGrupos;
 let numProf;
 
-(async function() {
-    ({ peticiones, profesores, gruposPendientes, numGrupos, numProf } = await getData());
-})();
-
 exports.crearAsignaciones = (req, res) => {
     res.render('loading');
 }
 
 exports.generarAsignaciones = async (req, res) => {
+    ({ peticiones, profesores, gruposPendientes, numGrupos, numProf } = await getData());
     await generaAsignaciones();
     res.status(200).send();
 }
