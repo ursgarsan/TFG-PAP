@@ -33,11 +33,14 @@ html
                 a.btn.btn-outline-secondary.ml-2(type='button', href='/auth/login') Iniciar Administrador
             else
               li.nav-item
-                a.btn.btn-outline-secondary.ml-2(type='button', href='/auth/logout', onclick='clearSelectedUVUS()') Cerrar Administrador
+                a.nav-link(href='/dashboard') Dashboard            
+              li.nav-item
+                a.btn.btn-outline-secondary.ml-2(type='button', href='/auth/logout') Cerrar Administrador
 
     .container-fluid.main-content
       block content
 
     footer.footer.bg-dark.text-light.text-center.footer-height
       .container
-        p Copyright © 2024 My Website
+        p TFG Plan de Asignación del Profesorado 2023-2024
+        p Hecho por Úrsula Garrucho Sánchez 

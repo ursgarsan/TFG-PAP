@@ -27,10 +27,21 @@
 }
 
 .footer-height {
-  min-height: 8vh;
+  margin-top: auto;
+}
+
+footer.footer p {
+  font-size: 0.6em;
+}
+
+footer.footer {
+  padding: 0.4em;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-size: 2vh;
   overflow-x: hidden;
 }
@@ -72,6 +83,10 @@ h1 {
   font-size: 3vmax;
 }
 
+h2 {
+  font-size: 2.5vmax;
+}
+
 /* TABLAS */
 .table-container {
   overflow-x: auto;
@@ -95,6 +110,14 @@ table td {
   align-items: center;
   padding-top: 5vh;
   padding-bottom: 8vh;
+}
+
+.button-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .btn.btn-primary {
@@ -149,6 +172,19 @@ table td {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.dash-container {
+  padding: 4vh;
+  margin: 4vh;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-icon {
+  color: var(--gris-oscuro);
+}
+
+/* Estilos para tablets en modo paisaje y algunos ordenadores de escritorio pequeños */
 @media only screen and (min-width: 1000px) {
   .btn {
     font-size: 2.5vh;
@@ -157,5 +193,10 @@ table td {
     font-size: 2.5vh;
     overflow-x: hidden;
   }
+}
+
+/* Estilos para ordenadores de escritorio grandes */
+@media only screen and (min-width: 1400px) {
+  /* Tus estilos aquí */
 }
 

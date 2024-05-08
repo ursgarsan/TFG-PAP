@@ -11,6 +11,13 @@ const peticionesRoutes = require('./routes/peticionRoutes');
 const asignacionesRoutes = require('./routes/asignacionRoutes');
 const authRoutes = require('./routes/authRoutes');
 const xlsxUploader = require('./upload/xlsxUploader');
+const { requireAdmin } = require('./utils/authUtils');
+
+const Asignacion = require('./models/asignacionModel');
+const Asignatura = require('./models/asignaturaModel');
+const Profesor = require('./models/profesorModel');
+const Peticion = require('./models/peticionModel');
+const Grupo = require('./models/grupoModel');
 
 
 const app = express();
@@ -55,6 +62,32 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/upload', express.static(path.join(__dirname, 'upload')));
 app.post('/upload', xlsxUploader);
 
+app.get('/dashboard', requireAdmin, (req, res) => {
+  res.render('dashboard');
+});
+
+app.get('/clear', requireAdmin, async (req, res) => {
+  try {
+      await Asignacion.deleteMany({})
+      await Peticion.deleteMany({})
+      await Profesor.deleteMany({})
+      await Grupo.deleteMany({})
+      await Asignatura.deleteMany({})
+      return res.redirect(await addQueryParams('/dashboard', { uploaded: true }));
+  } catch (error) {
+    return res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: 'Error al borrar los elementos de la base de datos'  }));
+  }
+
+});
+
 app.listen(PORT, async () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}\n`);
 });
+
+async function addQueryParams(url, params) {
+  const urlParams = new URLSearchParams();
+  for (const key in params) {
+    urlParams.set(key, params[key]);
+  }
+  return url + '?' + urlParams.toString();
+}
