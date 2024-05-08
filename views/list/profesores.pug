@@ -10,6 +10,8 @@ block content
           th(scope='col') Apellidos
           th(scope='col') UVUS
           th(scope='col') Capacidad
+          if isAdminLoggedIn
+            th(scope='col')
       tbody
         each profesor in profesores
           tr
@@ -17,8 +19,7 @@ block content
             td= profesor.apellidos
             td= profesor.uvus
             td= profesor.capacidad
-  if isAdminLoggedIn    
-    div.button-container
-      form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
-        input(type='file', name='xlsxFile')
-        button.btn.btn-primary(type='submit') Cargar archivo XLSX para procesar en la base de datos
+            if isAdminLoggedIn
+              td.d-flex.justify-content-center.align-items-center(style='height: 50px;')
+                a(href=`/profesores/${profesor._id}/delete`)
+                  i(class='bi bi-trash my-icon')

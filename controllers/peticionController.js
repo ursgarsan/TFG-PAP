@@ -15,6 +15,18 @@ exports.createForm = async (req, res) => {
     }
   };
 
+exports.getPeticiones = async (req, res) => {
+  try {
+    const title = 'Peticiones';
+    const peticiones = await Peticion.find().populate('profesor').populate('grupo')
+    console.log(peticiones[0].grupo.grupo)
+    res.render('list/peticiones', { peticiones, title});
+  } catch (error) {
+    console.error('Error al obtener peticiones:', error);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+}
+
 exports.createPeticion = async (req, res) => {
   const errors = validationResult(req);
   try {

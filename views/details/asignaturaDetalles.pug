@@ -1,14 +1,7 @@
 extends ../layout
 
 block content
-  h1 Detalles de Asignatura: #{asignatura.nombre}
-
-  h2 Información de la Asignatura
-  p Titulación: #{asignatura.titulacion}
-  p Código: #{asignatura.codigo}
-  p Acrónimo: #{asignatura.acronimo}
-
-  h2 Grupos
+  h1 Grupos de la asignatura #{asignatura.acronimo}
   if asignatura.grupos.length > 0
     .table-container
       table#tablaData.table.table-striped
@@ -30,18 +23,18 @@ block content
                 td
                   p
                     span.underline Día(s):
-                    | #{grupo.horario1.dias.join(', ')}
+                    |  #{grupo.horario1.dias.join(', ')}
                     br
                     span.underline Horario:
-                    | #{grupo.horario1.hora_inicio} a #{grupo.horario1.hora_fin}
+                    |  #{grupo.horario1.hora_inicio} a #{grupo.horario1.hora_fin}
               else if grupo.horario2
                 td
                   p
                     span.underline Día(s):
-                    | #{grupo.horario2.dias.join(', ')}
+                    |  #{grupo.horario2.dias.join(', ')}
                     br
                     span.underline Horario:
-                    | #{grupo.horario2.hora_inicio} a #{grupo.horario2.hora_fin}
+                    |  #{grupo.horario2.hora_inicio} a #{grupo.horario2.hora_fin}
               else
                 td -                  
   else

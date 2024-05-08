@@ -15,12 +15,12 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   try {
     const file = req.file;
     if (!file) {
-      return res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'No se ha proporcionado ningún archivo' }));
+      return res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: 'No se ha proporcionado ningún archivo' }));
     }
 
     const fileExtension = path.extname(file.originalname);
     if (fileExtension.toLowerCase() !== '.xlsx') {
-      return res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
+      return res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: 'El archivo no es de tipo .xlsx' }));
     }
 
     try {
@@ -33,7 +33,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
   
     } catch (error) {
       console.error('Error al procesar el archivo XLSX:', error);
-      res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'Error al eliminar los datos anteriores' }));
+      res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: 'Error al eliminar los datos anteriores' }));
     }
 
     const workbook = XLSX.read(file.buffer, { type: 'buffer' });
@@ -44,10 +44,9 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
 
     const profesorRange = { s: { c: 8, r: 0 }, e: { c: fullRange.e.c, r: 5 } };
     const profesores = XLSX.utils.sheet_to_json(worksheet, { range: XLSX.utils.encode_range(profesorRange), header: 1 });
-    
-    let profesoresDB = [];
-    
-      for (let i = 0; i < profesores[0].length; i++) {
+
+    for (let i = 0; i < profesores[0].length; i++) {
+      try {
         [nombre, apellidos] = await formatNombre(profesores[1][i])
         const profesor = new Profesor({
           orden: i,
@@ -61,13 +60,10 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
           creditos2: 0.0
         });
     
-        profesoresDB.push(profesor);
+        await profesor.save();
+      } catch (error) {
+        return res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: `Error al guardar el profesor de la columna ${i + 1}: ${error.message}` }));
       }
-    
-    try {
-      await Profesor.insertMany(profesoresDB);
-    } catch (error) {
-      res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'Error al guardar los profesores en la base de datos, asegúrese de que el formato es el acordado' }));
     }
 
     const gruposRange = { s: { c: 0, r: 7 }, e: { c: 7, r: fullRange.e.r } };
@@ -79,14 +75,19 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       const acronimo = grupos[i][0];
       const asignaturaExistente = await Asignatura.findOne({ acronimo: acronimo });
     
-      if (!asignaturaExistente) {
-        const asignatura = new Asignatura({
-          acronimo: acronimo,
-          grupos:[]
-        });
-    
-        await asignatura.save();
+      try {
+        if (!asignaturaExistente) {
+          const asignatura = new Asignatura({
+            acronimo: acronimo,
+            grupos:[]
+          });
+      
+          await asignatura.save();
+        }        
+      } catch (error){
+        return res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: `Error al guardar la asignatura de la fila ${i + 1}: ${error.message}` }));
       }
+
 
       let horario1 = null;
       let horario2 = null;
@@ -136,13 +137,12 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         try {
             await new Grupo(grupo).save();
         } catch (error) {
-            console.error(`Error al guardar el grupo: ${JSON.stringify(grupo)}`);
-            console.error(error);
+            return res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: `Error al guardar el grupo: ${JSON.stringify(grupo)}` }));
+
         }
     }
     } catch (error) {
-      res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'Error al guardar los grupos en la base de datos, asegúrese de que el formato es el acordado' }));
-      // Aquí puedes manejar el error como prefieras...
+      res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: 'Error al guardar los grupos en la base de datos, asegúrese de que el formato es el acordado' }));
     }
 
     const peticionesRange = { s: { c: 8, r: 7 }, e: { c: fullRange.e.c, r: fullRange.e.r } };
@@ -203,9 +203,9 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
         }
       }
     }
-    res.redirect(await addQueryParams('/asignaciones', { uploaded: true}));
+    res.redirect(await addQueryParams('/dashboard', { uploaded: true}));
   } catch (error) {
-    res.redirect(await addQueryParams('/asignaciones', { uploaded: false, error: 'Error al procesar el archivo' }));
+    res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: 'Error al procesar el archivo' }));
   }
 });
 

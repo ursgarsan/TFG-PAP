@@ -25,6 +25,18 @@ exports.getAllAsignaturas = async (req, res) => {
     }
 };
 
+exports.deleteAsignatura = async (req, res) => {
+  try {
+    const asignaturaId = req.params.id;
+    await Grupo.deleteMany({ asignatura_id: asignaturaId });
+    await Asignatura.findByIdAndDelete(asignaturaId);
+    res.redirect('/asignaturas');
+  } catch (error) {
+    console.error('Error al borrar la asignatura y sus grupos:', error);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+}
+
 exports.createForm = async (req, res) => {
   try {
     const data = req.body;

@@ -6,5 +6,6 @@ const { requireAdmin } = require('../utils/authUtils');
 router.get('/', profesorController.getAllProfesores);
 router.get('/create', requireAdmin, profesorController.createForm);
 router.post('/create', requireAdmin, profesorController.createProfesor);
+router.get('/:id/delete', requireAdmin, profesorController.deleteProfesor);
 
 module.exports = router;

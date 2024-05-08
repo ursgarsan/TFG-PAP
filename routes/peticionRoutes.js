@@ -5,5 +5,6 @@ const { createPeticionValidation } = require('../validations/peticionValidation'
 
 router.get('/create', peticionController.createForm);
 router.post('/create', createPeticionValidation, peticionController.createPeticion);
+router.get('/', peticionController.getPeticiones);
 
 module.exports = router;

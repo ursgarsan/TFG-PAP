@@ -21,6 +21,7 @@ exports.crearAsignaciones = (req, res) => {
 }
 
 exports.generarAsignaciones = async (req, res) => {
+    await Asignacion.deleteMany({});
     ({ peticiones, profesores, gruposPendientes, numGrupos, numProf } = await getData());
     await generaAsignaciones();
     res.status(200).send();

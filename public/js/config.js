@@ -47,7 +47,7 @@ $(document).ready(function() {
     if (uploaded === 'true') {
       Swal.fire({
         icon: 'success',
-        text: '¡El archivo se ha cargado correctamente!',
+        text: '¡La operación se ha realizado correctamente!',
         showConfirmButton: false,
         timer: 1500
       }).then(() => {

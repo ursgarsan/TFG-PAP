@@ -4,8 +4,8 @@ const asignacionController = require('../controllers/asignacionController');
 const { requireAdmin } = require('../utils/authUtils');
 
 router.get('/', asignacionController.getAllAsignaciones);
-router.get('/create', asignacionController.crearAsignaciones);
-router.get('/generate', asignacionController.generarAsignaciones);
-router.get('/export', asignacionController.exportarAsignaciones);
+router.get('/create', requireAdmin, asignacionController.crearAsignaciones);
+router.get('/generate', requireAdmin, asignacionController.generarAsignaciones);
+router.get('/export', requireAdmin, asignacionController.exportarAsignaciones);
 
 module.exports = router;

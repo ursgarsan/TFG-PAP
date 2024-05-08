@@ -1,4 +1,5 @@
 const Profesor = require('../models/profesorModel');
+const Peticion = require('../models/peticionModel');
 const { esAdmin } = require('../utils/authUtils');
 
 exports.getAllProfesores = async (req, res) => {
@@ -11,6 +12,18 @@ exports.getAllProfesores = async (req, res) => {
     res.status(500).json({ message: 'Error interno del servidor' });
   }
 };
+
+exports.deleteProfesor = async (req, res) => {
+  try {
+    const profesorId = req.params.id;
+    await Peticion.deleteMany({ profesor: profesorId });
+    await Profesor.findByIdAndDelete(profesorId);
+    res.redirect('/profesores');
+  } catch (error) {
+    console.error('Error al borrar el profesor', error);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+}
 
 exports.createForm = async (req, res) => {
   try {
