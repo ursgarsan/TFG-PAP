@@ -18,8 +18,12 @@ exports.createForm = async (req, res) => {
 exports.getPeticiones = async (req, res) => {
   try {
     const title = 'Peticiones';
-    const peticiones = await Peticion.find().populate('profesor').populate('grupo')
-    console.log(peticiones[0].grupo.grupo)
+    const peticiones = await Peticion.find()
+    .populate('profesor')
+    .populate({
+      path: 'grupo',
+      populate: { path: 'asignatura_id' }
+    });
     res.render('list/peticiones', { peticiones, title});
   } catch (error) {
     console.error('Error al obtener peticiones:', error);

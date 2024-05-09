@@ -1,6 +1,7 @@
 const Asignatura = require('../models/asignaturaModel');
 const Grupo = require('../models/grupoModel');
 const { validationResult } = require('express-validator');
+const Peticion = require('../models/peticionModel');
 
 exports.getAllAsignaturas = async (req, res) => {
     try {
@@ -28,6 +29,8 @@ exports.getAllAsignaturas = async (req, res) => {
 exports.deleteAsignatura = async (req, res) => {
   try {
     const asignaturaId = req.params.id;
+    const grupos = (await Grupo.find({asignatura_id: asignaturaId})).map(grupo => grupo._id);
+    await Peticion.deleteMany({grupo: {$in: grupos}})
     await Grupo.deleteMany({ asignatura_id: asignaturaId });
     await Asignatura.findByIdAndDelete(asignaturaId);
     res.redirect('/asignaturas');
