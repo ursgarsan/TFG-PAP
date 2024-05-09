@@ -538,3 +538,14 @@ function horarioToString(horario) {
 
     return `${dias} - ${hora_inicio} a ${hora_fin}`;
 }
+
+exports.deleteAsignacion = async (req, res) => {
+    try {
+      const asignacionId = req.params.id;
+      await Asignacion.deleteMany({_id: asignacionId});
+      res.redirect('/asignaciones');
+    } catch (error) {
+      console.error('Error al borrar la asignación:', error);
+      res.status(500).json({ message: 'Error interno del servidor' });
+    }
+  }

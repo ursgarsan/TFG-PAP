@@ -13,6 +13,8 @@ block content
           th(scope='col') UVUS
           th(scope='col') Asignados 
           th(scope='col') Excedente
+          if isAdminLoggedIn
+            th(scope='col')          
 
       tbody
         each asignacion in asignaciones
@@ -24,3 +26,7 @@ block content
             td= asignacion.profesor.uvus
             td= asignacion.profesor.asignados.toFixed(2) 
             td= asignacion.profesor.excedente.toFixed(2)
+            if isAdminLoggedIn
+              td.d-flex.justify-content-center.align-items-center(style='height: 50px;')
+                a(href=`/asignaciones/${asignacion._id}/delete`)
+                  i(class='bi bi-trash my-icon')             
