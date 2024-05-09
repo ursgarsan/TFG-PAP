@@ -1,5 +1,6 @@
 const Profesor = require('../models/profesorModel');
 const Peticion = require('../models/peticionModel');
+const Asignacion = require('../models/asignacionModel');
 const { esAdmin } = require('../utils/authUtils');
 
 exports.getAllProfesores = async (req, res) => {
@@ -17,6 +18,7 @@ exports.deleteProfesor = async (req, res) => {
   try {
     const profesorId = req.params.id;
     await Peticion.deleteMany({ profesor: profesorId });
+    await Asignacion.deleteMany({"profesor._id": profesorId});
     await Profesor.findByIdAndDelete(profesorId);
     res.redirect('/profesores');
   } catch (error) {
