@@ -17,3 +17,7 @@ block content
               td.d-flex.justify-content-center.align-items-center(style='height: 50px;')
                 a(href=`/asignaturas/${asignatura._id}/delete`)
                   i(class='bi bi-trash my-icon')
+  if isAdminLoggedIn
+    .button-container
+      a.btn.btn-primary(style='margin-right: 3vw;' href='/asignaturas/create') Crear Asignatura
+      a.btn.btn-primary(href='/grupos/create') Crear Grupo

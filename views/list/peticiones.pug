@@ -27,4 +27,6 @@ block content
             if isAdminLoggedIn
               td.d-flex.justify-content-center.align-items-center(style='height: 50px;')
                 a(href=`/peticiones/${peticion._id}/delete`)
-                  i(class='bi bi-trash my-icon')            
+                  i(class='bi bi-trash my-icon')  
+  .button-container
+    a.btn.btn-primary(href='/peticiones/create') Crear Petición          

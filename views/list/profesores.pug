@@ -23,3 +23,7 @@ block content
               td.d-flex.justify-content-center.align-items-center(style='height: 50px;')
                 a(href=`/profesores/${profesor._id}/delete`)
                   i(class='bi bi-trash my-icon')
+
+  if isAdminLoggedIn
+    .button-container
+      a.btn.btn-primary(href='/profesores/create') Crear Profesor
