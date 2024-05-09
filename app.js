@@ -4,21 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const crypto = require('crypto');
 
-const profesoresRoutes = require('./routes/profesorRoutes');
-const asignaturasRoutes = require('./routes/asignaturaRoutes');
-const gruposRoutes = require('./routes/grupoRoutes');
-const peticionesRoutes = require('./routes/peticionRoutes');
-const asignacionesRoutes = require('./routes/asignacionRoutes');
-const authRoutes = require('./routes/authRoutes');
-const xlsxUploader = require('./upload/xlsxUploader');
-const { requireAdmin } = require('./utils/authUtils');
-
-const Asignacion = require('./models/asignacionModel');
-const Asignatura = require('./models/asignaturaModel');
-const Profesor = require('./models/profesorModel');
-const Peticion = require('./models/peticionModel');
-const Grupo = require('./models/grupoModel');
-
+const appRoutes = require('./routes/appRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -45,45 +31,12 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res) => {
-  res.render('index', { title: 'Inicio'});
-});
-
-// Rutas para otras funcionalidades
-app.use('/profesores', profesoresRoutes);
-app.use('/asignaturas', asignaturasRoutes);
-app.use('/grupos', gruposRoutes);
-app.use('/peticiones', peticionesRoutes);
-app.use('/asignaciones', asignacionesRoutes);
-app.use('/auth', authRoutes);
+app.use('/', appRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/upload', express.static(path.join(__dirname, 'upload')));
-app.post('/upload', xlsxUploader);
-
-app.get('/clear', requireAdmin, async (req, res) => {
-  try {
-      await Asignacion.deleteMany({})
-      await Peticion.deleteMany({})
-      await Profesor.deleteMany({})
-      await Grupo.deleteMany({})
-      await Asignatura.deleteMany({})
-      return res.redirect(await addQueryParams('/dashboard', { uploaded: true }));
-  } catch (error) {
-    return res.redirect(await addQueryParams('/dashboard', { uploaded: false, error: 'Error al borrar los elementos de la base de datos'  }));
-  }
-
-});
 
 app.listen(PORT, async () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}\n`);
 });
-
-async function addQueryParams(url, params) {
-  const urlParams = new URLSearchParams();
-  for (const key in params) {
-    urlParams.set(key, params[key]);
-  }
-  return url + '?' + urlParams.toString();
-}
