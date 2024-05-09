@@ -6,5 +6,6 @@ const { createGrupoValidation } = require('../validations/grupoValidation');
 
 router.get('/create', requireAdmin, grupoController.createForm);
 router.post('/create', requireAdmin, createGrupoValidation, grupoController.createGrupo);
+router.get('/:id/delete', requireAdmin, grupoController.deleteGrupo);
 
 module.exports = router;

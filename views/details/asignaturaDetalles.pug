@@ -12,6 +12,8 @@ block content
             th(scope='col') Cuatr.
             th(scope='col') Cred.
             th(scope='col') Horario
+            if isAdminLoggedIn
+              th(scope='col')           
         tbody
           each grupo in asignatura.grupos
             tr
@@ -36,7 +38,11 @@ block content
                     span.underline Horario:
                     |  #{grupo.horario2.hora_inicio} a #{grupo.horario2.hora_fin}
               else
-                td -                  
+                td -   
+              if isAdminLoggedIn
+                td.d-flex.justify-content-center.align-items-center(style='height: 50px;')
+                  a(href=`/grupos/${grupo._id}/delete`)
+                    i(class='bi bi-trash my-icon')               
   else
     p No hay grupos asociados a esta asignatura.
 

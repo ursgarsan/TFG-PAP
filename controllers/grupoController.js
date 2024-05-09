@@ -1,5 +1,7 @@
 const Grupo = require('../models/grupoModel');
 const Asignatura = require('../models/asignaturaModel');
+const Peticion = require('../models/peticionModel');
+const Asignacion = require('../models/asignacionModel');
 const { validationResult } = require('express-validator');
 
 
@@ -39,3 +41,17 @@ exports.createGrupo = async (req, res) => {
     res.status(500).json({ message: 'Error interno del servidor' });
   }
 };
+
+exports.deleteGrupo = async (req, res) => {
+  try {
+    const grupoId = req.params.id;
+    await Peticion.deleteMany({grupo: grupoId})
+    await Asignacion.deleteMany({"grupo._id": grupoId});
+    await Asignatura.updateMany({}, { $pull: { grupos: grupoId } });
+    await Grupo.deleteMany({ _id: grupoId });
+    res.redirect('/asignaturas');
+  } catch (error) {
+    console.error('Error al borrar el grupo:', error);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+}
