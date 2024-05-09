@@ -61,3 +61,14 @@ exports.createPeticion = async (req, res) => {
     res.status(500).json({ message: 'Error interno del servidor' });
   }
 };
+
+exports.deletePeticion = async (req, res) => {
+  try {
+    const peticionId = req.params.id;
+    await Peticion.deleteMany({_id: peticionId});
+    res.redirect('/peticiones');
+  } catch (error) {
+    console.error('Error al borrar la petición:', error);
+    res.status(500).json({ message: 'Error interno del servidor' });
+  }
+}

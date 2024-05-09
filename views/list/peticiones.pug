@@ -12,6 +12,8 @@ block content
           th(scope='col') Tipo
           th(scope='col') Cuatr.
           th(scope='col') Profesor 
+          if isAdminLoggedIn
+            th(scope='col')
 
       tbody
         each peticion in peticiones
@@ -22,3 +24,7 @@ block content
             td= peticion.grupo.tipo   
             td= peticion.grupo.cuatrimestre
             td= peticion.profesor.uvus
+            if isAdminLoggedIn
+              td.d-flex.justify-content-center.align-items-center(style='height: 50px;')
+                a(href=`/peticiones/${peticion._id}/delete`)
+                  i(class='bi bi-trash my-icon')            
