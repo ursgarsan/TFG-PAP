@@ -1,5 +1,21 @@
 extends layout
 
 block content
-  .container
-    h1 Bienvenido a TFG-PAP
+  if isAdminLoggedIn
+    .dash-container
+      h2 Importar datos desde un fichero XLSX
+      br
+      form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
+        input(type='file', name='xlsxFile')
+        .button-container2
+          button.btn.btn-primary(type='submit') Cargar datos
+
+    .dash-container
+      h2 Generar asignaciones
+      .button-container2
+        a.btn.btn-primary(type='button', href='/asignaciones/create') Generar Asignaciones
+    
+    .dash-container 
+      h2 Limpiar datos actuales
+      .button-container2
+        a.btn.btn-primary(type='button', href='/clear') Limpiar base de datos  

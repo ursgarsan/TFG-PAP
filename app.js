@@ -62,10 +62,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/upload', express.static(path.join(__dirname, 'upload')));
 app.post('/upload', xlsxUploader);
 
-app.get('/dashboard', requireAdmin, (req, res) => {
-  res.render('dashboard');
-});
-
 app.get('/clear', requireAdmin, async (req, res) => {
   try {
       await Asignacion.deleteMany({})
