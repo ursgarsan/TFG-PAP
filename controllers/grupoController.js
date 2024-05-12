@@ -7,7 +7,7 @@ const { validationResult } = require('express-validator');
 
 exports.createForm = async (req, res) => {
   try {
-    const asignaturas = await Asignatura.find({}, '_id nombre');
+    const asignaturas = await Asignatura.find({}, '_id acronimo');
     const data = req.body;
     res.render('create/createGrupo', { title: 'Agregar Nuevo Grupo', asignaturas, data });
   } catch (error) {
@@ -20,7 +20,7 @@ exports.createForm = async (req, res) => {
 exports.createGrupo = async (req, res) => {
   const errors = validationResult(req);
   try {
-    const asignaturas = await Asignatura.find({}, '_id nombre');
+    const asignaturas = await Asignatura.find({}, '_id acronimo');
     const { tipo, grupo, cuatrimestre, acreditacion, horario, asignatura_id } = req.body;
     if (!errors.isEmpty()) {
       const errorObj = errors.array().reduce((acc, error) => {
