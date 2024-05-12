@@ -2,9 +2,33 @@ extends layout
 
 block content
   if isAdminLoggedIn
-    .dash-container
-      h2 Importar datos desde un fichero XLSX
-      br
+    .dash-container.position-relative
+      .d-flex.align-items-center
+        h2 Importar datos desde un fichero XLSX
+        button.btn.btn-icon.ml-2(type='button', data-toggle='modal', data-target='#infoModal')
+          i.bi.bi-info-circle
+
+      #infoModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='infoModalLabel', aria-hidden='true')
+        .modal-dialog(role='document')
+          .modal-content
+            .modal-header
+              h5#infoModalLabel.modal-title Información
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span(aria-hidden='true') &times;
+            .modal-body
+              .text-container(style='font-size: 1.4vh;')
+                p 
+                  | La hoja de cálculo a cargar debe tener el formato de las usadas por el departamento:
+                ul
+                  li Cada profesor va a tener una columna
+                  li En la primera fila debe ir el UVUS
+                  li En la segunda el nombre y apellidos con formato Apellido/s, Nombre
+                  li En la tercera debe ir la capacidad efectiva de este profesor, los decimales van con ,
+                  li En la cuarta los créditos asignados, al estar cargando datos deben estar a 0
+                  li En la quinta y séptima van los créditos que se asignan en primer y segundo cuatrimestre, pasaría lo mismo que con los asignados, deberían estar a 0
+                  p Todo esto quedaría con un formato así:
+                  img(src='/images/prof.png', alt='Descripción de la imagen', style='width: 60%; max-width: 500px; display: block; margin: auto;')
+
       form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
         input(type='file', name='xlsxFile')
         .button-container2
@@ -18,4 +42,4 @@ block content
     .dash-container 
       h2 Limpiar datos actuales
       .button-container2
-        a.btn.btn-primary(type='button', href='/clear') Limpiar base de datos  
+        a.btn.btn-primary(type='button', href='/clear') Limpiar base de datos
