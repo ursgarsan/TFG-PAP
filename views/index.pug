@@ -16,19 +16,30 @@ block content
               button.close(type='button', data-dismiss='modal', aria-label='Close')
                 span(aria-hidden='true') &times;
             .modal-body
-              .text-container(style='font-size: 1.4vh;')
+              .text-container(style='font-size: 1.4vmax;')
                 p 
                   | La hoja de cálculo a cargar debe tener el formato de las usadas por el departamento:
+                
+                p Cada profesor va a tener una columna
                 ul
-                  li Cada profesor va a tener una columna
                   li En la primera fila debe ir el UVUS
                   li En la segunda el nombre y apellidos con formato Apellido/s, Nombre
-                  li En la tercera debe ir la capacidad efectiva de este profesor, los decimales van con ,
-                  li En la cuarta los créditos asignados, al estar cargando datos deben estar a 0
-                  li En la quinta y séptima van los créditos que se asignan en primer y segundo cuatrimestre, pasaría lo mismo que con los asignados, deberían estar a 0
+                  li El resto de filas del profesor no es relevante su valor ya que este lo va a setear el sistema una vez las asignaciones definitivas se generen
                   p Todo esto quedaría con un formato así:
-                  img(src='/images/prof.png', alt='Descripción de la imagen', style='width: 60%; max-width: 500px; display: block; margin: auto;')
-
+                  img(src='/images/prof.png', alt='Descripción de la imagen', style='width: 40%; max-width: 500px; display: block; margin: auto;')
+                p Cada grupo va a tener una fila
+                ul 
+                  li En la primera columna pondremos el acrónimo de la asignatura 
+                  li En la segunda, tercera y cuarta insertaremos el tipo, el grupo y el cuatrimestre al que pertenece
+                  li En la quinta pondremos los créditos del grupo 
+                  li En la cuarta aparecerán las peticiones aunque el sistema las va a contar conforme las vaya guardando en la base de datos 
+                  li En la sexta va el horario, este debe tener en primer lugar los días, las abreviaciones L, M, Mi, J o V, si hay varios se separan por ', ' y también pueden llevar un . al final, a esto, si el grupo tiene horario se añadirá ' - ' y luego la hora de inicio, si dura 1 hora y 50 min el sistema pondrá la hora de fin automáticamente, en el caso en el que haya que indicar una hora se deberá poner seguido de la hora de inicio ' a ' e indicar la hora de fin.
+                  | En el caso de que no se añada hora se supondrá que el grupo es online, si sólo se añaden días se pondrá el horario predeterminado.
+                  p Todo esto quedaría con un formato así:
+                img(src='/images/asig.png', alt='Descripción de la imagen', style='width: 100%; max-width: 500px; display: block; margin: auto;')
+                p Las peticiones se introducirán como un valor numérico que indica la prioridad que tiene el profesor sobre ese grupo en la celda donde coinciden el profesor y grupo quedando de esta forma: 
+                img(src='/images/pet.png', alt='Descripción de la imagen', style='width: 100%; max-width: 500px; display: block; margin: auto;')
+                p Esto por ejemplo sería una petición de prioridad 2 del docente de la columna al grupo que aparece en la fila.
       form(action='/upload', method='post', enctype='multipart/form-data', id='uploadForm')
         input(type='file', name='xlsxFile')
         .button-container2
