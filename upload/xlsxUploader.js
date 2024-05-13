@@ -42,7 +42,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     const fullRange = XLSX.utils.decode_range(worksheet['!ref']);
 
 
-    const profesorRange = { s: { c: 8, r: 0 }, e: { c: fullRange.e.c, r: 5 } };
+    const profesorRange = { s: { c: 8, r: 0 }, e: { c: fullRange.e.c, r: 2 } };
     const profesores = XLSX.utils.sheet_to_json(worksheet, { range: XLSX.utils.encode_range(profesorRange), header: 1 });
 
     for (let i = 0; i < profesores[0].length; i++) {
@@ -66,9 +66,8 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       }
     }
 
-    const gruposRange = { s: { c: 0, r: 7 }, e: { c: 7, r: fullRange.e.r } };
+    const gruposRange = { s: { c: 0, r: 8 }, e: { c: 7, r: fullRange.e.r } };
     const grupos = XLSX.utils.sheet_to_json(worksheet, { range: XLSX.utils.encode_range(gruposRange), header: 1 }); 
-
     let gruposDB = [];
 
     for (let i = 0; i < grupos.length; i++) {
@@ -145,7 +144,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       res.redirect(await addQueryParams('/', { uploaded: false, error: 'Error al guardar los grupos en la base de datos, asegúrese de que el formato es el acordado' }));
     }
 
-    const peticionesRange = { s: { c: 8, r: 7 }, e: { c: fullRange.e.c, r: fullRange.e.r } };
+    const peticionesRange = { s: { c: 8, r: 8 }, e: { c: fullRange.e.c, r: fullRange.e.r } };
     const peticiones = XLSX.utils.sheet_to_json(worksheet, { range: XLSX.utils.encode_range(peticionesRange), header: 1 });
     for (let i = 0; i < peticiones.length; i++) {
       for (let j = 0; j < peticiones[i].length; j++) {
@@ -205,7 +204,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
     }
     res.redirect(await addQueryParams('/', { uploaded: true}));
   } catch (error) {
-    res.redirect(await addQueryParams('/', { uploaded: false, error: 'Error al procesar el archivo' }));
+    res.redirect(await addQueryParams('/', { uploaded: false, error: `Error al procesar el archivo ${error}` }));
   }
 });
 
