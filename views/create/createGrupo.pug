@@ -39,6 +39,8 @@ block formContent
       p.error-message= errors.asignatura_id.msg 
 
     #horarioContainer
+      br
+      u Horario habitual:
       .horarioEntry
         each day in ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']
           input(type="checkbox", id=`horario1_${day.toLowerCase()}`, name=`horario1[dias]`, value=day, checked=data.horario1 && data.horario1.dias === day)
@@ -57,7 +59,8 @@ block formContent
         br
         if errors && errors.horario1 && errors.horario1.hora_fin
           p.error-message= errors.horario1.hora_fin.msg 
-
+      br
+      u Horario primera semana (opcional);
       .horarioEntry
         each day in ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']
           input(type="checkbox", id=`horario2_${day.toLowerCase()}`, name=`horario2[dias]`, value=day, checked=data.horario2 && data.horario2.dias === day)
