@@ -29,14 +29,13 @@ block content
                     br
                     span.underline Horario:
                     |  #{grupo.horario1.hora_inicio} a #{grupo.horario1.hora_fin}
-              else if grupo.horario2
-                td
-                  p
-                    span.underline Día(s):
-                    |  #{grupo.horario2.dias.join(', ')}
-                    br
-                    span.underline Horario:
-                    |  #{grupo.horario2.hora_inicio} a #{grupo.horario2.hora_fin}
+                    if grupo.horario2
+                      br
+                      span.underline Día(s):
+                      |  #{grupo.horario2.dias.join(', ')}
+                      br
+                      span.underline Horario:
+                      |  #{grupo.horario2.hora_inicio} a #{grupo.horario2.hora_fin}
               else
                 td -   
               if isAdminLoggedIn
