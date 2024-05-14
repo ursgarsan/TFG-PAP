@@ -3,7 +3,7 @@ extends ../layout-form
 block formContent
   form(action="/profesores/create", method="post")
     label(for="orden") Orden:
-    input(type="number", name="orden", class=`form-control ${errors && errors.orden ? 'error-input' : ''}`, value= data.orden ? data.orden : "")
+    input(type="number", name="orden", min = "0", class=`form-control ${errors && errors.orden ? 'error-input' : ''}`, value= data.orden ? data.orden : "")
     br
     if errors && errors.orden
       p.error-message= errors.orden.msg
@@ -27,7 +27,7 @@ block formContent
       p.error-message= errors.uvus.msg
 
     label(for="capacidad") Capacidad:
-    input(type="number", name="capacidad", class=`form-control ${errors && errors.capacidad ? 'error-input' : ''}`, value= data.capacidad ? data.capacidad : "")
+    input(type="number", id="capacidad", name="capacidad", step="0.01", class=`form-control ${errors && errors.capacidad ? 'error-input' : ''}`, value= data.capacidad ? data.capacidad : "")
     br
     if errors && errors.capacidad
       p.error-message= errors.capacidad.msg
