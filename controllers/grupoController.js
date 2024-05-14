@@ -54,6 +54,8 @@ exports.createGrupo = async (req, res) => {
       }
     }
 
+    nuevoGrupo.peticiones = 0;
+
     await nuevoGrupo.save();
 
     await Asignatura.findByIdAndUpdate(asignatura_id, { $push: { grupos: nuevoGrupo._id } });

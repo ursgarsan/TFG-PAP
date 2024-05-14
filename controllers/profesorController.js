@@ -51,6 +51,10 @@ exports.createProfesor = async (req, res) => {
 
     const { orden, nombre, apellidos, uvus, capacidad } = req.body;
     const nuevoProfesor = new Profesor({ orden, nombre, apellidos, uvus, capacidad });
+    nuevoProfesor.asignados = 0;
+    nuevoProfesor.excedente = 0;
+    nuevoProfesor.creditos1 = 0;
+    nuevoProfesor.creditos2 = 0;
     await nuevoProfesor.save();
     res.redirect('/profesores'); 
   } catch (error) {
