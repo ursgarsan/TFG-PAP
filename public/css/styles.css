@@ -194,7 +194,9 @@ select {
   margin-left: 8px;
 }
 
-
+.text-container {
+  font-size: 1em;
+}
 
 /* Estilos para tablets en modo paisaje y algunos ordenadores de escritorio pequeños */
 @media only screen and (min-width: 1000px) {
@@ -225,6 +227,9 @@ select {
   
   h2 {
     font-size: 2.8vh;
+  }
+  .text-container {
+    font-size: 0.8em;
   }
 }
 
