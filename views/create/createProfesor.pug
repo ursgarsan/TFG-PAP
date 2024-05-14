@@ -3,19 +3,34 @@ extends ../layout-form
 block formContent
   form(action="/profesores/create", method="post")
     label(for="orden") Orden:
-    input(type="number", name="orden", required)
+    input(type="number", name="orden", class=`form-control ${errors && errors.orden ? 'error-input' : ''}`, value= data.orden ? data.orden : "")
     br
+    if errors && errors.orden
+      p.error-message= errors.orden.msg
+
     label(for="nombre") Nombre:
-    input(type="text", name="nombre", required)
+    input(type="text", name="nombre", class=`form-control ${errors && errors.nombre ? 'error-input' : ''}`, value= data.nombre ? data.nombre : "")
     br
+    if errors && errors.nombre
+      p.error-message= errors.nombre.msg
+
     label(for="apellidos") Apellidos:
-    input(type="text", name="apellidos", required)
+    input(type="text", name="apellidos", class=`form-control ${errors && errors.apellidos ? 'error-input' : ''}`, value= data.apellidos ? data.apellidos : "")
     br
+    if errors && errors.apellidos
+      p.error-message= errors.apellidos.msg
+
     label(for="uvus") UVUS:
-    input(type="text", name="uvus", required)
+    input(type="text", name="uvus", class=`form-control ${errors && errors.uvus ? 'error-input' : ''}`, value= data.uvus ? data.uvus : "")
     br
+    if errors && errors.uvus
+      p.error-message= errors.uvus.msg
+
     label(for="capacidad") Capacidad:
-    input(type="number", name="capacidad", required)
+    input(type="number", name="capacidad", class=`form-control ${errors && errors.capacidad ? 'error-input' : ''}`, value= data.capacidad ? data.capacidad : "")
     br
+    if errors && errors.capacidad
+      p.error-message= errors.capacidad.msg
+
     .button-container2
         button(type="submit", class="btn btn-primary") Crear Profesor

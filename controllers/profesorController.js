@@ -2,6 +2,7 @@ const Profesor = require('../models/profesorModel');
 const Peticion = require('../models/peticionModel');
 const Asignacion = require('../models/asignacionModel');
 const { esAdmin } = require('../utils/authUtils');
+const { validationResult } = require('express-validator');
 
 exports.getAllProfesores = async (req, res) => {
   try {
@@ -29,7 +30,8 @@ exports.deleteProfesor = async (req, res) => {
 
 exports.createForm = async (req, res) => {
   try {
-    res.render('create/createProfesor', { title: 'Agregar Nuevo Profesor' });
+    const data = req.body;
+    res.render('create/createProfesor', { title: 'Agregar Nuevo Profesor', data });
   } catch (error) {
     console.error('Error al renderizar formulario:', error);
     res.status(500).json({ message: 'Error interno del servidor' });
@@ -37,7 +39,16 @@ exports.createForm = async (req, res) => {
 };
 
 exports.createProfesor = async (req, res) => {
+  const errors = validationResult(req);
   try {
+    if (!errors.isEmpty()) {
+      const errorObj = errors.array().reduce((acc, error) => {
+        acc[error.path] = { msg: error.msg };
+        return acc;
+      }, {});
+      return res.render('create/createProfesor', { title: 'Agregar Nuevo Profesor', data: req.body, errors: errorObj });
+    }    
+
     const { orden, nombre, apellidos, uvus, capacidad } = req.body;
     const nuevoProfesor = new Profesor({ orden, nombre, apellidos, uvus, capacidad });
     await nuevoProfesor.save();
