@@ -20,7 +20,6 @@ exports.createForm = async (req, res) => {
 exports.createGrupo = async (req, res) => {
   const errors = validationResult(req);
   try {
-    console.log(req.body)
     const asignaturas = await Asignatura.find({}, '_id acronimo');
     const { tipo, grupo, presencial, cuatrimestre, acreditacion, asignatura_id } = req.body;
 
@@ -35,7 +34,7 @@ exports.createGrupo = async (req, res) => {
       hora_inicio: req.body['horario2.hora_inicio'],
       hora_fin: req.body['horario2.hora_fin']
     } : null;
-    
+
     if (!errors.isEmpty()) {
       const errorObj = errors.array().reduce((acc, error) => {
         acc[error.path] = { msg: error.msg };
