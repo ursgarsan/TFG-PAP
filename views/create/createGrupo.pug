@@ -9,19 +9,19 @@ block formContent
       p.error-message= errors.tipo.msg
 
     label(for="grupo") Grupo:
-    input(type="text", id="grupo", name="grupo", class=`form-control ${errors && errors.grupo ? 'error-input' : ''}`, value= data.grupo ? data.grupo : "")
+    input(type="number", id="grupo", name="grupo", min="1", class=`form-control ${errors && errors.grupo ? 'error-input' : ''}`, value= data.grupo ? data.grupo : "")
     br
     if errors && errors.grupo
       p.error-message= errors.grupo.msg
 
     label(for="cuatrimestre") Cuatrimestre:
-    input(type="text", id="cuatrimestre", name="cuatrimestre", class=`form-control ${errors && errors.cuatrimestre ? 'error-input' : ''}`, value= data.cuatrimestre ? data.cuatrimestre : "")
+    input(type="number", id="cuatrimestre", name="cuatrimestre", min="1", max="2", class=`form-control ${errors && errors.cuatrimestre ? 'error-input' : ''}`, value= data.cuatrimestre ? data.cuatrimestre : "")
     br
     if errors && errors.cuatrimestre
       p.error-message= errors.cuatrimestre.msg
 
     label(for="acreditacion") Acreditación:
-    input(type="text", id="acreditacion", name="acreditacion", class=`form-control ${errors && errors.acreditacion ? 'error-input' : ''}`, value= data.acreditacion ? data.acreditacion : "")
+    input(type="number", id="acreditacion", name="acreditacion", step="0.01", class=`form-control ${errors && errors.acreditacion ? 'error-input' : ''}`, value= data.acreditacion ? data.acreditacion : "")
     br
     if errors && errors.acreditacion
       p.error-message= errors.acreditacion.msg
@@ -38,46 +38,58 @@ block formContent
     if errors && errors.asignatura_id
       p.error-message= errors.asignatura_id.msg 
 
-    #horarioContainer
+    label(for="presencial") ¿Posee el grupo horario?:
+    input(type="checkbox", id="presencial", name="presencial", value="true", checked = data.presencial)
+    br
+
+    #horarioContainer(style=`display: ${data.presencial ? 'block' : 'none'}`)
       br
       u Horario habitual:
       .horarioEntry
-        each day in ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']
-          input(type="checkbox", id=`horario1_${day.toLowerCase()}`, name=`horario1[dias]`, value=day, checked=data.horario1 && data.horario1.dias === day)
+        each day in ['L', 'Ma', 'Mi', 'J', 'V']
+          input(type="checkbox", id=`horario1_${day.toLowerCase()}`, name=`horario1.dias`, value=day, checked= data['horario1.dias'] && data['horario1.dias'].includes(day))
           label(for=`horario1_${day.toLowerCase()}`)= day
           br
-        if errors && errors.horario1 && errors.horario1.dias
-          p.error-message= errors.horario1.dias.msg 
-        label(for="hora_inicio") Hora de inicio:
-        input(type="text", id="hora_inicio_1", name="horario1[hora_inicio]", class=`form-control ${errors && errors.horario1 && errors.horario1.hora_inicio ? 'error-input' : ''}`, value= data.horario1 && data.horario1.hora_inicio ? data.horario1.hora_inicio : "")
         br
-        if errors && errors.horario1 && errors.horario1.hora_inicio
-          p.error-message= errors.horario1.hora_inicio.msg
+        if errors && errors['horario1.dias']
+          p.error-message= errors['horario1.dias'].msg 
+        label(for="hora_inicio") Hora de inicio:
+        input(type="text", id="hora_inicio_1", name="horario1.hora_inicio", class=`form-control ${errors && errors['horario1.hora_inicio'] ? 'error-input' : ''}`, value= data['horario1.hora_inicio'] ? data['horario1.hora_inicio'] : "")
+        br
+        if errors && errors['horario1.hora_inicio']
+          p.error-message= errors['horario1.hora_inicio'].msg
 
         label(for="hora_fin") Hora de fin:
-        input(type="text", id="hora_fin_1", name="horario1[hora_fin]", class=`form-control ${errors && errors.horario1 && errors.horario1.hora_fin ? 'error-input' : ''}`, value= data.horario1 && data.horario1.hora_fin ? data.horario1.hora_fin : "")
+        input(type="text", id="hora_fin_1", name="horario1.hora_fin", class=`form-control ${errors && errors['horario1.hora_fin'] ? 'error-input' : ''}`, value= data['horario1.hora_fin'] ? data['horario1.hora_fin'] : "")
         br
-        if errors && errors.horario1 && errors.horario1.hora_fin
-          p.error-message= errors.horario1.hora_fin.msg 
+        if errors && errors['horario1.hora_fin']
+          p.error-message= errors['horario1.hora_fin'].msg 
       br
       u Horario primera semana (opcional);
       .horarioEntry
-        each day in ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']
-          input(type="checkbox", id=`horario2_${day.toLowerCase()}`, name=`horario2[dias]`, value=day, checked=data.horario2 && data.horario2.dias === day)
+        each day in ['L', 'Ma', 'Mi', 'J', 'V']
+          input(type="checkbox", id=`horario2_${day.toLowerCase()}`, name=`horario2.dias`, value=day, checked= data['horario2.dias'] && data['horario2.dias'].includes(day))
           label(for=`horario2_${day.toLowerCase()}`)= day
           br
-        if errors && errors.horario2 && errors.horario2.dias
-          p.error-message= errors.horario2.dias.msg 
-        label(for="hora_inicio") Hora de inicio:
-        input(type="text", id="hora_inicio_2", name="horario2[hora_inicio]", class=`form-control ${errors && errors.horario2 && errors.horario2.hora_inicio ? 'error-input' : ''}`, value= data.horario2 && data.horario2.hora_inicio ? data.horario2.hora_inicio : "")
         br
-        if errors && errors.horario2 && errors.horario2.hora_inicio
-          p.error-message= errors.horario2.hora_inicio.msg
+        if errors && errors['horario2.dias']
+          p.error-message= errors['horario2.dias'].msg 
+        label(for="hora_inicio") Hora de inicio:
+        input(type="text", id="hora_inicio_2", name="horario2.hora_inicio", class=`form-control ${errors && errors['horario2.hora_inicio'] ? 'error-input' : ''}`, value= data['horario2.hora_inicio'] ? data['horario2.hora_inicio'] : "")
+        br
+        if errors && errors['horario2.hora_inicio']
+          p.error-message= errors['horario2.hora_inicio'].msg
 
         label(for="hora_fin") Hora de fin:
-        input(type="text", id="hora_fin_2", name="horario2[hora_fin]", class=`form-control ${errors && errors.horario2 && errors.horario2.hora_fin ? 'error-input' : ''}`, value= data.horario2 && data.horario2.hora_fin ? data.horario2.hora_fin : "")
+        input(type="text", id="hora_fin_2", name="horario2.hora_fin", class=`form-control ${errors && errors['horario2.hora_fin'] ? 'error-input' : ''}`, value= data['horario2.hora_fin'] ? data['horario2.hora_fin'] : "")
         br
-        if errors && errors.horario2 && errors.horario2.hora_fin
-          p.error-message= errors.horario2.hora_fin.msg 
+        if errors && errors['horario2.hora_fin']
+          p.error-message= errors['horario2.hora_fin'].msg 
+      br
     .button-container2
         button(type="submit", class="btn btn-primary") Crear Grupo
+
+  script.
+    document.getElementById('presencial').addEventListener('change', function() {
+      document.getElementById('horarioContainer').style.display = this.checked ? 'block' : 'none';
+    });
