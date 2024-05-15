@@ -26,7 +26,7 @@ block formContent
     if errors && errors.grupo
       p.error-message= errors.grupo.msg
 
-    label(for="orden") Orden:
+    label(for="orden") Prioridad:
     input(type="number", id="orden", min="1", name="orden", class=`form-control ${errors && errors.orden ? 'error-input' : ''}`, value= data.orden ? data.orden : "")
     br
     if errors && errors.orden
