@@ -2,7 +2,7 @@ extends ../layout-form
 
 block formContent
   form(id="peticionForm", action="/peticiones/create", method="post")
-    label(for="profesor") Docente:
+    label(for="profesor") Profesor:
     select(id="profesor", name="profesor", class=`form-select ${errors && errors.profesor ? 'error-input' : ''}`)
       - if (!data.profesor)
         option(value="", selected)= ''
