@@ -7,7 +7,7 @@ const fs = require('fs');
 const ExcelJS = require('exceljs');
 
 let index = 0;
-let limCuatrimestre = 12;
+let limCuatrimestre = 14.4;
 let asignaciones = [];
 let memoria = new Set();
 let peticiones;
