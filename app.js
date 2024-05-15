@@ -35,8 +35,6 @@ app.use('/', appRoutes);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/upload', express.static(path.join(__dirname, 'upload')));
-
 app.listen(PORT, async () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}\n`);
 });
