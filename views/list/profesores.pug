@@ -6,6 +6,7 @@ block content
     table#tablaData.table.table-striped
       thead
         tr
+          th(scope='col') Prelación
           th(scope='col') Nombre
           th(scope='col') Apellidos
           th(scope='col') UVUS
@@ -15,6 +16,7 @@ block content
       tbody
         each profesor in profesores
           tr
+            td= profesor.prelacion
             td= profesor.nombre
             td= profesor.apellidos
             td= profesor.uvus

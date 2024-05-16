@@ -26,11 +26,11 @@ block formContent
     if errors && errors.grupo
       p.error-message= errors.grupo.msg
 
-    label(for="orden") Prioridad:
-    input(type="number", id="orden", min="1", name="orden", class=`form-control ${errors && errors.orden ? 'error-input' : ''}`, value= data.orden ? data.orden : "")
+    label(for="prioridad") Prioridad:
+    input(type="number", id="prioridad", min="1", name="prioridad", class=`form-control ${errors && errors.prioridad ? 'error-input' : ''}`, value= data.prioridad ? data.prioridad : "")
     br
-    if errors && errors.orden
-      p.error-message= errors.orden.msg
+    if errors && errors.prioridad
+      p.error-message= errors.prioridad.msg
 
     .button-container2
         button(type="submit", class="btn btn-primary") Crear Petición

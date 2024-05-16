@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const profesorSchema = new mongoose.Schema({
-  orden: Number,
+  prelacion: Number,
   nombre: String,
   apellidos: String,
   uvus: String,

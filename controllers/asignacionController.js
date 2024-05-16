@@ -6,8 +6,7 @@ const Asignatura = require('../models/asignaturaModel');
 const fs = require('fs');
 const ExcelJS = require('exceljs');
 
-let index = 0;
-let limCuatrimestre = 14.4;
+let limCuatrimestre = 12;
 let asignaciones = [];
 let memoria = new Set();
 let peticiones;
@@ -30,14 +29,13 @@ exports.generarAsignaciones = async (req, res) => {
 async function crearAsignacionObj(profesor, grupo, index) {
     return {
         profesor: profesor,
-        grupo: grupo,
-        orden: index
+        grupo: grupo
     };
 }
 
 async function getData() {
     let profesoresRaw = await Profesor.find();
-    profesoresRaw = profesoresRaw.sort((a, b) => a.orden - b.orden);
+    profesoresRaw = profesoresRaw.sort((a, b) => a.prelacion - b.prelacion);
     let numProf = profesoresRaw.length;
     const peticionesRaw = await Peticion.find();
     const gruposRaw = await Grupo.find();
@@ -49,11 +47,11 @@ async function getData() {
 
     for (const profesor of profesoresRaw) {
         let peticionesProfesor = peticionesRaw.filter(peticion => peticion.profesor.equals(profesor._id));
-        peticionesProfesor = peticionesProfesor.sort((a, b) => a.orden - b.orden);
+        peticionesProfesor = peticionesProfesor.sort((a, b) => a.prioridad - b.prioridad);
 
         let profesorObj = {
             _id:profesor._id,
-            orden: profesor.orden,
+            prelacion: profesor.prelacion,
             uvus: profesor.uvus,
             capacidad: profesor.capacidad,
             creditos1: 0.0,
@@ -296,7 +294,6 @@ async function desasignaCreditos(profesor, grupo) {
 async function desasignaGrupo () {
     let ultima = await asignaciones.pop();
     await desasignaCreditos(ultima.profesor, ultima.grupo);
-    index--;
     await gruposPendientes.push(ultima.grupo._id.toString());
     let anterior = asignaciones[asignaciones.length - 1];
     let memoriaObj = JSON.stringify({
@@ -318,7 +315,7 @@ async function asignarGrupoSiEsPosible(profesor, grupo) {
     if (!existeAsignacion) {
         if (await darGrupo(grupo, profesor) && !(await conflictoCreditosCuatrimestre(grupo, profesor)) && !(await conflictoHorario(grupo, profesor))) {
             await asignaCreditos(profesor, grupo);
-            const asignacion = await crearAsignacionObj(profesor, grupo, index++);
+            const asignacion = await crearAsignacionObj(profesor, grupo);
             asignaciones.push(asignacion);
             // si se asigna un grupo se quita de los pendientes
             gruposPendientes = await gruposPendientes.filter(id => id !== grupo._id.toString()); 

@@ -6,7 +6,7 @@ block content
     table#tablaData.table.table-striped
       thead
         tr
-          th(scope='col') Preferencia
+          th(scope='col') Prioridad
           th(scope='col') Asignatura
           th(scope='col') Grupo
           th(scope='col') Tipo
@@ -18,7 +18,7 @@ block content
       tbody
         each peticion in peticiones
           tr
-            td= peticion.orden
+            td= peticion.prioridad
             td= peticion.grupo.asignatura_id.acronimo
             td= peticion.grupo.grupo
             td= peticion.grupo.tipo   

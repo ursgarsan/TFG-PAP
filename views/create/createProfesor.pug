@@ -2,11 +2,11 @@ extends ../layout-form
 
 block formContent
   form(action="/profesores/create", method="post")
-    label(for="orden") Orden:
-    input(type="number", name="orden", min = "0", class=`form-control ${errors && errors.orden ? 'error-input' : ''}`, value= data.orden ? data.orden : "")
+    label(for="prelacion") Prelación:
+    input(type="number", name="prelacion", min = "0", class=`form-control ${errors && errors.prelacion ? 'error-input' : ''}`, value= data.prelacion ? data.prelacion : "")
     br
-    if errors && errors.orden
-      p.error-message= errors.orden.msg
+    if errors && errors.prelacion
+      p.error-message= errors.prelacion.msg
 
     label(for="nombre") Nombre:
     input(type="text", name="nombre", class=`form-control ${errors && errors.nombre ? 'error-input' : ''}`, value= data.nombre ? data.nombre : "")

@@ -11,7 +11,7 @@ const peticionSchema = new Schema({
         ref: 'grupos',
         require: true,
     },
-    orden: {
+    prioridad: {
         type: Number,
         require: true,
     }

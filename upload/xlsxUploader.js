@@ -49,7 +49,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
       try {
         [nombre, apellidos] = await formatNombre(profesores[1][i])
         const profesor = new Profesor({
-          orden: i,
+          prelacion: i,
           nombre: nombre,
           apellidos: apellidos,
           uvus: profesores[0][i],
@@ -188,7 +188,7 @@ router.post('/upload', upload.single('xlsxFile'), async (req, res) => {
           const peticion = new Peticion ({
             profesor: profesor._id,
             grupo: grupo._id,
-            orden: peticiones[i][j]
+            prioridad: peticiones[i][j]
           });
 
           peticion.save();

@@ -43,8 +43,8 @@ exports.createPeticion = async (req, res) => {
       }, {});
       return res.render('create/createPeticion', { title: 'Agregar Nueva Petición', data: req.body, errors: errorObj, profesores, grupos });      
     }
-    const { profesor, grupo, orden } = req.body;
-    const nuevaPeticion = new Peticion({ profesor, grupo, orden });
+    const { profesor, grupo, prioridad } = req.body;
+    const nuevaPeticion = new Peticion({ profesor, grupo, prioridad });
     await nuevaPeticion.save();
     
     const grupoBD = await Grupo.findById(grupo);

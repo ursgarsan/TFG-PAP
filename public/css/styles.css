@@ -198,7 +198,6 @@ select {
   font-size: 1em;
 }
 
-/* Estilos para tablets en modo paisaje y algunos ordenadores de escritorio pequeños */
 @media only screen and (min-width: 1000px) {
   .btn {
     font-size: 2.5vh;
@@ -209,7 +208,6 @@ select {
   }
 }
 
-/* Estilos para ordenadores de escritorio grandes */
 @media only screen and (min-width: 1800px) {
   .btn {
     font-size: 1.8vh;
