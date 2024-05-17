@@ -1,12 +1,3 @@
-const isAdminLogged = (req, res, next) => {
-  if (req.session.adminId) {
-    req.isAdminLoggedIn = true;
-  } else {
-    req.isAdminLoggedIn = false;
-  }
-  next();
-};
-
 const requireAdmin = (req, res, next) => {
   if (req.session.adminId) {
     next();
@@ -15,4 +6,4 @@ const requireAdmin = (req, res, next) => {
   }
 };
 
-module.exports = { requireAdmin, isAdminLogged };
+module.exports = { requireAdmin };
