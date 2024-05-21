@@ -24,12 +24,17 @@ block content
               if grupo.horario1
                 td
                   p
+                    span.bold Horario habitual
+                    br
                     span.underline Día(s):
                     |  #{grupo.horario1.dias.join(', ')}
                     br
                     span.underline Horario:
                     |  #{grupo.horario1.hora_inicio} a #{grupo.horario1.hora_fin}
                     if grupo.horario2
+                      br
+                      br
+                      span.bold Horario primera semana
                       br
                       span.underline Día(s):
                       |  #{grupo.horario2.dias.join(', ')}

@@ -198,6 +198,10 @@ select {
   font-size: 1em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 1000px) {
   .btn {
     font-size: 2.5vh;
