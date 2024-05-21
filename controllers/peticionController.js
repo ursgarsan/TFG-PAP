@@ -55,7 +55,7 @@ exports.createPeticion = async (req, res) => {
       } 
   ); 
 
-    res.redirect('/');
+    res.redirect('/peticiones');
   } catch (error) {
     console.error('Error al crear petición:', error);
     res.status(500).json({ message: 'Error interno del servidor' });
